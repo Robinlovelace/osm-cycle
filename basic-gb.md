@@ -1,7 +1,18 @@
 OSM-GB - basic analysis of the dataset
 ========================================================
 
-The file "great-britain-latest.osm.pbf" was downloaded from [geofabrik](http://download.geofabrik.de/europe/great-britain.html) on 10th March 2014.
+This vignette describes how to load-in and undertake basic analysis of cycle 
+path data in OSM.
+
+## Accessing the data
+
+### Downloading sections of planet.osm
+
+Planet.osm is the name of the entire world, as represented in a single, large (~32 Gb)
+xml file. Clearly this is not easy to download or process so we downloaded sections.
+
+The file "great-britain-latest.osm.pbf" was downloaded from [geofabrik](http://download.geofabrik.de/europe/great-britain.html) on 10th March 2014. Another possible solution would be 
+to use the "overpass" API, but this approach has not yet been attempted.
 
 This file has a compressed size of 611 Mb, and is constantly growing due to new 
 additions to the map from the OSM community. Clearly, this is a large file to manage, 
@@ -20,86 +31,36 @@ the cycle network is best understood in intuitive terms.
 ```{bash}
 osmosis --read-xml gb-cways.osm --bounding-box top=53.2 left=-1.8 bottom=52.7 right=-1.3 --write-xml NottLeedsCways.osm
 ```
-This resulted in a file that was a more manageable size: 4 Mb
+This resulted in a file that was a more manageable size: 4 Mb.
 
-## Analysis in R
+### Using the Overpass API
 
-To read in the file, the following command was run, having first loaded the 
-osmar package.
+The [Overpass API](http://wiki.openstreetmap.org/wiki/Overpass_API) allows specific
+parts of the planet.osm file to be accessed and downloaded directly, using its 
+own language of filters. To download all cycle paths in the UK, for example, 
+the following query can be used:
 
-
-```r
-# cway <- get_osm(complete_file(), source =
-# osmsource_file('/media/SAMSUNG/geodata/osm-data/NottLeedsCways.osm'))
-# cwaySp <- as_sp(cway, 'lines') save.image()
-load(".RData")
-
-nrow(cwaySp)
+```{bash}
+http://overpass-api.de/api/interpreter?[timeout:600];data=(way(poly:"51.33770 
+1.983960 50.10375 0.05807600 49.89032 -1.246113 49.77612 -2.027284 
+49.76352 -2.020900 49.76171 -2.031990 49.10263 -1.808598 49.00443 
+-1.835368 49.15592 -3.940324 49.70097 -7.024780 52.78017 -5.441616 
+53.77268 -5.206178 54.86510 -5.488813 55.33747 -6.208707 55.45018 
+-6.730561 57.73276 -9.408655 58.20977 -9.077830 60.34515 -4.158581 
+61.13564 -1.637515 61.1030 -0.2670265 59.76591 0.1278457 59.42198 
+0.09781600 55.79959 0.7998970 54.43427 1.702395 52.58000 
+2.250000")[highway=cycleway];);<;>;out meta;
 ```
 
-```
-## Loading required package: sp
-```
+Many thanks to Toni Hernandez at the 
+[SIGTE](http://www.sigte.udg.edu/sigte_en/) service of the University 
+of Girona for demonstrating this method. 
 
-```
-## [1] 1033
-```
-
-```r
-plot(cwaySp)
-```
-
-![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-11.png) 
-
-```r
-head(cwaySp@data)
-```
-
-```
-##              id version           timestamp     uid           user
-## 1861135 1861135      25 2013-01-12 18:18:51   31550 talkytoasteruk
-## 4088003 4088003       1 2006-12-26 21:07:12     729        rjmunro
-## 4329713 4329713       5 2013-01-12 18:18:55   31550 talkytoasteruk
-## 4776311 4776311       9 2014-01-03 17:51:35 1390892           3tom
-## 4776319 4776319       5 2012-09-09 16:39:05  178626       Rovastar
-## 4776325 4776325       8 2012-09-09 16:39:06  178626       Rovastar
-##         changeset type
-## 1861135  14625555  way
-## 4088003    172745  way
-## 4329713  14625555  way
-## 4776311  19791665  way
-## 4776319  13046661  way
-## 4776325  13046661  way
-```
-
-```r
-
-# Let's see the distribution of times of contribution:
-hist(cway$nodes$attrs$timestamp, breaks = "month")
-```
-
-![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-12.png) 
+This resulted in a 16 Mb .pbf file. This was converted to an osm file using osmconvert:
 
 
 
 
-You can also embed plots, for example:
 
-
-```r
-library(rgeos)
-```
-
-```
-## rgeos version: 0.2-19, (SVN revision 394)
-##  GEOS runtime version: 3.3.8-CAPI-1.7.8 
-##  Polygon checking: TRUE
-```
-
-```r
-plot(gLength(cwaySp, byid = T), cwaySp$timestamp, xlim = c(0, 0.1))
-```
-
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
 
 

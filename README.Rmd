@@ -1,7 +1,20 @@
 osm-cycle
 =========
 
-Analysis of osm cycle path data
+This repository is home to a project looking at cycle path data
+on Open Street Map (OSM). The aims of the project are as follows:
+
+1. Describe the cycle path data in OSM and test the hypothesis that 
+it is a good source of data on cycle paths in Great Britain, suitable for academic research.
+
+2. Compare the OSM cycle path data with alternative data sources.
+
+3. Describe and explain the spatio-temporal distribution of additions to the 
+the cycle path dataset and investigate how this corresponds with investment in 
+cycle schemes overall.
+
+As indicated by the above aims this is a data-driven project.
+So let's load some data:
 
 ### Load Nottingham cycle data
 
