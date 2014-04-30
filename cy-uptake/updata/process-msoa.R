@@ -1,0 +1,10 @@
+library(rgdal)
+msoa2001 <- readOGR("cy-uptake/updata/", "msoa-2001")
+plot(msoa2001)
+object.size(msoa2001)
+library(rgeos)
+msoa2001_2 <- SpatialPolygonsDataFrame(gSimplify(msoa2001, 100), msoa2001@data)
+object.size(msoa2001_2) / object.size(msoa2001) # 1/4 the size
+object.size(msoa2001_2) / 1000000 # still 30 mb (to = 60)
+plot(msoa2001_2)
+writeOGR(msoa2001_2, "cy-uptake/", "msoa-2001", "ESRI Shapefile")
