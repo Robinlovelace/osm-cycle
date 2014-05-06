@@ -77,8 +77,21 @@ Let's look at the cross-comparison between LAs in 2001 and 2011.
 
 ```{r}
 la01@data[! la01$ZONE_LABEL %in% la11$NAME , 1:5 ] # now switch to qgis to merge these
+plot(la01[! la01$ZONE_LABEL %in% la11$NAME ,]) # all zones which have changed
+la01.points <- 
 la11merge <- merge(la01@data, la11@data, by.x = "ZONE_LABEL", by.y = "NAME", all.x=F)
 plot(la11merge$All.x, la11merge$All.y) # this suggests we can just rm some of the zones woop
+la11merge[which(la11merge$All.x / la11merge$All.y < 0.75), 1:3]
+```
+
+Merge the data from the 2001 census to fit into 2011 las.
+
+```{r}
+la01.pnts <- SpatialPoints(coordinates(la01))
+plot(la11[ grepl("Cornw", la11$NAME), ])
+proj4string(la01.pnts) <- proj4string(la11)
+cornwal01 <- la01.pnts[la11[ grepl("Cornw", la11$NAME), ],]
+points(cornwal01)
 ```
 
 
