@@ -1,0 +1,85 @@
+Cycling uptake across the UK
+========================================================
+
+```{r}
+library(rgdal)
+la01 <- readOGR("updata/", "ua2001")
+head(la01@data)
+
+names(la01)[9:20] <- c("All", "Mfh", "Tram", "Train", "Bus", "Moto", "Car.d", "Car.p", "Taxi", "Cycle", "Walk", "Other")
+la01$pCycle <- la01$Cycle / la01$All 
+la01@data[la01$pCycle > 0.1,] # do these seem like cycling towns? - YES!
+
+la11 <- readOGR("updata/", "ua2011")
+head(la11@data) # no data for Scotland
+length(la11) # 326 las in England
+la11.data <- read.csv("updata/all-modes-la-Data_AGE_MTTWRK_UNIT.csv")
+head(la11.data[1:6])
+la11.data <- la11.data[!la11.data$F560 == "",] # remove na values
+la11.data <-la11.data[!grepl("W", la11.data$GEO_CODE),] # remove welsh areas
+la11.names <- la11.data[1,]
+la11.names[6:18]
+names(la11.data)[c(2, 6:18)] <- c("CODE", "All", "Mfh", "Tram", "Train", "Bus", "Taxi", "Moto", "Car.d", "Car.p", "Cycle", "Walk", "Other", "Unemp")
+la11.data <- la11.data[-1,] # remove names row
+head(la11.data)
+
+length(which(la11.data$CODE %in% la11$CODE))
+la11.data[!(la11.data$CODE %in% la11$CODE), 1:10]
+
+# substituting cornwall's code
+la11@data[grepl("Corn", la11$NAME), ]
+la11.data[grepl("Corn", la11.data$GEO_LABEL), ] # that's cornwall
+plot(la11[grepl("Corn", la11$NAME), ]) # it's definitely cornwall!
+la11.data$CODE <- as.character(la11.data$CODE)
+la11.data$CODE[grepl("Corn", la11.data$GEO_LABEL)] <- "E06000052"
+
+# Westminster
+la11@data[grepl("Westm", la11$NAME), ]
+la11.data[grepl("Westm", la11.data$GEO_LABEL), ] # different code
+la11.data$CODE[grepl("Westm", la11.data$GEO_LABEL)] <- "E09000033"
+
+la11@data[!(la11$CODE %in% la11.data$CODE),] # check shapes not in data
+la11 <- la11[-which(grepl("Scilly|City of L", la11$NAME)),]
+
+head(la11.data)
+head(la11@data)
+la11@data <- join(la11@data, la11.data)
+head(la11@data)
+
+# convert to numbers
+la11@data[!grepl("[1-9]", la11$Train),] 
+head(la11@data)
+for(i in 8:20){
+  la11@data[,i] <- as.numeric(as.character(la11@data[,i]))
+}
+
+
+
+```
+
+We have now loaded the data at the LA level for 2001 and 2011 modal split data.
+Are the proportions generated realistic?
+
+```{r}
+names(la11)
+sum(la11@data[8]) - sum(la11@data[9:19])
+sum(la11$Unemp)
+sum(la11$All) - sum(la11$Unemp)
+sum(la01$All) # this shows the "All" category includes unemployed. Rm them!
+la11$All <- la11$All - la11$Unemp
+sum(la11$All) / sum(la01$All) # 12% growth - sounds about right
+
+la11$pCycle <- la11$Cycle / la11$All 
+la11@data[la11$pCycle > 0.1,] # do these seem like cycling towns? - YES!
+```
+
+Let's look at the cross-comparison between LAs in 2001 and 2011.
+
+```{r}
+la01@data[! la01$ZONE_LABEL %in% la11$NAME , 1:5 ] # now switch to qgis to merge these
+la11merge <- merge(la01@data, la11@data, by.x = "ZONE_LABEL", by.y = "NAME", all.x=F)
+plot(la11merge$All.x, la11merge$All.y) # this suggests we can just rm some of the zones woop
+```
+
+
+

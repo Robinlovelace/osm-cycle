@@ -16,14 +16,18 @@ to use the "overpass" API, but this approach has not yet been attempted.
 
 This file has a compressed size of 611 Mb, and is constantly growing due to new 
 additions to the map from the OSM community. Clearly, this is a large file to manage, 
-so the first stage was to filter out all of the information except for cycleways. 
-This was done using the following command.
+so the first stage was to filter out all of the information except for transport routes.
+
+
+
+Next, a filter was used to try to extract all the 'cycleways'.
+This was done using the following command (note that this is not guaranteed to extract all cycle ways).
 
 ```{bash}
 osmosis --read-pbf great-britain-latest-10-03-2014.osm.pbf --tf accept-ways highway=cycleway --used-node --write-xml gb-cways.osm
 ```
 
-This command took 5 minutes to run on a 3rd generation Core i5 laptop computer with 12 Mb of RAM.
+This command took around 5 minutes to run on a 3rd generation Core i5 laptop computer with 12 Mb of RAM.
 The resulting file was 260 Mb in size. It was decided that a further subset would be taken of this file, to facilitate fast preliminary analysis. To start with, we took the bounding box 
 encapsulating Leeds and Nottingham, the home locations of the authors and where
 the cycle network is best understood in intuitive terms.
