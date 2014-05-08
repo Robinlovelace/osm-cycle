@@ -5,10 +5,21 @@ Investment in cycling infrastructure growth in bicycle commuting: what's the lin
 # Introduction
 
 Cycling has many benefits. These include,
+<!--For the following bullets:\citep{Saunders2013}
 
-- improved health \citep{}
-- economic savings at the individual level (e.g. lower expenditure on public transport,
-car fuel and gym fees) and for society at large (e.g. reduce dependence on imported fuels)
+\citep{Jarrett2012,}
+
+-->
+
+- improved health of cyclists ([Saunders et al. 2013](http://dx.plos.org/10.1371/journal.pone.0069912),
+)
+
+
+- economic savings at the individual level through lower expenditure on public transport,
+cars and health
+- economic benefits for society at large via reduced public health bills (Rutter et al. 2013,
+Jarrett et al. 2012), 
+
 - reduction in congestion during rush hour - this is a particular benefit of cycle commuting
 as opposed to leisure cycling that would have knock-on benefits
 in terms of time savings for other commuters, traffic flow and energy use.
@@ -18,14 +29,30 @@ the hope that society may one day be able to operate without burning valuable fi
 
 Due to the breadth and strength of these benefits, there has been
 a noticeable increase in political commitment to cycling in many countries
-in recent years \citep{}. In the UK, for example, Prime Minister David 
+in recent years.
+<!--\citep{} -->
+In the UK, for example, Prime Minister David 
 Cameron announced that "we want to see cycling soar"
 ([Prime Minister's Office, 2013](https://www.gov.uk/government/news/government-shifts-cycling-up-a-gear))
 as well as providing
 a more specific statement of intent: "This government wants to make it easier and safer for people who already cycle
-as well as encouraging far more people to take it up" (ibid). However, a major barrier to
-increasing the rate of cycling in many areas, assuming that funding and political will are abundant,
-is the paucity of specific and quantitative evidence about what works.
+as well as encouraging far more people to take it up" (ibid). 
+
+Within this context of widespread political and evidence-based
+support of policies to promote modal shift to cycling, a major barrier is specific
+evidence on the effectiveness of different interventions. Clearly, the number of new cyclists
+resulting from a specific policy intervention cannot precisely be known. However,
+using an analogy from medicine, 'dose-response' type studies can greatly help
+predict the impact of planned interventions 
+<!--\citep{}-->
+and aid the strategic decision making process (Schweizer and Rupi, 2014)
+and maximise the cost-effectiveness ratio of cycle-related expenditure.
+More numerous and rigorous studies
+```{r, echo=F}
+# such as those undertaken by x and y,
+```
+could therefore help increase the rate of cycling in
+many areas, assuming that funding and political will are abundant.
 
 The purpose of this paper is to help fill this knowledge gap by analysising the change in
 bicycle commuting across administrative zones across the UK. A geographically weighted regression
@@ -75,16 +102,4 @@ img <- readPNG("../figures/las01-not11.png")
 
 
 # Method
-
-
-
-```{r}
-summary(cars)
-```
-
-You can also embed plots, for example:
-
-```{r fig.width=7, fig.height=6}
-plot(cars)
-```
 

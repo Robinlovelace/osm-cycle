@@ -5,10 +5,21 @@ Investment in cycling infrastructure growth in bicycle commuting: what's the lin
 # Introduction
 
 Cycling has many benefits. These include,
+<!--For the following bullets:\citep{Saunders2013}
 
-- improved health \citep{}
-- economic savings at the individual level (e.g. lower expenditure on public transport,
-car fuel and gym fees) and for society at large (e.g. reduce dependence on imported fuels)
+\citep{Jarrett2012,}
+
+-->
+
+- improved health of cyclists ([Saunders et al. 2013](http://dx.plos.org/10.1371/journal.pone.0069912),
+)
+
+
+- economic savings at the individual level through lower expenditure on public transport,
+cars and health
+- economic benefits for society at large via reduced public health bills (Rutter et al. 2013,
+Jarrett et al. 2012), 
+
 - reduction in congestion during rush hour - this is a particular benefit of cycle commuting
 as opposed to leisure cycling that would have knock-on benefits
 in terms of time savings for other commuters, traffic flow and energy use.
@@ -18,14 +29,29 @@ the hope that society may one day be able to operate without burning valuable fi
 
 Due to the breadth and strength of these benefits, there has been
 a noticeable increase in political commitment to cycling in many countries
-in recent years \citep{}. In the UK, for example, Prime Minister David 
+in recent years.
+<!--\citep{} -->
+In the UK, for example, Prime Minister David 
 Cameron announced that "we want to see cycling soar"
 ([Prime Minister's Office, 2013](https://www.gov.uk/government/news/government-shifts-cycling-up-a-gear))
 as well as providing
 a more specific statement of intent: "This government wants to make it easier and safer for people who already cycle
-as well as encouraging far more people to take it up" (ibid). However, a major barrier to
-increasing the rate of cycling in many areas, assuming that funding and political will are abundant,
-is the paucity of specific and quantitative evidence about what works.
+as well as encouraging far more people to take it up" (ibid). 
+
+Within this context of widespread political and evidence-based
+support of policies to promote modal shift to cycling, a major barrier is specific
+evidence on the effectiveness of different interventions. Clearly, the number of new cyclists
+resulting from a specific policy intervention cannot precisely be known. However,
+using an analogy from medicine, 'dose-response' type studies can greatly help
+predict the impact of planned interventions 
+<!--\citep{}-->
+and aid the strategic decision making process (Schweizer and Rupi, 2014)
+and maximise the cost-effectiveness ratio of cycle-related expenditure.
+More numerous and rigorous studies
+
+
+could therefore help increase the rate of cycling in
+many areas, assuming that funding and political will are abundant.
 
 The purpose of this paper is to help fill this knowledge gap by analysising the change in
 bicycle commuting across administrative zones across the UK. A geographically weighted regression
@@ -54,42 +80,20 @@ the modelling approach was to start simple (with large geographical zones)
 and move to analyse higher resolution spatial datasets as the analysis progressed.
 
 A GIS problem that had to be overcome early in the analysis was the conversion
-of 2011 Local Authority areas into 2001 Local authority areas.
+of 2001 Local and Unitary Authorities (combined with the 'merge' function in QGIS)
+into 2001 Local authority areas.
 As shown in Fig. x, there are 8 new local authorities which encapsulate
-many smaller areas from the 2001 administrative zones.
+many (37) smaller areas from the 2001 administrative zones.
+The result of this process of spatial aggregation was all 324
+'lower tier' Local Authorities in England
+(excluding the Isles of Scilly and City of London, for which there were no data).
+Mode of travel to work data was thus made directly comparable between 2001 and 2011
+administrative zones.
 
-![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1.png) 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
 
 
 
 
 # Method
-
-
-
-
-```r
-summary(cars)
-```
-
-```
-##      speed           dist    
-##  Min.   : 4.0   Min.   :  2  
-##  1st Qu.:12.0   1st Qu.: 26  
-##  Median :15.0   Median : 36  
-##  Mean   :15.4   Mean   : 43  
-##  3rd Qu.:19.0   3rd Qu.: 56  
-##  Max.   :25.0   Max.   :120
-```
-
-
-You can also embed plots, for example:
-
-
-```r
-plot(cars)
-```
-
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
-
 
