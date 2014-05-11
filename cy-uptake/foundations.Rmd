@@ -2,8 +2,10 @@ Cycling uptake across the UK
 ========================================================
 
 ```{r}
-library(rgdal)
+x <- c("rgdal", "dplyr", "plyr", "ggplot2", "rgeos")
+lapply(x, require, character.only=T)
 la01 <- readOGR("updata/", "ua2001")
+length(la01)
 head(la01@data)
 
 names(la01)[9:20] <- c("All", "Mfh", "Tram", "Train", "Bus", "Moto", "Car.d", "Car.p", "Taxi", "Cycle", "Walk", "Other")
@@ -13,6 +15,9 @@ la01@data[la01$pCycle > 0.1,] # do these seem like cycling towns? - YES!
 la11 <- readOGR("updata/", "ua2011")
 head(la11@data) # no data for Scotland
 length(la11) # 326 las in England
+
+354 - 38 + 8
+
 la11.data <- read.csv("updata/all-modes-la-Data_AGE_MTTWRK_UNIT.csv")
 head(la11.data[1:6])
 la11.data <- la11.data[!la11.data$F560 == "",] # remove na values
@@ -25,6 +30,7 @@ head(la11.data)
 
 length(which(la11.data$CODE %in% la11$CODE))
 la11.data[!(la11.data$CODE %in% la11$CODE), 1:10]
+la11@data[!(la11@data$CODE %in% la11.data$CODE),]
 
 # substituting cornwall's code
 la11@data[grepl("Corn", la11$NAME), ]
@@ -38,8 +44,13 @@ la11@data[grepl("Westm", la11$NAME), ]
 la11.data[grepl("Westm", la11.data$GEO_LABEL), ] # different code
 la11.data$CODE[grepl("Westm", la11.data$GEO_LABEL)] <- "E09000033"
 
+# City of London
+la11@data[grepl("London", la11$NAME), ]
+la11.data[grepl("London", la11.data$GEO_LABEL), ] # different code
+la11.data$CODE[grepl("City of L", la11.data$GEO_LABEL)] <- "E09000033"
+
 la11@data[!(la11$CODE %in% la11.data$CODE),] # check shapes not in data
-la11 <- la11[-which(grepl("Scilly|City of L", la11$NAME)),]
+la11 <- la11[-which(grepl("City of L|Scill", la11$NAME)),]
 plot(la11)
 
 head(la11.data)
@@ -53,9 +64,6 @@ head(la11@data)
 for(i in 8:20){
   la11@data[,i] <- as.numeric(as.character(la11@data[,i]))
 }
-
-
-
 ```
 
 We have now loaded the data at the LA level for 2001 and 2011 modal split data.
@@ -86,12 +94,14 @@ la11merge[which(la11merge$All.x / la11merge$All.y < 0.75), 1:3]
 ```
 
 Merge the data from the 2001 census to fit into 2011 las.
+First up: Cornwall.
 
 ```{r}
 la01.pnts <- SpatialPointsDataFrame(coordinates(la01), data=la01@data)
 plot(la11[ grepl("Cornw", la11$NAME), ])
 proj4string(la01.pnts) <- proj4string(la11)
-cornwal01 <- la01.pnts[la11[ grep("Cornw", la11$NAME), ],]
+cornwal01 <- la01.pnts[la11[ grep("Cornw|Sci", la11$NAME), ],]
+cornwal01
 points(cornwal01)
 corn.sel <- c(row.names(cornwal01), "96") # include isle of scilly
 
@@ -114,7 +124,7 @@ la11@data[ grep("Cornw", la11$NAME), ]
 la01.pnts@data[ grep("Cornw", la01.pnts@data$ZONE_LABEL),]
 ```
 
-Merge the next zone...
+Merge the next zone: Wiltshire.
 
 ```{r}
 plot(la11)
@@ -294,6 +304,9 @@ nrow(la01.pnts)
 la11@data[ grep("Central B", la11$NAME), ]
 la01.pnts@data[ grep("Central B", la01.pnts@data$ZONE_LABEL),]
 points(la01.pnts, col = "green")
+
+# total zones merged
+length(corn.sel) + length(Wilt) + length(Northumb) + length(Durh) + 3 + 3 + 5 + length(Chest)  
 ```
 
 ## Now merge the results
@@ -301,6 +314,28 @@ points(la01.pnts, col = "green")
 ```{r}
 la11merge <- merge(la01.pnts@data, la11@data, by.x = "ZONE_LABEL", by.y = "NAME", all.x=F)
 lam <- la11merge ; rm(la11merge)
+
+# allocate cdm funding
+lam$cdm <- "No"
+cdt05 <- grepl("Ayl|Bright|Darl|Derby$|Exeter|Lancaster$", lam$ZONE_LABEL)
+lam[cdt05, ] 
+lam$cdm[cdt05] <- "2005" 
+cdt09 <- grepl("Blackpo|Bristol|Cambridge$|Chester$|Colches|Bedf|Shrop|Southend|Sefton|Stoke|Woking$|York$", lam$ZONE_LABEL)
+lam[cdt09, ] 
+lam$cdm[cdt09] <- "2009" 
+
+# allocate GOR
+la11$GOR <- "NA"
+gor <- readOGR("updata/", "GOR_st121-smaller")
+la11.pnts <- SpatialPointsDataFrame(coordinates(la11), data=la11@data, match.ID=F)
+proj4string(la11.pnts) <- proj4string(la11)
+head(gor$ZONE_LABEL)
+for(i in 1:length(gor)){
+  subset <- which(la11$NAME %in% la11.pnts[gor[i,],]$NAME)
+  plot(gor[i,])
+  points(la11.pnts[gor[i,], ])
+  la11@data$GOR[subset] <- as.character(gor$ZONE_LABEL[i])
+}
 ```
 
 ```{r}
@@ -313,13 +348,27 @@ lam$Allm.y <- rowSums(lam[c("Tram.y", "Train.y","Bus.y","Moto.y","Car.d.y","Car.
 summary(lam$Allm.y / (lam$Mfh.y + lam$Allm.y)) # around 5% work mfh 2011???
 lam$pCycle <- lam$Cycle.y / lam$Allm.y
 
-plot(lam$pCycle01, lam$pCycle)
+plot(lam$pCycle01, lam$pCycle) # make this plot nice! add regions!!!
 summary(lam$pCycle)
 summary(lam$pCycle01)
 sum(lam$Cycle.x) / sum(lam$Allm.x)
 sum(lam$Cycle.y) / sum(lam$Allm.y)
 lam$Growth <- (lam$pCycle / lam$pCycle01  - 1) * 100
+
+# analysing the growth in cycling
 summary(lam$Growth)
+cD <- which(lam$Growth < 0) # cycling Down
+cU <- which(lam$Growth > 0)
+length(cD)
+summary(lam$Growth[cD])
+length(which(lam$Growth < 0))
+summary(lam$Growth[cU])
+hist(lam$Growth)
+qplot(data=lam, x = Growth, geom="histogram", fill = cdm)
+
+# what were these places like in 2001?
+summary(lam$pCycle01[cD])
+summary(lam$pCycle01[cU])
 
 sum(lam$Cycle.x)
 sum(lam$Cycle.y)
@@ -346,13 +395,19 @@ lam$id <- lam$ZONE_LABEL
 laf <- fortify(lamf, region = "ZONE_LABEL")
 head(laf)
 laf <- merge(laf, lam, by="id")
+
+gorf <- fortify(gor, region = "ZONE_LABEL")
 ```
 
 Plotting.
 
 ```{r}
-ggplot() + geom_polygon(data = laf, aes(long, lat, group, fill = Growth)) +
-  scale_fill_continuous(low="red", high = "green") + theme_bw()
+ggplot() + 
+  geom_polygon(data = laf, aes(long, lat, group, fill = Growth)) +
+  scale_fill_gradient2(low="red", mid="grey", high="green") +
+#   scale_fill_continuous(limits=c(-40, 0, 120) low="red", high = "green") + 
+  geom_path(data = gorf, aes(long, lat, group = group)) +
+  theme_minimal()
 ```
 
 

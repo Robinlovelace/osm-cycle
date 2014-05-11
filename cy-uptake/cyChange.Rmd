@@ -5,29 +5,39 @@ Investment in cycling infrastructure growth in bicycle commuting: what's the lin
 # Introduction
 
 Cycling has many benefits. These include,
-<!--For the following bullets:\citep{Saunders2013}
-
-\citep{Jarrett2012,}
-
+<!--For the following bullets:\citep{Oja2011,Rojas-rueda2011,Saunders2013,}
+\citep{borjesson2010value}
+\citep{Jarrett2012,Rutter2013}
+saelensminde2004cost semlyen2005cutting
 -->
 
-- improved health of cyclists ([Saunders et al. 2013](http://dx.plos.org/10.1371/journal.pone.0069912),
-)
+- improved health of cyclists
+([Oja, 2011](http://www.fietsersbond.be/sites/default/files/Heath%20benefits%20of%20cycling%20REVIEW%20%28Oja%202011%29.pdf);
+[Rojas-Rueda et al., 2011](http://www.creal.cat/media/upload/pdf/articledavidrojas_editora_2_217_1.pdf);
+[Saunders et al., 2013](http://dx.plos.org/10.1371/journal.pone.0069912)).
 
+- economic benefits at the individual level, for example due to lower trip times ([Borjesson and Jonas, 2011](http://www.researchgate.net/publication/228341559_The_value_of_time_and_external_benefits_in_bicycle_cost-benefit_analysEs/file/e0b495165b88274e0c.pdf)),
+and reduced car use (Semlyen, 2005).
 
-- economic savings at the individual level through lower expenditure on public transport,
-cars and health
-- economic benefits for society at large via reduced public health bills (Rutter et al. 2013,
-Jarrett et al. 2012), 
+- economic benefits for society at large via reduced public health bills ([Rutter et al. 2013](http://www.sciencedirect.com/science/article/pii/S0749379712007301);
+Jarrett et al. 2012) and wider impacts (Cavill et al., 2008; Krizek, 2007; Saelensminde, 2004).
+
+- environmental benefits including lower greenhouse gas emissions and demand for roads
+and motor vehicles ([Lenzen, 1999](http://www.sciencedirect.com/science/article/B6VH8-3WMK47K-4/2/707d71a2636a20c4e40d703ae128b1c7);
+[Lindsay and Macmillan, 2011](http://onlinelibrary.wiley.com/doi/10.1111/j.1753-6405.2010.00621.x/abstract;jsessionid=111BFA6034AF092673E1C985C07238E8.f01t04?deniedAccessCustomisedMessage=&userIsAuthenticated=false);
+[Lovelace et al., 2011](http://linkinghub.elsevier.com/retrieve/pii/S0301421511000620)).
 
 - reduction in congestion during rush hour - this is a particular benefit of cycle commuting
-as opposed to leisure cycling that would have knock-on benefits
-in terms of time savings for other commuters, traffic flow and energy use.
-- bicycles pose a lower risk to other road users than do cars
-- 'wide boundary' impacts including heightened sociability of public space and
-the hope that society may one day be able to operate without burning valuable finite resources.
+(as opposed to leisure cycling) via improved traffic flow (Arnott et al., 2005; Downs, 2004).
 
-Due to the breadth and strength of these benefits, there has been
+- bicycles pose a lower risk to other road users than do cars, with benefits for
+social equality (Jacobsen et al., 2009; Furness, 2010).
+
+- 'wide boundary' impacts including heightened sociability of public space and
+the hope that society may one day be able to operate without burning valuable finite resources
+(Furness, 2010).
+
+Due in part to these benefits, there has been
 a noticeable increase in political commitment to cycling in many countries
 in recent years.
 <!--\citep{} -->
@@ -36,17 +46,20 @@ Cameron announced that "we want to see cycling soar"
 ([Prime Minister's Office, 2013](https://www.gov.uk/government/news/government-shifts-cycling-up-a-gear))
 as well as providing
 a more specific statement of intent: "This government wants to make it easier and safer for people who already cycle
-as well as encouraging far more people to take it up" (ibid). 
+as well as encouraging far more people to take it up" (ibid).
 
 Within this context of widespread political and evidence-based
 support of policies to promote modal shift to cycling, a major barrier is specific
 evidence on the effectiveness of different interventions. Clearly, the number of new cyclists
 resulting from a specific policy intervention cannot precisely be known. However,
 using an analogy from medicine, 'dose-response' type studies can greatly help
-predict the impact of planned interventions 
+predict the impact of planned interventions.
 <!--\citep{}-->
-and aid the strategic decision making process (Schweizer and Rupi, 2014)
-and maximise the cost-effectiveness ratio of cycle-related expenditure.
+Transport planning is a long-term process with even longer-term impacts
+and such evidence can aid the strategic decision making process (Schweizer and Rupi, 2014)
+With limited public funds, it is critical to
+maximise the cost-effectiveness ratio of cycle-related expenditure.
+
 More numerous and rigorous studies
 ```{r, echo=F}
 # such as those undertaken by x and y,
@@ -58,6 +71,51 @@ The purpose of this paper is to help fill this knowledge gap by analysising the 
 bicycle commuting across administrative zones across the UK. A geographically weighted regression
 methodology will be used to estimate how effective different types of intervention - including
 investment from the Cycling Demonstration Towns (CDT) initiative and number of cycle paths - have been.
+
+# Literature on the spatial distribution of cycling
+
+The Census travel to work statistics have been used in a number of studies
+to shed light on the spatial distribution of travel patterns overall.
+
+However, the number of studies focussed on active travel, and cycling in particular,
+is much lower. Goodman (2013) provides a detailed and up-to-date account of
+the spatial distribution of walking and cycling at the national level across England and Wales
+and describes how it has changed between 2001 and 2011. The overall
+rate of walking and cycling to work was found to have changed little, but important
+important regional differences were identified: at the regional and local authority level
+cycling growth was largely concentrated in high density urban centres, notably London and Bristol.
+The paper also provided new insight into the shifting social distribution of travel to work mode:
+affluence is associated with motorised modes, although this association is weakening.
+Walking and cycling was found to have grown most in the least deprived areas, with car use
+tending to fall in the wealthiest areas (Goodman 2013).
+The underlying reasons for these shifts was not explored:
+"Future analyses could also explore associations with
+geographic factors such as hilliness, climate and land use patterns;
+although outside the scope of this paper, these may play a key role
+in explaining local and regional variation" (Goodman, 2013, p.9).
+The present paper follows this suggestion by exploring the
+factors associated with growth in bicycle commuting.
+
+Multivariate regression models have been used to help explain
+the spatially uneven distribution of the proportion of commutes
+made by bicycle. Parkin et al. (2007) used a logistic regression model
+to identify the most important factors related to cycling at the ward
+level in England and Wales. 81% of the variability in the proportion
+of commuters cycling to work could be explained by the model. The proportion
+of white male commuters (positive), number of cars per household (negative)
+and income deprivation (negative) were found to be powerful socio-economic
+explanatory variables. Interestingly, hilliness was found to have a negative
+impact on cycle commuting in the model. Road traffic (via the proxy 'transport
+demand intensity') was negatively related to cycling to work whereas the proportion
+of off-road routes had a positive impact. These latter findings
+indicating transport infrastructure is an important policy
+area for encouraging cycling.
+
+Another useful output from this paper was the estimation of a 'saturation point',
+referred to as 'carrying capacity' in population ecology (Lovelace et al 2011),
+a theoretical upper limit on the proportion of people cycling to work in any particular
+area. This was calculated to be 43% of trips, higher than any wards in the UK, but comparable
+with the proportion cycling to work in some Dutch areas (Parkin et al. 2011)
 
 # Data
 
@@ -71,7 +129,7 @@ reason for trip (commuting) and its poor temporal resolution. However, recent wo
 shows that the modal split for commuting is highly correlated with
 modal split for all trips (r > 0.9 for private modes and public transport, dropping to r = 0.77
 for cycling), suggesting that commuting is a reasonable proxy for travel behaviour overall
-\citep{Goodman2013}. In addition, the annual publication of results from the [National
+(Goodman2013). In addition, the annual publication of results from the [National
 Travel Survey](https://www.gov.uk/government/collections/national-travel-survey-statistics)
 provide higher temporal resolution to complement the 10 year cycle of the census.
 
@@ -80,16 +138,14 @@ between the 2001 and 2011 Census of population. In line with the principle of pa
 the modelling approach was to start simple (with large geographical zones)
 and move to analyse higher resolution spatial datasets as the analysis progressed.
 
-A GIS problem that had to be overcome early in the analysis was the conversion
-of 2001 Local and Unitary Authorities (combined with the 'merge' function in QGIS)
-into 2001 Local authority areas.
-As shown in Fig. x, there are 8 new local authorities which encapsulate
-many (37) smaller areas from the 2001 administrative zones.
+A data problem that had to be overcome early in the analysis was the conversion
+of 2001 354 Local and Unitary Authorities (combined with the 'merge' function in QGIS)
+into 2011 Local authority areas.
+As shown in Fig. x, there are 8 2011 LAs which encapsulate
+many (38) 2001 administrative zones.
 The result of this process of spatial aggregation was all 324
-'lower tier' Local Authorities in England
-(excluding the Isles of Scilly and City of London, for which there were no data).
-Mode of travel to work data was thus made directly comparable between 2001 and 2011
-administrative zones.
+'lower tier' Local Authorities in England, for which the
+travel to work data was directly comparable between 2001 and 2011.
 
 ```{r fig.width=10, fig.height=13, echo=FALSE}
 library(png)
@@ -99,7 +155,42 @@ img <- readPNG("../figures/las01-not11.png")
 # ![image](../figures/las01-not11.png)
 ```
 
+The other scales of analysis used in this study were Medium Super Output
+Areas and Lower Super Output Areas (MSOAs and LSOAs with average
+working populations of x and y people, respectively).
+The smallest administrative geography in England is the Output Area
+which contain on average around 100 households. These were omitted from
+the analysis because small values are "randomly adjusted "
+in the Census tables for low counts (Lovelace, 2014;
+see for example http://www.nomisweb.co.uk/livelinks/4652.xls ).
 
+The data pre-processing for these areas was simpler as there has been less
+change between 2001 and 2011 for Output Areas than other types of adminstrative
+geography. Of the xx 2001 MSOAs, xx were also found in the 2011 dataset. The remaining
+zones were allocated to new areas in which there was more than a 90% spatial overlap
+between 2001 and 2011 zones and the remainder were left as NAs. This led to xx 2011
+MSOA zones for which the change in the proportion of commuters using bicycles as their
+primary mode of transport to work was known. The process was used to process the LSOA
+level data, resulting in xx LSOA zones containing data from both the 2001 and 2011 Census.
 
 # Method
 
+
+
+# Results
+
+The rate of cycling between 2001 and 2011 census was found to have changed
+very little, being 3.1% in both cases. However, there was substantial variation
+between the zones in terms of change in cycling.
+There is a strong positive skew in the distribution the growth rate
+(fig. x): 74 areas saw the modal share of cycling rise, by an average of 30%
+whereas the majority of LAs (250) saw moderate declines in the proportion of
+people cycling. These results are plotted geographically in fig. x.
+
+```{r fig.width=5, fig.height=8, echo=FALSE}
+library(png)
+library(grid)
+img <- readPNG("figure//overview-la.png")
+ grid.raster(img)
+# ![image](../figures/las01-not11.png)
+```
