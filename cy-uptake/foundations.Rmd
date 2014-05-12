@@ -356,6 +356,9 @@ summary(lam$Allm.x / (lam$Mfh.x + lam$Allm.x)) # around 5% work mfh 2011???
 lam$pCycle <- lam$Cycle.x / lam$Allm.x
 
 plot(lam$pCycle01, lam$pCycle) # make this plot nice! add regions!!!
+cor(lam$pCycle01, lam$pCycle) # make this plot nice! add regions!!!
+.Last.value^2
+
 summary(lam$pCycle)
 summary(lam$pCycle01)
 

@@ -12,13 +12,31 @@ notLon$Abs.Growth <- (notLon$pCycle - notLon$pCycle01) * 100
 # analysing the growth in cycling
 summary(notLon$Growth)
 summary(notLon$Abs.Growth)
-
-
+sd(notLon$pCycle)
+sd(notLon$pCycle01)
 
 length(which(abs(notLon$Abs.Growth) < 1)) / nrow(notLon)
 cD <- which(notLon$Growth < 0) # cycling Down
 cU <- which(notLon$Growth > 0)
 notLon[notLon$Abs.Growth > 0.5,1]
+notLon[notLon$Abs.Growth < -2,1]
+
+head(notLon[order(notLon$Abs.Growth, decreasing=T ), c("NAME", "Abs.Growth") ], 12) 
+top5B <- head(notLon[order(notLon$Abs.Growth), c("NAME", "pCycle01", "pCycle", "Abs.Growth", "Growth" ) ], 5) 
+top5T <- head(notLon[order(notLon$Abs.Growth, decreasing=T ), c("NAME", "pCycle01", "pCycle", "Abs.Growth", "Growth" ) ], 5) 
+tops <- rbind(top5T, top5B)
+tops[2:3] <- tops[2:3] * 100
+tops[,-1] <- round(tops[,-1], 1)
+tops$Evidence <- "..."
+write.csv(tops, "results/top5s.csv")
+kable(print(tops), row.names=F)
+
+# give these high/low areas names!
+lam$Label <- ""
+lam$Label[as.numeric(row.names(top5B))] <- as.character(lam$NAME[as.numeric(row.names(top5B))])
+lam$Label[as.numeric(row.names(top5T))] <- as.character(lam$NAME[as.numeric(row.names(top5T))])
+
+
 notLon[cU,1]
 length(cD)
 summary(notLon$Growth[cD])

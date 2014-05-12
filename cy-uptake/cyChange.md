@@ -1,5 +1,5 @@
 <!--Investment in cycling infrastructure growth in bicycle commuting: what's the link? -->
-An exploration changes in cycle commuting in England between 2001 and 2011: investment, infrastructure and accidents
+An exploration of factors driving changes in cycle commuting in England between 2001 and 2011: investment, infrastructure and road safety
 ========================================================
 
 
@@ -218,8 +218,21 @@ hypothesis of positive feedback loops in modal shift to cycling through
 (borjesson2012benefits, goetzke2011bicycle).
 
 The regional distribution of growth in cycling, with its focus on
-London, is evident from figs x. and y.
-This is emphasised in in table x, which shows that
+London, is also evident from fig x, which shows the expected
+high correlation between the percent cycling to work in 2001 and 2011
+(r-squared = 0.82).
+The $x = y$ line in fig x represents the 'break even' point
+above which cycling has grown and below which it has dropped.Thus
+there are 74 points above the line and the rest fall below.
+The further points are located from this break even line the more cycling has
+changed in that area. The colors illustrate that many of the zones with the greatest growth
+in cycling are located within the Greater London Authority.
+
+![plot of chunk Scatterplot](figure/Scatterplot.png) 
+
+
+The regional pattern represented by the colors in fig. x
+is emphasised in in table x, which shows that
 outside London there were falls in the proportion
 of people cycling to work, with the greatest declines
 in the Midlands and the North: the average LA in the Midlands
@@ -250,7 +263,7 @@ as a mode of travel to work grow, yet only
 in 12 zones did the cycling to work increase by more than half a percentage point.
 (These were, in descending order of growth rate, were Cambridge, 
 Bristol, Oxford, Brighton, Exeter, Newcastle, South Cambridgeshire, South Gloucestershire,
-Manchester, Sheffield and Bournmouth.) Of these, only 5 had growth rates above
+Manchester, Sheffield and Bournemouth.) Of these, only 5 had growth rates above
 1 percent. In the name of balance, it was decided to focus equally on the areas
 where cycling has fallen greatly: there is a tendency towards picking 'best case'
 studies in the cycling literature. This can be seen as analogous to
@@ -260,14 +273,14 @@ impartial evidence to policy makers ([Jones et al., 2013](http://www.bmj.com/con
 
 Table x presents the growth in cycling in the top 5 and bottom
 5 areas in terms of absolute shift in the proportion of people cycling
-to work. It is noticeable that while 4 of the top 5 received large funding
-grants between 2001 and 2011 from the CDT initiative, none of the bottom 5 did.
+to work. It is noticeable that while 4 of the top 5 received central government funding
+between 2001 and 2011 from the CDT initiative, none of the bottom 5 did.
 (Oxford is conspicuously missing from the list of CDT beneficiaries,
-which led some cycle campaigners to accuse the local council of
+and some cycle campaigners have accused the local council of
 failing to properly maintain the city's existing cycle infrastructure
 ([Horne, 2008](http://www.oxfordmail.co.uk/news/2296153.print/)).)
-This suggests that, in addition to funding helping to increase the rate of cycling,
-it can also serve to maintain it and prevent it from falling in areas that have an
+This suggests that, in addition to investment helping to increase the rate of cycling,
+it can also serve to maintain it and prevent declines in areas that have an
 already high rate of cycling.
 
 Table x: Statistics on cycle commuting from the top 5 and bottom 5 local authorities in
@@ -288,14 +301,5 @@ Note
 |Waveney                      |       9.3|     6.5|        -2.7|   -29.6|No       |
 |Fenland                      |       7.4|     4.9|        -2.6|   -34.4|No       |
 |North East Lincolnshire      |       8.2|     5.6|        -2.6|   -31.2|No       |
-
-
-
-
-
-
-
-
-
 
 
