@@ -140,11 +140,12 @@ and move to analyse higher resolution spatial datasets as the analysis progresse
 
 A data problem that had to be overcome early in the analysis was the conversion
 of 2001 354 Local and Unitary Authorities (combined with the 'merge' function in QGIS)
-into 2011 Local authority areas.
+into 2011 local authority areas (LAs),
+composed of English Districts, Unitary Authorities and London Boroughs.
 As shown in Fig. x, there are 8 2011 LAs which encapsulate
 many (38) 2001 administrative zones.
 The result of this process of spatial aggregation was all 324
-'lower tier' Local Authorities in England, for which the
+'lower tier' 2011 LAs, for which the
 travel to work data was directly comparable between 2001 and 2011.
 
 ```{r fig.width=10, fig.height=13, echo=FALSE}
@@ -175,6 +176,18 @@ level data, resulting in xx LSOA zones containing data from both the 2001 and 20
 
 # Method
 
+The proportion of people cycling to work was calculated as the total number
+of people reporting travelling to work by bicycle divided the number
+of people travelling by all modes. The categories of "unemployed"
+and "work from home" were deliberately avoided, to prevent changes in employment
+structure influencing the result: if a commuter belt shifted towards 'teleworking'
+(working from home), for example, this method would provide an unfairly optimistic
+impression of the uptake of cycling.
+
+The dependent variable, *change* in the proportion of people cycling to work,
+was defined in two ways. First, the absolute difference in the percentage
+of people cycling to work was calculated by subtracting the 2011 results from
+the 2001 results. Under this method, for example, 
 
 
 # Results
@@ -183,14 +196,52 @@ The rate of cycling between 2001 and 2011 census was found to have changed
 very little, being 3.1% in both cases. However, there was substantial variation
 between the zones in terms of change in cycling.
 There is a strong positive skew in the distribution the growth rate
-(fig. x): 74 areas saw the modal share of cycling rise, by an average of 30%
-whereas the majority of LAs (250) saw moderate declines in the proportion of
-people cycling. These results are plotted geographically in fig. x.
+(fig. x): less than a quarter (74) of LAs saw the modal share of cycling rise, by an average of 30%
+whereas the majority of LAs (250) saw small declines in the proportion of
+people cycling. In terms of absolute growth, the distribution is more
+symetrical, with the vast majority of zones (264 zones, 81%) seeing less than a 1% change
+either way in absolute proportion of people cycling to work.
+These results are plotted geographically in fig. x.
+
+```{r fig.width=8, fig.height=8, echo=FALSE}
+img <- readPNG("figure/cygrowth-hist.png")
+ grid.raster(img)
+# ![image](../figures/las01-not11.png)
+```
 
 ```{r fig.width=5, fig.height=8, echo=FALSE}
-library(png)
-library(grid)
 img <- readPNG("figure//overview-la.png")
  grid.raster(img)
 # ![image](../figures/las01-not11.png)
 ```
+
+The regional distribution of growth in cycling, with its focus on
+London, is evident from figs x. and y.
+This is emphasised in in table x, which shows that
+outside London there were falls in the proportion
+of people cycling to work, with the greatest declines
+in the Midlands and the North: the average LA in the Midlands
+saw the proportion of people cycling to work drop by a fifth.
+
+
+|Region    |Relative change|Absolute change|
+|:---------|-----------:|-----------:|
+|London    |   47.4|   1.6|
+|Midlands  |  -19.7|  -0.7|
+|North     |  -12.3|  -0.5|
+|South     |   -7.8|  -0.2|
+
+
+Because of this apparent "London exceptionalism",
+the analysis was re-run with London removed.
+It was found that outside London, the proportion of
+all people cycling to work dropped substantially, from
+3.2% in 2001 to 2.9% in 2011. The average LA outside London
+saw a 12% drop in the proportion of people cycling. These results
+suggest that attempts to 'get Britain cycling' have so far failed
+outside of the capital, which has seen the country's only
+large 'congestion charge' scheme encourage active travel
+(nakamura2014economic).
+
+
+

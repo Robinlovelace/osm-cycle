@@ -103,15 +103,15 @@ proj4string(la01.pnts) <- proj4string(la11)
 cornwal01 <- la01.pnts[la11[ grep("Cornw|Sci", la11$NAME), ],]
 cornwal01
 points(cornwal01)
-corn.sel <- c(row.names(cornwal01), "96") # include isle of scilly
+corRegionel <- c(row.names(cornwal01), "96") # include isle of scilly
 
 la01.pnts@data <- la01@data[c(2,9:23)]
 class(la01.pnts@data$Mfh)
-colSums(la01.pnts@data[corn.sel,2:16])
+colSums(la01.pnts@data[corRegionel,2:16])
 la01.pnts$ZONE_LABEL <- as.character(la01.pnts$ZONE_LABEL)
-# la01.pnts@data <- rbind(la01.pnts@data, c("Cornwall,Isles of Scilly", colSums(la01.pnts@data[corn.sel, 2:16])))
+# la01.pnts@data <- rbind(la01.pnts@data, c("Cornwall,Isles of Scilly", colSums(la01.pnts@data[corRegionel, 2:16])))
 newCornw <- SpatialPointsDataFrame(coordinates(la11[ grepl("Cornw", la11$NAME), ]), match.ID= F,
-                                         data = data.frame(t(c(ZONE_LABEL =1000, colSums(la01.pnts@data[corn.sel, 2:16])))) )
+                                         data = data.frame(t(c(ZONE_LABEL =1000, colSums(la01.pnts@data[corRegionel, 2:16])))) )
 proj4string(newCornw) <- proj4string(la01.pnts)
 
 la01.pnts <- rbind.SpatialPointsDataFrame(la01.pnts, newCornw )
@@ -119,7 +119,7 @@ la01.pnts <- rbind.SpatialPointsDataFrame(la01.pnts, newCornw )
 class(la01.pnts@data$Mfh)
 la01.pnts@data[nrow(la01.pnts@data),1] <- "Cornwall"
 
-la01.pnts <- la01.pnts[- which(row.names(la01.pnts) %in% corn.sel) ,]
+la01.pnts <- la01.pnts[- which(row.names(la01.pnts) %in% corRegionel) ,]
 la11@data[ grep("Cornw", la11$NAME), ]
 la01.pnts@data[ grep("Cornw", la01.pnts@data$ZONE_LABEL),]
 ```
@@ -306,21 +306,22 @@ la01.pnts@data[ grep("Central B", la01.pnts@data$ZONE_LABEL),]
 points(la01.pnts, col = "green")
 
 # total zones merged
-length(corn.sel) + length(Wilt) + length(Northumb) + length(Durh) + 3 + 3 + 5 + length(Chest)  
+length(corRegionel) + length(Wilt) + length(Northumb) + length(Durh) + 3 + 3 + 5 + length(Chest)  
 ```
 
 ## Now merge the results
 
 ```{r}
-la11merge <- merge(la01.pnts@data, la11@data, by.x = "ZONE_LABEL", by.y = "NAME", all.x=F)
+la11merge <- merge(la11@data, la01.pnts@data, by.y = "ZONE_LABEL", by.x = "NAME", all.x=F, sort=F)
 lam <- la11merge ; rm(la11merge)
+head(lam)
 
 # allocate cdm funding
 lam$cdm <- "No"
-cdt05 <- grepl("Ayl|Bright|Darl|Derby$|Exeter|Lancaster$", lam$ZONE_LABEL)
+cdt05 <- grepl("Ayl|Bright|Darl|Derby$|Exeter|Lancaster$", lam$NAME)
 lam[cdt05, ] 
 lam$cdm[cdt05] <- "2005" 
-cdt09 <- grepl("Blackpo|Bristol|Cambridge$|Chester$|Colches|Bedf|Shrop|Southend|Sefton|Stoke|Woking$|York$", lam$ZONE_LABEL)
+cdt09 <- grepl("Blackpo|Bristol|Cambridge$|Chester$|Colches|Bedf|Shrop|Southend|Sefton|Stoke|Woking$|York$", lam$NAME)
 lam[cdt09, ] 
 lam$cdm[cdt09] <- "2009" 
 
@@ -339,24 +340,33 @@ for(i in 1:length(gor)){
 ```
 
 ```{r}
-names(lam)
-lam$Allm.x <- rowSums( lam[c("Tram.x", "Train.x","Bus.x","Moto.x","Car.d.x","Car.p.x","Taxi.x","Cycle.x","Walk.x", "Other.x")])
-summary(lam$Allm.x / (lam$Mfh.x + lam$Allm.x)) # around 10% work mfh 2001
-lam$pCycle01 <- lam$Cycle.x / lam$Allm.x
+lam$GOR <- la11$GOR
+lam$Region <- "North"
+lam$Region[grepl("Midl", lam$GOR)] <- "Midlands"
+lam$Region[grepl("South", lam$GOR)] <- "South"
+lam$Region[grepl("Lond", lam$GOR)] <- "London"
 
-lam$Allm.y <- rowSums(lam[c("Tram.y", "Train.y","Bus.y","Moto.y","Car.d.y","Car.p.y","Taxi.y","Cycle.y","Walk.y", "Other.y")])
-summary(lam$Allm.y / (lam$Mfh.y + lam$Allm.y)) # around 5% work mfh 2011???
-lam$pCycle <- lam$Cycle.y / lam$Allm.y
+names(lam)
+lam$Allm.y <- rowSums( lam[c("Tram.y", "Train.y","Bus.y","Moto.y","Car.d.y","Car.p.y","Taxi.y","Cycle.y","Walk.y", "Other.y")])
+summary(lam$Allm.y / (lam$Mfh.y + lam$Allm.y)) # around 10% work mfh 2001
+lam$pCycle01 <- lam$Cycle.y / lam$Allm.y
+
+lam$Allm.x <- rowSums(lam[c("Tram.x", "Train.x","Bus.x","Moto.x","Car.d.x","Car.p.x","Taxi.x","Cycle.x","Walk.x", "Other.x")])
+summary(lam$Allm.x / (lam$Mfh.x + lam$Allm.x)) # around 5% work mfh 2011???
+lam$pCycle <- lam$Cycle.x / lam$Allm.x
 
 plot(lam$pCycle01, lam$pCycle) # make this plot nice! add regions!!!
 summary(lam$pCycle)
 summary(lam$pCycle01)
-sum(lam$Cycle.x) / sum(lam$Allm.x)
 sum(lam$Cycle.y) / sum(lam$Allm.y)
+sum(lam$Cycle.x) / sum(lam$Allm.x)
 lam$Growth <- (lam$pCycle / lam$pCycle01  - 1) * 100
+lam$Abs.Growth <- (lam$pCycle - lam$pCycle01) * 100
 
 # analysing the growth in cycling
 summary(lam$Growth)
+summary(lam$Abs.Growth)
+length(which(abs(lam$Abs.Growth) < 1)) / nrow(lam)
 cD <- which(lam$Growth < 0) # cycling Down
 cU <- which(lam$Growth > 0)
 length(cD)
@@ -364,22 +374,33 @@ summary(lam$Growth[cD])
 length(which(lam$Growth < 0))
 summary(lam$Growth[cU])
 hist(lam$Growth)
-qplot(data=lam, x = Growth, geom="histogram", fill = cdm)
+
+library(knitr)
+kable(aggregate(cbind(lam$Growth, lam$Abs.Growth), by=list(lam$Region), mean))
+
+library(gridExtra)
+p1 <- qplot(data=lam, x = Growth, fill = Region, binwidth=10) +
+  xlab("Relative growth in proportion cycling (%)") + theme_classic()
+p2 <- qplot(data=lam, x = Abs.Growth, fill = Region, binwidth = 0.5) +
+  xlab("Absolute growth in cycling (% points)") +
+#   scale_fill_discrete(guide = 'none') +
+  theme_classic()
+grid.arrange(p1, p2)
 
 # what were these places like in 2001?
 summary(lam$pCycle01[cD])
 summary(lam$pCycle01[cU])
 
-sum(lam$Cycle.x)
 sum(lam$Cycle.y)
+sum(lam$Cycle.x)
+sum(lam$Allm.x)
 sum(lam$Allm.y)
-sum(lam$Allm.x)
 
-sum(lam$Cycle.y) / sum(lam$Cycle.x)
-sum(lam$Allm.y) / sum(lam$Allm.x) # percent cycling
+sum(lam$Cycle.x) / sum(lam$Cycle.y)
+sum(lam$Allm.x) / sum(lam$Allm.y) # percent cycling
 
-(sum(lam$Cycle.y) / sum(lam$Cycle.x)) / (sum(lam$Allm.y) / sum(lam$Allm.x))
-sum(lam$Allm.x)
+(sum(lam$Cycle.x) / sum(lam$Cycle.y)) / (sum(lam$Allm.x) / sum(lam$Allm.y))
+sum(lam$Allm.y)
 ```
 
 First plot of the results.
@@ -387,12 +408,12 @@ Fortification + merging.
 
 ```{r}
 lamf <- la11
-lamf@data <- data.frame(ZONE_LABEL = la11$NAME)
+lamf@data <- data.frame(NAME = la11$NAME)
 lamf@data <- join(lamf@data, lam)
 head(lamf@data)
 
-lam$id <- lam$ZONE_LABEL
-laf <- fortify(lamf, region = "ZONE_LABEL")
+lam$id <- lam$NAME
+laf <- fortify(lamf, region = "NAME")
 head(laf)
 laf <- merge(laf, lam, by="id")
 
@@ -402,12 +423,19 @@ gorf <- fortify(gor, region = "ZONE_LABEL")
 Plotting.
 
 ```{r}
+# map theme
+theme_map <- theme_classic() + theme(axis.line = element_blank(),
+                                       axis.title = element_blank(),
+                                       axis.ticks = element_blank(),
+                                       axis.text = element_blank())
+
 ggplot() + 
   geom_polygon(data = laf, aes(long, lat, group, fill = Growth)) +
-  scale_fill_gradient2(low="red", mid="grey", high="green") +
+  scale_fill_gradient2(low="red", mid="grey", high="green", name = "Change in\ncycling (%)") +
 #   scale_fill_continuous(limits=c(-40, 0, 120) low="red", high = "green") + 
   geom_path(data = gorf, aes(long, lat, group = group)) +
-  theme_minimal()
+  theme_map
+ggsave("figure/overview-la.png")
 ```
 
 
