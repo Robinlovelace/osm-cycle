@@ -193,7 +193,9 @@ between the zones in terms of change in cycling.
 There is a strong positive skew in the distribution the growth rate
 (fig. x): less than a quarter (74) of LAs saw the modal share of cycling rise, by an average of 30%
 whereas the majority of LAs (250) saw small declines in the proportion of
-people cycling. In terms of absolute growth, the distribution is more
+people cycling. 
+
+In terms of absolute growth, the distribution is more
 symetrical, with the vast majority of zones (264 zones, 81%) seeing less than a 1% change
 either way in absolute proportion of people cycling to work.
 These results are plotted geographically in fig. x.
@@ -204,6 +206,17 @@ These results are plotted geographically in fig. x.
 ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
 
 
+It is interesting to note that the average cycling rate in 2001
+was lower for zones where cycling dropped (3.3 %) compared with zones where cycling grew (3.7%).
+Indeed, the spread in the values of pCycle grew from 2.5 percentage points in 2001 to
+2.7 in 2011. Far from cycling becoming more accessible to everyone everywhere, these
+results provide some geographical evidence
+for a divergence between the cycling 'haves' and 'have nots'. Spatial inequality in
+cycling as a mode of travel to work in recent years in England, supporting the
+hypothesis of positive feedback loops in modal shift to cycling through
+'strength in numbers' and the normalisation of cycling culture
+(borjesson2012benefits, goetzke2011bicycle).
+
 The regional distribution of growth in cycling, with its focus on
 London, is evident from figs x. and y.
 This is emphasised in in table x, which shows that
@@ -211,11 +224,8 @@ outside London there were falls in the proportion
 of people cycling to work, with the greatest declines
 in the Midlands and the North: the average LA in the Midlands
 saw the proportion of people cycling to work drop by a fifth.
-Against this trend, 12 urban areas break the trend, seeing cycling
-as a mode of travel to work grow by more than half a percent.
-Table x presents the growth in each area and demonstrates each
-has seen substantial investment in cycling...
 
+Table x: regional differences in the change in cycling as a commuter mode in England, 2001 to 2011.
 
 |Region    |Relative change|Absolute change|
 |:---------|-----------:|-----------:|
@@ -224,17 +234,68 @@ has seen substantial investment in cycling...
 |North     |  -12.3|  -0.5|
 |South     |   -7.8|  -0.2|
 
-
 Because of this apparent "London exceptionalism",
 the analysis was re-run with London removed.
 It was found that outside London, the proportion of
 all people cycling to work dropped substantially, from
-3.2% in 2001 to 2.9% in 2011. The average LA outside London
-saw a 12% drop in the proportion of people cycling. These results
+3.2% in 2001 to 2.9% in 2011. *The average LA outside London
+saw a 12% drop in the proportion of people cycling*. These results
 suggest that attempts to 'get Britain cycling' have so far failed
 outside of the capital, which has seen the country's only
 large 'congestion charge' scheme encourage active travel
 (nakamura2014economic).
+
+Some urban areas outside London broke the trend, seeing cycling
+as a mode of travel to work grow, yet only
+in 12 zones did the cycling to work increase by more than half a percentage point.
+(These were, in descending order of growth rate, were Cambridge, 
+Bristol, Oxford, Brighton, Exeter, Newcastle, South Cambridgeshire, South Gloucestershire,
+Manchester, Sheffield and Bournmouth.) Of these, only 5 had growth rates above
+1 percent. In the name of balance, it was decided to focus equally on the areas
+where cycling has fallen greatly: there is a tendency towards picking 'best case'
+studies in the cycling literature. This can be seen as analogous to
+the disproportionate non-publication of medical trials that have negative results:
+it is important to focus on 'failures' as well as 'success stories' to provide
+impartial evidence to policy makers ([Jones et al., 2013](http://www.bmj.com/content/347/bmj.f6104?tab=citation)).
+
+Table x presents the growth in cycling in the top 5 and bottom
+5 areas in terms of absolute shift in the proportion of people cycling
+to work. It is noticeable that while 4 of the top 5 received large funding
+grants between 2001 and 2011 from the CDT initiative, none of the bottom 5 did.
+(Oxford is conspicuously missing from the list of CDT beneficiaries,
+which led some cycle campaigners to accuse the local council of
+failing to properly maintain the city's existing cycle infrastructure
+([Horne, 2008](http://www.oxfordmail.co.uk/news/2296153.print/)).)
+This suggests that, in addition to funding helping to increase the rate of cycling,
+it can also serve to maintain it and prevent it from falling in areas that have an
+already high rate of cycling.
+
+Table x: Statistics on cycle commuting from the top 5 and bottom 5 local authorities in
+England in terms of the absolute change in the proportion of commuters cycling to work.
+Note
+
+|Local Authority             |  pCycle 2001|  pCycle 2011|  Absolute growth|  Rel. growth| CDT  |
+|:----------------------------|---------:|-------:|-----------:|-------:|:---------|
+|Cambridge                    |      28.3|    31.9|         3.6|    12.7|2009      |
+|Bristol, City of             |       4.9|     8.1|         3.1|    63.7|2009       |
+|Oxford                       |      16.2|    18.7|         2.5|    15.5|No       |
+|Brighton and Hove            |       3.0|     5.3|         2.4|    80.1|2005       |
+|Exeter                       |       4.8|     6.6|         1.8|    37.3|2005       |
+|                       |       |     |         |    |       |
+|:----------------------------|---------:|-------:|-----------:|-------:|:---------|
+|Boston                       |      11.1|     6.9|        -4.3|   -38.4|No       |
+|Kingston upon Hull, City of  |      12.3|     8.3|        -4.0|   -32.2|No       |
+|Waveney                      |       9.3|     6.5|        -2.7|   -29.6|No       |
+|Fenland                      |       7.4|     4.9|        -2.6|   -34.4|No       |
+|North East Lincolnshire      |       8.2|     5.6|        -2.6|   -31.2|No       |
+
+
+
+
+
+
+
+
 
 
 

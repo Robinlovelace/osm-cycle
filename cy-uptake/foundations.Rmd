@@ -358,8 +358,13 @@ lam$pCycle <- lam$Cycle.x / lam$Allm.x
 plot(lam$pCycle01, lam$pCycle) # make this plot nice! add regions!!!
 summary(lam$pCycle)
 summary(lam$pCycle01)
+
+sd(lam$pCycle)
+sd(lam$pCycle01)
+
 sum(lam$Cycle.y) / sum(lam$Allm.y)
 sum(lam$Cycle.x) / sum(lam$Allm.x)
+
 lam$Growth <- (lam$pCycle / lam$pCycle01  - 1) * 100
 lam$Abs.Growth <- (lam$pCycle - lam$pCycle01) * 100
 
@@ -371,6 +376,9 @@ cD <- which(lam$Growth < 0) # cycling Down
 cU <- which(lam$Growth > 0)
 length(cD)
 summary(lam$Growth[cD])
+summary(lam$pCycle01[cU])
+summary(lam$pCycle01[cD])
+
 length(which(lam$Growth < 0))
 summary(lam$Growth[cU])
 hist(lam$Growth)
