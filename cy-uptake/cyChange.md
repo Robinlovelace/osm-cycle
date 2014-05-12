@@ -1,4 +1,5 @@
-Investment in cycling infrastructure growth in bicycle commuting: what's the link? 
+<!--Investment in cycling infrastructure growth in bicycle commuting: what's the link? -->
+An exploration changes in cycle commuting in England between 2001 and 2011: investment, infrastructure and accidents
 ========================================================
 
 
@@ -210,6 +211,10 @@ outside London there were falls in the proportion
 of people cycling to work, with the greatest declines
 in the Midlands and the North: the average LA in the Midlands
 saw the proportion of people cycling to work drop by a fifth.
+Against this trend, 12 urban areas break the trend, seeing cycling
+as a mode of travel to work grow by more than half a percent.
+Table x presents the growth in each area and demonstrates each
+has seen substantial investment in cycling...
 
 
 |Region    |Relative change|Absolute change|
