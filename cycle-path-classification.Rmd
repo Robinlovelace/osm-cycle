@@ -1,0 +1,39 @@
+Classification of cycle network in Open Street Map
+========================================================
+
+There are many ways to classify bicycle paths in OSM.
+
+Probably the best public description of the different tags of route
+data in OSM and their cyclability is available from
+CycleStreets.net: 
+[http://www.cyclestreets.net/journey/help/osmconversion/]{http://www.cyclestreets.net/journey/help/osmconversion/}
+
+This demonstrates that the `highway=cycleway` tag is common
+(with 460,000 elements) but by no means the only way
+of defining bicycle paths. In fact this classification contains 
+less than half of all routes designed to be used by cyclists.
+More common is the `cycleway=track` tag, with over 500,000
+elements belonging to this category.
+
+There are is a bewildering range of additional tags, all of which
+must be taken into account before one can be confident that all cycle
+paths in a given area have been captured. The
+problem becomes more complex when we remember that
+the recommended way of classifying cycle paths is via relations
+(see ...). Thus, on-road cycle paths may not be visible from
+tag data at all - a potentially confusing feature of OSM data
+for new users.
+With many years of practical
+experience in this realm, CycleStreets.net and OpenCycleMap have
+devel
+
+```{r}
+summary(cars)
+```
+
+You can also embed plots, for example:
+
+```{r fig.width=7, fig.height=6}
+plot(cars)
+```
+

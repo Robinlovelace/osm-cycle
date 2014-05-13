@@ -46,7 +46,8 @@ In the UK, for example, Prime Minister David
 Cameron announced that "we want to see cycling soar"
 ([Prime Minister's Office, 2013](https://www.gov.uk/government/news/government-shifts-cycling-up-a-gear))
 as well as providing
-a more specific statement of intent: "This government wants to make it easier and safer for people who already cycle
+a more specific statement of intent: 
+"This government wants to make it easier and safer for people who already cycle
 as well as encouraging far more people to take it up" (ibid).
 
 Within this context of widespread political and evidence-based
@@ -168,12 +169,21 @@ see for example http://www.nomisweb.co.uk/livelinks/4652.xls ).
 
 The data pre-processing for these areas was simpler as there has been less
 change between 2001 and 2011 for Output Areas than other types of adminstrative
-geography. Of the xx 2001 MSOAs, xx were also found in the 2011 dataset. The remaining
-zones were allocated to new areas in which there was more than a 90% spatial overlap
-between 2001 and 2011 zones and the remainder were left as NAs. This led to xx 2011
-MSOA zones for which the change in the proportion of commuters using bicycles as their
-primary mode of transport to work was known. The process was used to process the LSOA
-level data, resulting in xx LSOA zones containing data from both the 2001 and 2011 Census.
+geography. Of the 6,781 2001 MSOAs, 98% (6,640) are unchanged in the 2011 dataset. 
+The remaining 141 zones are contiguous with the more numerous (n = 6791) 2011
+zones (fig. x).
+Because many of 2001 MSOAs were split-up into small 2011 zones, the solution was
+not as simple as allocating the misfits to the nearest 2011 zones. Instead
+we took advantage of the unchanging geometry of the OA zones and calculated
+incomplete records by aggregating 2001 data from OA-zones in each incomplete
+2011 zone (fig. x).
+
+```{r, echo=FALSE}
+# The same process was applied to LSOA
+# level data, resulting in xx LSOA zones containing data from both the 2001 and 2011 Census.
+# only do LSOA-level analysis after you've got good results from the simpler shapes
+```
+
 
 # Method
 
@@ -219,8 +229,15 @@ img <- readPNG("figure//overview-la.png")
 
 It is interesting to note that the average cycling rate in 2001
 was lower for zones where cycling dropped (3.3 %) compared with zones where cycling grew (3.7%).
-Indeed, the spread in the values of pCycle grew from 2.5 percentage points in 2001 to
-2.7 in 2011. Far from cycling becoming more accessible to everyone everywhere, these
+Indeed, the variability in the proportional of people cycling grew
+between 2001 and 2011, despite the mean remaining the same: 
+the standard deviation increased from 2.5 percentage points in 2001 to
+2.7 in 2011.
+At the MSOA level the standard deviation of the percentage
+of people cycling to work also grew noticeably, from
+2.7 to 2.9.
+
+Far from cycling becoming more accessible to everyone everywhere, these
 results provide some geographical evidence
 for a divergence between the cycling 'haves' and 'have nots'. Spatial inequality in
 cycling as a mode of travel to work in recent years in England, supporting the
