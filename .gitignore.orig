@@ -1,0 +1,11 @@
+.Rproj.user
+<<<<<<< HEAD
+*.Rhistory
+*DB*.RData
+=======
+.Rhistory
+*.RData
+>>>>>>> 215cd2e5a7d82297aac486ca360be6658575c0f1
+lit/
+*html
+*.gz
