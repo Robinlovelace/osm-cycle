@@ -1,0 +1,31 @@
+A regression model to explain change in cycle commuting, 2001 - 2011
+========================================================
+
+Loading, cleaning and 'tidying' the data is often the hardest part of data analysis
+problems (Wickham 2014). Fortunately this problem has already
+been solved, as explained in another R script. Now we are in the privileged
+position of starting from an orderly dataset containing the 'independent'
+and 'explanatory' variables: $c$ is vector containing real positive numbers equal
+in length to the number of zones in the study area. $c$ is the
+absolute change in the proportion of commuters
+recording bicycle as their primary means of travel to work between the 2001 and 2011
+Census of population. There are many ($m$)
+explanatory variables ($x_1 - x_m$) which seek to explain $c$ assuming linear
+relationships between the 'dose' (X) and response (c):
+
+$$ c = \sum_{m} \beta_m x_m + e$$
+where e represents error in the model's prediction capabilities.
+
+```{r}
+load("updata/lam.RData")
+names(lam)
+lm1 <- lm(Abs.Growth ~ (Car.d.x / All.x) , data = lam)
+summary(lm1)
+```
+
+You can also embed plots, for example:
+
+```{r fig.width=7, fig.height=6}
+plot(cars)
+```
+

@@ -371,6 +371,12 @@ sum(lam$Cycle.x) / sum(lam$Allm.x)
 lam$Growth <- (lam$pCycle / lam$pCycle01  - 1) * 100
 lam$Abs.Growth <- (lam$pCycle - lam$pCycle01) * 100
 
+# save the resulting dataset - input into regression
+save(lam, file = "updata/lam.RData")
+```
+
+
+```{r}
 # analysing the growth in cycling
 summary(lam$Growth)
 summary(lam$Abs.Growth)
