@@ -5,7 +5,72 @@ An exploration of factors driving changes in cycle commuting in England between 
 
 # Introduction
 
-Cycling has many benefits. These include,
+During the first decades of the 21st century
+the nature of threats to the long-term wellbeing of the planet
+and its inhabitants have become increasingly clear. We have
+more data than ever about the problems,
+from satellites monitoring the impacts of climate change
+\citep{GRL51730} to detailed global statistics on likely decline rates of
+unconventional oil and gas supplies \citep{hughes2013reality}.
+Yet collectively humanity seems unable to act on these cues,
+raising the spectre of past civilisational collapse
+and bleak prospects for future generations \citep{Beddoe2009, ehrlich2013can}.
+Although the problems are well understood, effective solutions have
+thus far been elusive. In some instances unintended consequences
+have meant that proposed solutions have only worsened the situation
+while leaving root causes unaddressed (e.g. \citealp{sheehan2009biofuels}).
+Various theories have been developed to explain our collective failure \citep{Berners-Lee2013}.
+Generally these revolve around a failure to understand that
+long-term problems at the interface between the human economy and the Earth's physical
+systems are entrenched, complex and interdependent \citep{smil}.
+
+It is within this wider context that questions of transport and health
+should be considered \citep{Woodcock2009}. The 'global energy challenge'
+\citep{Nocera2006} underlies this research, even though
+it is quite specific geographically (focussing solely on England),
+temporally (analysing decadal shifts) and sectorally, with its focus on
+transport to work. Yet the subject matter was influenced by, and could
+influence, discussion of humanities short term sustainability and
+longer term survival.
+
+What is striking about the bicycle is that it is an accessible technology
+(everyone worldwide can realistically aspire to own one)
+that tackles a very wide range of issues.
+Interventions that can simultaneously tackle
+health, energy and economic problems are the mythical 'golden bullets'
+that policy makers dream of yet almost never encounter:
+the sustainability challenge can be seen as an overinflated balloon:
+squeeze one area of it and a bulge generally appears elsewhere \citep{Berners-Lee2013}.
+However, a strong argument can be made that
+policies which increase the rate of cycling for
+personal transport represent one such 'golden bullet', tackling an
+array of issues in one simple step.
+
+This paper starts from the
+premise that cycling is a desirable outcome for health and other
+reasons and there is much research into the benefits of active travel more broadly.
+There is less research, however, about which policies are most
+likely to boost cycling in different context. There have been international
+comparative studies on why cycling flourishes in some countries whilst barely accounting
+for 1% of trips in others \citep{Pucher}, but less evidence on intranational variation.
+Given the continued importance of social, cultural and spatial-economic differences
+between nation states, we argue that explaining national-level variation
+is a higher priority from the perspective of local transport planning -
+and much transport planning takes place within local authorities.
+The starting point
+of this paper is therefore a question: what conditions are associated with
+for growth in cycling at the national level?
+<!-- Breakdown this question??? -->
+
+## The benefits of cycling
+
+Unlike some other types of
+environmental intervention, there are no major downsides to
+bicycle uptake:
+cyclists (often unwittingly) provide many benefits to the wider system
+whilst simply enjoying a fast and healthy for of tranpsort. To be specific,
+there is strong evidence of social, environmental and
+economic benefits of cycling  in the following areas:
 <!--For the following bullets:\citep{Oja2011,Rojas-rueda2011,Saunders2013,}
 \citep{borjesson2010value}
 \citep{Jarrett2012,Rutter2013}
@@ -38,6 +103,8 @@ social equality (Jacobsen et al., 2009; Furness, 2010).
 the hope that society may one day be able to operate without burning valuable finite resources
 (Furness, 2010).
 
+## Pro-cycling policies: a UK perspective
+
 Due in part to these benefits, there has been
 a noticeable increase in political commitment to cycling in many countries
 in recent years.
@@ -46,7 +113,8 @@ In the UK, for example, Prime Minister David
 Cameron announced that "we want to see cycling soar"
 ([Prime Minister's Office, 2013](https://www.gov.uk/government/news/government-shifts-cycling-up-a-gear))
 as well as providing
-a more specific statement of intent: "This government wants to make it easier and safer for people who already cycle
+a more specific statement of intent: 
+"This government wants to make it easier and safer for people who already cycle
 as well as encouraging far more people to take it up" (ibid).
 
 Within this context of widespread political and evidence-based
@@ -72,7 +140,7 @@ bicycle commuting across administrative zones across the UK. A geographically we
 methodology will be used to estimate how effective different types of intervention - including
 investment from the Cycling Demonstration Towns (CDT) initiative and number of cycle paths - have been.
 
-# Literature on the spatial distribution of cycling
+# Literature review: the spatial distribution of cycling
 
 The Census travel to work statistics have been used in a number of studies
 to shed light on the spatial distribution of travel patterns overall.
@@ -162,12 +230,18 @@ see for example http://www.nomisweb.co.uk/livelinks/4652.xls ).
 
 The data pre-processing for these areas was simpler as there has been less
 change between 2001 and 2011 for Output Areas than other types of adminstrative
-geography. Of the xx 2001 MSOAs, xx were also found in the 2011 dataset. The remaining
-zones were allocated to new areas in which there was more than a 90% spatial overlap
-between 2001 and 2011 zones and the remainder were left as NAs. This led to xx 2011
-MSOA zones for which the change in the proportion of commuters using bicycles as their
-primary mode of transport to work was known. The process was used to process the LSOA
-level data, resulting in xx LSOA zones containing data from both the 2001 and 2011 Census.
+geography. Of the 6,781 2001 MSOAs, 98% (6,640) are unchanged in the 2011 dataset. 
+The remaining 141 zones are contiguous with the more numerous (n = 6791) 2011
+zones (fig. x).
+Because many of 2001 MSOAs were split-up into small 2011 zones, the solution was
+not as simple as allocating the misfits to the nearest 2011 zones. Instead
+we took advantage of the unchanging geometry of the OA zones and calculated
+incomplete records by aggregating 2001 data from OA-zones in each incomplete
+2011 zone (fig. x).
+
+
+
+
 
 # Method
 
@@ -200,16 +274,23 @@ symetrical, with the vast majority of zones (264 zones, 81%) seeing less than a 
 either way in absolute proportion of people cycling to work.
 These results are plotted geographically in fig. x.
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
-
-
 ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+
+
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
 
 It is interesting to note that the average cycling rate in 2001
 was lower for zones where cycling dropped (3.3 %) compared with zones where cycling grew (3.7%).
-Indeed, the spread in the values of pCycle grew from 2.5 percentage points in 2001 to
-2.7 in 2011. Far from cycling becoming more accessible to everyone everywhere, these
+Indeed, the variability in the proportional of people cycling grew
+between 2001 and 2011, despite the mean remaining the same: 
+the standard deviation increased from 2.5 percentage points in 2001 to
+2.7 in 2011.
+At the MSOA level the standard deviation of the percentage
+of people cycling to work also grew noticeably, from
+2.7 to 2.9.
+
+Far from cycling becoming more accessible to everyone everywhere, these
 results provide some geographical evidence
 for a divergence between the cycling 'haves' and 'have nots'. Spatial inequality in
 cycling as a mode of travel to work in recent years in England, supporting the

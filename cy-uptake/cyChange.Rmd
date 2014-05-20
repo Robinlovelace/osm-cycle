@@ -1,15 +1,94 @@
 <!--Investment in cycling infrastructure growth in bicycle commuting: what's the link? -->
-An exploration of factors driving changes in cycle commuting in England between 2001 and 2011: investment, infrastructure and road safety
+What boosts cycle commuting? Investment, demographics and road safety in England between 2001 and 2011
 ========================================================
 
 
 # Introduction
 
-During the 21st century, the major threats to the long-term wellbeing of the planet
-and its inhabitants are clear. Humanity has more data than ever before about the nature
-and scale of problems facing us, from advanced satellite monitoring of ice sheets
-()
-Cycling has many benefits. These include,
+During the first decades of the 21st century
+the nature of threats to the long-term wellbeing of the planet
+and its inhabitants have become increasingly clear. We have
+more data than ever about the problems,
+from satellites monitoring the impacts of climate change
+\citep{GRL51730} to detailed global statistics on likely decline rates of
+unconventional oil and gas supplies \citep{hughes2013reality}.
+Yet collectively humanity seems unable to act on these cues,
+raising the spectre of past civilisational collapse
+and bleak prospects for future generations \citep{Beddoe2009, ehrlich2013can}.
+Although the problems are well understood, effective solutions have
+thus far been elusive. In some instances unintended consequences
+have meant that proposed solutions have only worsened the situation
+while leaving root causes unaddressed (e.g. \citealp{sheehan2009biofuels}).
+Various theories have been developed to explain our collective failure \citep{Berners-Lee2013}.
+Generally these revolve around a failure to understand that
+long-term problems at the interface between the human economy and the Earth's physical
+systems are entrenched, complex and interdependent \citep{smil}.
+
+It is within this wider context that questions of transport and health
+should be considered \citep{Woodcock2009}. The 'global energy challenge'
+\citep{Nocera2006} underlies this research, even though
+it is quite specific geographically (focussing solely on England),
+temporally (analysing decadal shifts) and sectorally, with its focus on
+transport to work. Yet the subject matter was influenced by, and could
+influence, discussion of humanities short term sustainability and
+longer term survival.
+
+What is striking about the bicycle is that it is an accessible technology
+(everyone worldwide can realistically aspire to own one)
+that tackles a very wide range of issues.
+Interventions that can simultaneously tackle
+health, energy and economic problems are the mythical 'golden bullets'
+that policy makers dream of yet almost never encounter:
+the sustainability challenge can be seen as an overinflated balloon:
+squeeze one area of it and a bulge generally appears elsewhere \citep{Berners-Lee2013}.
+However, a strong argument can be made that
+policies which increase the rate of cycling for
+personal transport represent one such 'golden bullet', tackling an
+array of issues in one simple step.
+
+This paper starts from the
+premise that cycling is a desirable outcome for health and other
+reasons and there is much research into the benefits of active travel more broadly.
+There is less research, however, about which policies are most
+likely to boost cycling in different context. There have been international
+comparative studies on why cycling flourishes in some countries whilst barely accounting
+for 1% of trips in others \citep{Pucher}, but less evidence on intranational variation.
+Given the continued importance of social, cultural and spatial-economic differences
+between nation states, we argue that explaining national-level variation
+is a higher priority from the perspective of local transport planning -
+and much transport planning takes place within local authorities.
+
+The starting point
+of this paper is therefore a question: what conditions are associated with
+growth in cycling at the national level? The aim is to inform the policy
+making process by supplying evidence about the factors that are within
+the scope of local transport planners to influence. (For example, if topography
+and weather are found to completely explain growth in cycling, there is little
+transport planners can do compared with if provision of cycle paths is found
+to explain much of the change.) Within this question, the following hypotheses were
+generated, based on the literature on the spatial distribution of cycling (see section x).
+The expectations were, certeris parabis, that:
+
+- Areas with high incomes would see disprortional increases in cycle commuting.
+- Length of cycle paths (a proxy for investment in cycling) will be associate with higher than
+expected growth rates in cycling.
+- A good safety record on cycling (relative to the number of bicycle commuters)
+will be associated with high growth rates.
+- Areas that had received central government support for cycling, through the Cycling
+Demonstration Towns initiative, would see growth in cycle commuting.
+
+-
+<!-- Breakdown this question??? -->
+
+## The benefits of cycling
+
+Unlike some other types of
+environmental intervention, there are no major downsides to
+bicycle uptake:
+cyclists (often unwittingly) provide many benefits to the wider system
+whilst simply enjoying a fast and healthy for of tranpsort. To be specific,
+there is strong evidence of social, environmental and
+economic benefits of cycling  in the following areas:
 <!--For the following bullets:\citep{Oja2011,Rojas-rueda2011,Saunders2013,}
 \citep{borjesson2010value}
 \citep{Jarrett2012,Rutter2013}
@@ -41,6 +120,8 @@ social equality (Jacobsen et al., 2009; Furness, 2010).
 - 'wide boundary' impacts including heightened sociability of public space and
 the hope that society may one day be able to operate without burning valuable finite resources
 (Furness, 2010).
+
+## Pro-cycling policies: a UK perspective
 
 Due in part to these benefits, there has been
 a noticeable increase in political commitment to cycling in many countries
@@ -78,7 +159,7 @@ bicycle commuting across administrative zones across the UK. A geographically we
 methodology will be used to estimate how effective different types of intervention - including
 investment from the Cycling Demonstration Towns (CDT) initiative and number of cycle paths - have been.
 
-# Literature on the spatial distribution of cycling
+# Literature review: the spatial distribution of cycling
 
 The Census travel to work statistics have been used in a number of studies
 to shed light on the spatial distribution of travel patterns overall.

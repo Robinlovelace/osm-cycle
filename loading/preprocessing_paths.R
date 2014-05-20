@@ -1,5 +1,5 @@
 # subset based on cyclestreets classification
-load("data//cyclestreetDB2.RData")
+load("bigdata//cyclestreetDB2.RData")
 summary(nchar(ps[,1])) 
 
 ps.data <- cbind(ps, mway2)
