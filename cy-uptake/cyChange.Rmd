@@ -5,6 +5,10 @@ An exploration of factors driving changes in cycle commuting in England between 
 
 # Introduction
 
+During the 21st century, the major threats to the long-term wellbeing of the planet
+and its inhabitants are clear. Humanity has more data than ever before about the nature
+and scale of problems facing us, from advanced satellite monitoring of ice sheets
+()
 Cycling has many benefits. These include,
 <!--For the following bullets:\citep{Oja2011,Rojas-rueda2011,Saunders2013,}
 \citep{borjesson2010value}

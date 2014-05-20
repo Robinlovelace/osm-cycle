@@ -34,7 +34,9 @@ head(ps)
 
 # load the tags data
 mwayTags <- dbReadTable(con, "map_way_tags")
+head(mwayTags)
 mwayBR <- dbReadTable(con, "map_osmBicycleRoute")
+head(mwayBR)
 dbDisconnect(con)
 
 # load cc routing factors
