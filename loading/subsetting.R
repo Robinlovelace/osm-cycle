@@ -21,7 +21,9 @@ for(i in 1:nrow(mway2)){
 }
 
 ps <- SpatialLines(ps) # convert to SpatialLines object
-ps <- SpatialLinesDataFrame(ps, data=m[ m1.sel, ], match.ID=F) # add data
+save(ps, file="bigdata/ps-allroutelines.RData")
+ps <- SpatialLinesDataFrame(ps, data=mway2, match.ID=F) # add data
+writeOGR(ps, "bigdata/cc-subsets/", "allLines", "ESRI Shapefile")
 # plot(ps) # test plot
 ps1 <- ps
 summary(ps@data)

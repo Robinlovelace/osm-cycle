@@ -29,9 +29,14 @@ should be considered \citep{Woodcock2009}. The 'global energy challenge'
 \citep{Nocera2006} underlies this research, even though
 it is quite specific geographically (focussing solely on England),
 temporally (analysing decadal shifts) and sectorally, with its focus on
-transport to work. Yet the subject matter was influenced by, and could
-influence, discussion of humanities short term sustainability and
-longer term survival.
+transport to work. Yet the subject matter was influenced by and contributes to
+discussion of humanity's short term sustainability and
+longer term survival. Many of the benefits of cycling uptake now may only
+be realised long in the future, yet many papers evaluating bicycle policies
+focus solely on 'the here and now'. This bias towards the present is present
+in many areas, not least in economics, and deserves wider discussion
+in the context transport planning. For now, however, let us press on with the
+specific matter of the paper: cycling to work.
 
 What is striking about the bicycle is that it is an accessible technology
 (everyone worldwide can realistically aspire to own one)
@@ -44,30 +49,40 @@ squeeze one area of it and a bulge generally appears elsewhere \citep{Berners-Le
 However, a strong argument can be made that
 policies which increase the rate of cycling for
 personal transport represent one such 'golden bullet', tackling an
-array of issues in one simple step.
+array of issues in one simple step. Commuting is an important reason for personal
+travel, accounting for around a fifth of trips in high income nations and is
+inflexible compared with other forms of transport: people have to get to work
+\citep{Sexton2010}
 
 This paper starts from the
 premise that cycling is a desirable outcome for health and other
-reasons and there is much research into the benefits of active travel more broadly.
+reasons. There is much research supporting this premise and
+on the benefits of active travel more broadly.
 There is less research, however, about which policies are most
-likely to boost cycling in different context. There have been international
+likely to boost cycling in different places at the sub national level. There have been international
 comparative studies on why cycling flourishes in some countries whilst barely accounting
-for 1% of trips in others \citep{Pucher}, but less evidence on intranational variation.
-Given the continued importance of social, cultural and spatial-economic differences
-between nation states, we argue that explaining national-level variation
-is a higher priority from the perspective of local transport planning -
-and much transport planning takes place within local authorities.
+for 1% of trips in others \citep{Pucher}. Research seeking to explain variation in
+bicycle use between smaller administrative zones is described in section x.
 
-The starting point
-of this paper is therefore a question: what conditions are associated with
-growth in cycling at the national level? The aim is to inform the policy
-making process by supplying evidence about the factors that are within
+There are important social, cultural and spatial-economic differences
+between nation states, meaning that what works in one country may not
+always work in another.
+In addition, we argue that explaining national-level variation
+is a higher priority from the perspective of local transport planners -
+those who implement the details of strategic plans and decide precisely how
+investment in cycling is spent.
+
+What conditions are associated with
+growth in cycling at the national level? A central motivation of
+this paper is to shed light on potential answers to this question.
+The aim is to inform the policy
+making process by supplying evidence about which important factors are within
 the scope of local transport planners to influence. (For example, if topography
 and weather are found to completely explain growth in cycling, there is little
 transport planners can do compared with if provision of cycle paths is found
 to explain much of the change.) Within this question, the following hypotheses were
 generated, based on the literature on the spatial distribution of cycling (see section x).
-The expectations were, certeris parabis, that:
+The expectations were, certeris parabis (all things being being equal), that:
 
 - Areas with high incomes would see disprortional increases in cycle commuting.
 - Length of cycle paths (a proxy for investment in cycling) will be associate with higher than
@@ -269,6 +284,27 @@ incomplete records by aggregating 2001 data from OA-zones in each incomplete
 # only do LSOA-level analysis after you've got good results from the simpler shapes
 ```
 
+The explanatory variables used to test the hypotheses listed in section 1 were
+
+- *Avinc*, the mean average income for households in each area, downloaded at the MSOA level
+from the official data repository [data.gov.uk](http://data.gov.uk/dataset/household_earnings_estimates_-_model-based_estimates_of_income_for_msoas).
+
+```{r, echo=FALSE}
+# Avchange 
+```
+
+- *Lpath*, the of high quality cycle paths within each area. This dataset was provided
+in a series of MySQL databases by CycleStreets.net and processes in R.
+
+- *Bcrash*, a proxy on the safety record on cycling in each area defined as a severity-weighted
+count of the number of cycle-related road traffic incidents reported in the STATS19 database
+from the beginning of 2005 until the end of 2012.
+
+- *Invst*, a crude proxy of investment in cycling in each zone, defined as a binary variable:
+0 for areas outside the scope of the CDT project and 1 for areas that did receive funding.
+
+In addition to these main explanatory variables,
+ variables were 
 
 # Method
 
@@ -281,9 +317,21 @@ structure influencing the result: if a commuter belt shifted towards 'teleworkin
 impression of the uptake of cycling.
 
 The dependent variable, *change* in the proportion of people cycling to work,
-was defined in two ways. First, the absolute difference in the percentage
+can be defined in two ways. First, the *absolute difference* in the percentage
 of people cycling to work was calculated by subtracting the 2011 results from
-the 2001 results. Under this method, for example, 
+the 2001 results. Second, *relative change* was defined as the proportion of people
+cycling in 2011 divided by the rate in 2001.
+
+A linear regression model was used to test the impact of the explanatory variables
+on model fit, and to elucidate the direction of influence. Following the principle
+of parsimony in model design, a simple model based on the hypotheses presented in
+the introduction was developed first. Against this baseline the performance of
+different model runs was compared. To this end the following alterations were made:
+
+- Changes to the number and type of explanatory variables used.
+- Subsetting the observations used for the model (e.g. to exclude London)
+- Altering the dependent variable itself to explore the relationship between
+absolute and relative increases in cycling.
 
 
 # Results

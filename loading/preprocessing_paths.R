@@ -2,11 +2,13 @@
 load("bigdata//cyclestreetDB2.RData")
 summary(nchar(ps[,1])) 
 
-ps.data <- cbind(ps, mway2)
+# ps.data <- cbind(ps, mway2)
 mway2 <- mway2[1:6]
 
 head(mway2)
-m <- merge(mway2, mwayTags, by = "id")
+summary(mway2$id)
+summary(mwayTags$id)
+m <- merge(mway2, mwayTags, by = "id", all.x=T)
 for(i in 5:12){
   m[,i] <- as.factor(m[,i])
 }
@@ -24,8 +26,11 @@ summary(mwayBR) # it's worth merging, but what to merge by?
 summary(mwayBR$id %in% m$id)
 summary(mwayBR$id %in% m$wayNameId)
 summary(mwayBR$id %in% m$routeId) # the one: best fit
-m <- merge(m, mwayBR, by.x = "routeId", by.y = "id", all.x=T)
+summary(mwayBR$id %in% m$) # the one: best fit
+
+m <- merge(m, mwayBR, by.x = "routeId", by.y = "id")
 head(m)
+length(which(!is.na(m$network)))
 
 summary(m$network)
 m[20:35,]
@@ -36,9 +41,5 @@ summary(mwayRF) # subset by speed and quietness
 summary(m$routingFactorId.x) # check we can do a merge - yes
 m <- merge(m, mwayRF[,c(1,5,6)], by.x = "routingFactorId.x", by.y = "id")
 head(m)
-summary(m)
-
-sel.cn <- !is.na(m$network) # this method just does not seem to work to select the cycle network
-mcn <- m[ sel.cn, ] 
 
 

@@ -372,7 +372,7 @@ lam$Growth <- (lam$pCycle / lam$pCycle01  - 1) * 100
 lam$Abs.Growth <- (lam$pCycle - lam$pCycle01) * 100
 
 # save the resulting dataset - input into regression
-save(lam, file = "updata/lam.RData")
+# save(lam, file = "updata/lam.RData")
 ```
 
 
@@ -452,7 +452,7 @@ ggplot() +
 #   scale_fill_continuous(limits=c(-40, 0, 120) low="red", high = "green") + 
   geom_path(data = gorf, aes(long, lat, group = group)) +
   theme_map
-ggsave("figure/overview-la.png")
+# ggsave("figure/overview-la.png")
 ```
 
 
