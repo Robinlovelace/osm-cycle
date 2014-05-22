@@ -444,13 +444,14 @@ Plotting.
 theme_map <- theme_classic() + theme(axis.line = element_blank(),
                                        axis.title = element_blank(),
                                        axis.ticks = element_blank(),
-                                       axis.text = element_blank())
+                                       axis.text = element_blank()) 
 
 ggplot() + 
   geom_polygon(data = laf, aes(long, lat, group, fill = Growth)) +
   scale_fill_gradient2(low="red", mid="grey", high="green", name = "Change in\ncycling (%)") +
 #   scale_fill_continuous(limits=c(-40, 0, 120) low="red", high = "green") + 
-  geom_path(data = gorf, aes(long, lat, group = group)) +
+  geom_path(data = gorf, aes(long, lat, group = group))+
+  coord_map() +
   theme_map
 # ggsave("figure/overview-la.png")
 ```
