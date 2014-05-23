@@ -1,3 +1,10 @@
+# map_osmBicycleRoute contains our interpretation of OSM's relations
+# relaitng to cycling.
+# 
+# map_way_tags is effectively a summarized version of the osm_wayTag
+# table - but with a column linking to the map_osmBicycleRoute.id
+
+
 # trying to load the osm cycle data from mysql
 library(RODBC)
 odbcConnect("/var/lib/mysql/mysql.sock")
