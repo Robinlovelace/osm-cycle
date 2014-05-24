@@ -6,27 +6,27 @@ What boosts cycle commuting? Investment, demographics and road safety in England
 # Introduction
 
 During the first decades of the 21st century
-the nature of threats to the long-term wellbeing of the planet
+the nature of threats to the long-term well-being of the planet
 and its inhabitants have become increasingly clear. We have
 more data than ever about the problems,
 from satellites monitoring the impacts of climate change
-\citep{GRL51730} to detailed global statistics on likely decline rates of
-unconventional oil and gas supplies \citep{hughes2013reality}.
+(citep{GRL51730} to detailed global statistics on likely decline rates of
+unconventional oil and gas supplies (citep{hughes2013reality}.
 Yet collectively humanity seems unable to act on these cues,
 raising the spectre of past civilisational collapse
-and bleak prospects for future generations \citep{Beddoe2009, ehrlich2013can}.
+and bleak prospects for future generations (citep{Beddoe2009, ehrlich2013can}.
 Although the problems are well understood, effective solutions have
 thus far been elusive. In some instances unintended consequences
 have meant that proposed solutions have only worsened the situation
-while leaving root causes unaddressed (e.g. \citealp{sheehan2009biofuels}).
-Various theories have been developed to explain our collective failure \citep{Berners-Lee2013}.
+while leaving the root causes un-addressed (e.g. Sheehan et al. 2009).
+Various theories have been developed to explain our collective failure (Berners-Lee and Clarke, 2012).
 Generally these revolve around a failure to understand that
 long-term problems at the interface between the human economy and the Earth's physical
-systems are entrenched, complex and interdependent \citep{smil}.
+systems are entrenched, complex and interdependent (citep{smil}.
 
 It is within this wider context that questions of transport and health
-should be considered \citep{Woodcock2009}. The 'global energy challenge'
-\citep{Nocera2006} underlies this research, even though
+should be considered (citep{Woodcock2009}. The 'global energy challenge'
+(citep{Nocera2006} underlies this research, even though
 it is quite specific geographically (focussing solely on England),
 temporally (analysing decadal shifts) and sectorally, with its focus on
 transport to work. Yet the subject matter was influenced by and contributes to
@@ -45,14 +45,14 @@ Interventions that can simultaneously tackle
 health, energy and economic problems are the mythical 'golden bullets'
 that policy makers dream of yet almost never encounter:
 the sustainability challenge can be seen as an overinflated balloon:
-squeeze one area of it and a bulge generally appears elsewhere \citep{Berners-Lee2013}.
+squeeze one area of it and a bulge generally appears elsewhere (citep{Berners-Lee2013}.
 However, a strong argument can be made that
 policies which increase the rate of cycling for
 personal transport represent one such 'golden bullet', tackling an
 array of issues in one simple step. Commuting is an important reason for personal
 travel, accounting for around a fifth of trips in high income nations and is
 inflexible compared with other forms of transport: people have to get to work
-\citep{Sexton2010}
+(citep{Sexton2010}
 
 This paper starts from the
 premise that cycling is a desirable outcome for health and other
@@ -61,7 +61,7 @@ on the benefits of active travel more broadly.
 There is less research, however, about which policies are most
 likely to boost cycling in different places at the sub national level. There have been international
 comparative studies on why cycling flourishes in some countries whilst barely accounting
-for 1% of trips in others \citep{Pucher}. Research seeking to explain variation in
+for 1% of trips in others (citep{Pucher}. Research seeking to explain variation in
 bicycle use between smaller administrative zones is described in section x.
 
 There are important social, cultural and spatial-economic differences
@@ -84,7 +84,7 @@ to explain much of the change.) Within this question, the following hypotheses w
 generated, based on the literature on the spatial distribution of cycling (see section x).
 The expectations were, certeris parabis (all things being being equal), that:
 
-- Areas with high incomes would see disprortional increases in cycle commuting.
+- Areas with high incomes would see disproportional increases in cycle commuting.
 - Length of cycle paths (a proxy for investment in cycling) will be associate with higher than
 expected growth rates in cycling.
 - A good safety record on cycling (relative to the number of bicycle commuters)
@@ -101,12 +101,12 @@ Unlike some other types of
 environmental intervention, there are no major downsides to
 bicycle uptake:
 cyclists (often unwittingly) provide many benefits to the wider system
-whilst simply enjoying a fast and healthy for of tranpsort. To be specific,
+whilst simply enjoying a fast and healthy for of transport. To be specific,
 there is strong evidence of social, environmental and
 economic benefits of cycling  in the following areas:
-<!--For the following bullets:\citep{Oja2011,Rojas-rueda2011,Saunders2013,}
-\citep{borjesson2010value}
-\citep{Jarrett2012,Rutter2013}
+<!--For the following bullets:(citep{Oja2011,Rojas-rueda2011,Saunders2013,}
+(citep{borjesson2010value}
+(citep{Jarrett2012,Rutter2013}
 saelensminde2004cost semlyen2005cutting
 -->
 
@@ -141,7 +141,7 @@ the hope that society may one day be able to operate without burning valuable fi
 Due in part to these benefits, there has been
 a noticeable increase in political commitment to cycling in many countries
 in recent years.
-<!--\citep{} -->
+<!--(citep{} -->
 In the UK, for example, Prime Minister David 
 Cameron announced that "we want to see cycling soar"
 ([Prime Minister's Office, 2013](https://www.gov.uk/government/news/government-shifts-cycling-up-a-gear))
@@ -156,7 +156,7 @@ evidence on the effectiveness of different interventions. Clearly, the number of
 resulting from a specific policy intervention cannot precisely be known. However,
 using an analogy from medicine, 'dose-response' type studies can greatly help
 predict the impact of planned interventions.
-<!--\citep{}-->
+<!--(citep{}-->
 Transport planning is a long-term process with even longer-term impacts
 and such evidence can aid the strategic decision making process (Schweizer and Rupi, 2014)
 With limited public funds, it is critical to
@@ -169,7 +169,7 @@ More numerous and rigorous studies
 could therefore help increase the rate of cycling in
 many areas, assuming that funding and political will are abundant.
 
-The purpose of this paper is to help fill this knowledge gap by analysising the change in
+The purpose of this paper is to help fill this knowledge gap by analysing the change in
 bicycle commuting across administrative zones across the UK. A geographically weighted regression
 methodology will be used to estimate how effective different types of intervention - including
 investment from the Cycling Demonstration Towns (CDT) initiative and number of cycle paths - have been.
@@ -183,7 +183,7 @@ However, the number of studies focussed on active travel, and cycling in particu
 is much lower. Goodman (2013) provides a detailed and up-to-date account of
 the spatial distribution of walking and cycling at the national level across England and Wales
 and describes how it has changed between 2001 and 2011. The overall
-rate of walking and cycling to work was found to have changed little, but important
+rate of walking and cycling to work was found to have changed little, but
 important regional differences were identified: at the regional and local authority level
 cycling growth was largely concentrated in high density urban centres, notably London and Bristol.
 The paper also provided new insight into the shifting social distribution of travel to work mode:
@@ -268,7 +268,7 @@ in the Census tables for low counts (Lovelace, 2014;
 see for example http://www.nomisweb.co.uk/livelinks/4652.xls ).
 
 The data pre-processing for these areas was simpler as there has been less
-change between 2001 and 2011 for Output Areas than other types of adminstrative
+change between 2001 and 2011 for Output Areas than other types of administrative
 geography. Of the 6,781 2001 MSOAs, 98% (6,640) are unchanged in the 2011 dataset. 
 The remaining 141 zones are contiguous with the more numerous (n = 6791) 2011
 zones (fig. x).
@@ -284,7 +284,8 @@ incomplete records by aggregating 2001 data from OA-zones in each incomplete
 # only do LSOA-level analysis after you've got good results from the simpler shapes
 ```
 
-The explanatory variables used to test the hypotheses listed in section 1 were
+The explanatory variables used in the baseline model
+to test the hypotheses listed in section 1 were:
 
 - *Avinc*, the mean average income for households in each area, downloaded at the MSOA level
 from the official data repository [data.gov.uk](http://data.gov.uk/dataset/household_earnings_estimates_-_model-based_estimates_of_income_for_msoas).
@@ -303,23 +304,42 @@ from the beginning of 2005 until the end of 2012.
 - *Invst*, a crude proxy of investment in cycling in each zone, defined as a binary variable:
 0 for areas outside the scope of the CDT project and 1 for areas that did receive funding.
 
-In addition to these main explanatory variables,
- variables were 
+In addition to these baseline input datasets, a number of other variables
+were tested to investigate the relationship between other variables and cycling to work.
+These are described as and when they appear in the results.
 
 # Method
 
-The proportion of people cycling to work was calculated as the total number
-of people reporting travelling to work by bicycle divided the number
-of people travelling by all modes. The categories of "unemployed"
-and "work from home" were deliberately avoided, to prevent changes in employment
-structure influencing the result: if a commuter belt shifted towards 'teleworking'
-(working from home), for example, this method would provide an unfairly optimistic
+The proportion of people cycling to cycling to work
+(*pCycle*) was calculated as the total number
+of bicycle commuters ($Cycle$) divided the number
+of people commuting by all modes ($Commute$) for each area ($a$).
+At the national level, this can be represented as
+the population-weighted sum of *pCycle* for all areas:
+
+$$PCycle = \sum_{a=1}^n \frac{Commute_a}{\sum_{a=1}^n Commute} \frac{Cycle_a}{Commute_a} $$
+
+where $PCycle$ is the proportion cycling overall.
+This is expressed more concisely as the total number of cyclists divided by
+the total number of commuters ($PCycle = Cycle / Commute$). However, equation x
+is useful in demonstrating how a single national value can mask substantial regional
+variation and highlights the importance of a zone's total population:
+while the *average* value of *pCycle* dropped from 3.3 to 3.1%
+across English LAs from 2001 to 2011, *PCycle* remained constant.
+In other words cycling grew in the (urban) LAs with higher than average populations.
+
+The categories of "unemployed"
+and "work from home" were deliberately excluded from the $Commut$ count,
+to prevent changes in employment
+structure influencing the result: if a commuter belt shifted
+away from car driving towards 'teleworking'
+(working from home), for example, this method could provide an unfairly optimistic
 impression of the uptake of cycling.
 
 The dependent variable, *change* in the proportion of people cycling to work,
 can be defined in two ways. First, the *absolute difference* in the percentage
-of people cycling to work was calculated by subtracting the 2011 results from
-the 2001 results. Second, *relative change* was defined as the proportion of people
+of people cycling to work ($\Delta pCycle$) was calculated by subtracting the 2011 results from
+the 2001 results. Second, *relative change* ($Q pCycle$) was defined as proportion of people
 cycling in 2011 divided by the rate in 2001.
 
 A linear regression model was used to test the impact of the explanatory variables
@@ -345,7 +365,7 @@ whereas the majority of LAs (250) saw small declines in the proportion of
 people cycling. 
 
 In terms of absolute growth, the distribution is more
-symetrical, with the vast majority of zones (264 zones, 81%) seeing less than a 1% change
+symmetrical, with the vast majority of zones (264 zones, 81%) seeing less than a 1% change
 either way in absolute proportion of people cycling to work.
 These results are plotted geographically in fig. x.
 
@@ -383,10 +403,10 @@ London, is also evident from fig x, which shows the expected
 high correlation between the percent cycling to work in 2001 and 2011
 (r-squared = 0.82).
 The $x = y$ line in fig x represents the 'break even' point
-above which cycling has grown and below which it has dropped.Thus
+above which cycling has grown and below which it has dropped. Thus
 there are 74 points above the line and the rest fall below.
 The further points are located from this break even line the more cycling has
-changed in that area. The colors illustrate that many of the zones with the greatest growth
+changed in that area. The colours illustrate that many of the zones with the greatest growth
 in cycling are located within the Greater London Authority.
 
 ```{r Scatterplot, fig.width=7, fig.height=8, echo=FALSE}
@@ -394,7 +414,7 @@ img <- readPNG("figure/scatter-color.png")
  grid.raster(img)
 ```
 
-The regional pattern represented by the colors in fig. x
+The regional pattern represented by the colours in fig. x
 is emphasised in in table x, which shows that
 outside London there were falls in the proportion
 of people cycling to work, with the greatest declines
@@ -464,5 +484,102 @@ Note
 |Waveney                      |       9.3|     6.5|        -2.7|   -29.6|No       |
 |Fenland                      |       7.4|     4.9|        -2.6|   -34.4|No       |
 |North East Lincolnshire      |       8.2|     5.6|        -2.6|   -31.2|No       |
+
+## Regression model results
+
+The baseline model was able to explain 16% of the variation in $\Delta pCycle$
+and 14% of the variability in $Q pCycle$ across all zones (Table x).
+This is a statistically
+significant by not particularly powerful result. In addition, the most
+statistically significant variable, $Bcrash$, had the opposite sign as
+expected, indicating a cycling may have become proportionally riskier
+in places where cycling has grown the most. Indeed,
+the correlation between $Bcrash$ and $\Delta pCycle$ was strongly
+positive (r = 0.31).
+
+We can speculate why this may be - perhaps car drivers in growth
+areas were relatively unused to high cyclist volumes or perhaps
+accident rates are higher amongst new cyclists. Yet correlation
+does not prove causality and the number of cycle commuters is a poor
+indication of *exposure*, meaning that the results do not
+show with any certainty that cycling really did tend to become less safe
+in areas where cycling grew.
+
+$Avinc$ and $Invst$ had a statistically significant (p > 5%)
+impact on the model in the direction expected, with average income
+in 2004/5 having a strong positive correlation with $\Delta pCycle$ 
+(r = 0.22) and $Q pCycle$ (r = 0.21). Despite there being only
+17 CTD projects (their impact spread across 19 LAs), the impact
+on the model was statistically significant: CDT funding increased
+the proportion of people cycling in an LA by on average 0.6 % points
+in the baseline model.
+
+
+|id           |     Estimate|  Std. Error|    t value|   Pr$(>|t|)$|
+|:------------|------------:|-----------:|----------:|----------:|
+|(Intercept)  |   -2.32|   0.33|  -7.1|  0.00|
+|Avinc        |    0.00|   0.00|   4.3|  0.00|
+|Lpath        |  -28.08|  26.88|  -1.0|  0.29|
+|Bcrash       |    3.91|   0.71|   5.5|  0.00|
+|Invst        |    0.61|   0.25|   2.4|  0.02|
+
+
+## Additional variables
+
+
+## Removing London
+
+As can be seen in figure xx, LAs within London had anomalously high growth
+rates, some of which can be explained by factors exclusive to the capital
+such as the congestion charge, slow traffic speeds and an influx of young,
+mobile workers.
+
+# Discussion
+
+There are a number of limitations to the study.
+The use of linear regression as a tool to explain changes
+over space
+
+The research presented in this paper also raises important
+questions about data quality. From a health perspective,
+the number of people who use bicycles as their *main* form
+of transport to work is far less important than the
+number of people who cycle once or twice per week.
+The marginal benefit of exercise decreases after a few
+hours of moderate exertion per week and a roughly typical
+cycle commute of 3 miles each way could easily reach this amount.
+
+More important from a health perspective (and potentially from
+an environmental perspective) is the number of people who *sometimes*
+cycle to work, once or twice per week, but not always. Because cycling
+is often a 'plan B' mode to be used occasionally, the potential impact of under-reporting
+of trips is large. Conversely, there may be many people who entered cycling
+as their primary mode of transport to work as 'aspirational cyclists'
+who cycle occasionally but would like to think that they always do.
+These questions of data quality require further analysis and the National
+Travel Survey could provide a useful empirical starting point for future
+research into this area. 
+
+In terms of monitoring the geographical distribution of a shift to cycling,
+a more suitable independent variable would be the total number of trips
+taken by residents of each area per year. Even more specifically, estimates
+of the total distance cycled in each area, and the social distribution of
+this cycling activity across society as a whole would be preferable. Indeed,
+if cycling is concentrated amongst healthy men, it is realising only a fraction
+of the potential health benefits. 
+
+```{r, echo=FALSE}
+# really need average age change as a variable
+```
+
+ 
+
+# Conclusions
+
+```{r, echo=FALSE}
+# citations \citealp{sheehan2009biofuels}
+# render("cyChange.Rmd", output_format="pdf_document")
+# Ling, J., Ieee, M., & Son, K. A. (2010). Optimal Capacity Planning for Stand – alone Photovoltaic Generation in Taiwan. Power System Technology.
+```
 
 

@@ -28,6 +28,27 @@ lam$CDT <- 0
 lam$CDT[ lam$cdm != "No"] <- 1
 ```
 
+To get the data into the right form, the variables were recoded.
+Thus, the dataset for the regression analysis was set up as:
+
+```{r}
+la <- data.frame(DpCycle = lam$Abs.Growth, # absolute change in cycling
+                 QpCycle = lam$Growth,
+                 Avinc = lam$avinc,
+                 Lpath = lam$pathDPP,
+                 Bcrash = lam$pWAc,
+                 Invst = lam$CDT)
+```
+
+
+The baseline model was as follows:
+
+```{r}
+lm1 <- lm(QpCycle ~ Avinc + Lpath + Bcrash + Invst, data=la)
+summary(lm1)
+kable(summary(lm1)[[4]])
+```
+
 
 ```{r}
 names(lam)
