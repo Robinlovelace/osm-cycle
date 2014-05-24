@@ -44,7 +44,7 @@ la <- data.frame(DpCycle = lam$Abs.Growth, # absolute change in cycling
 The baseline model was as follows:
 
 ```{r}
-lm1 <- lm(QpCycle ~ Avinc + Lpath + Bcrash + Invst, data=la)
+lm1 <- lm(DpCycle ~ Avinc + Lpath + Bcrash + Invst, data=la)
 summary(lm1)
 kable(summary(lm1)[[4]])
 ```
@@ -52,9 +52,10 @@ kable(summary(lm1)[[4]])
 
 ```{r}
 names(lam)
-lm1 <- lm(Growth ~ avinc + pathDPP + perc.car01 + pWAc +
-            changeYMW + changeCar + CDT, data = lam, na.action="na.omit")
-summary(lm1)
+lm2 <- lm(Abs.Growth ~ avinc + pathDPP + perc.car01 +  CDT, data = lam, na.action="na.omit")
+lm3 <- lm(Growth ~ avinc + pathDPP + CDT + perc.car01 + 
+            changeYMW + changeCar , data = lam, na.action="na.omit")
+summary(lm3)
 ```
 
 You can also embed plots, for example:

@@ -44,4 +44,28 @@ length(which(notLon$Growth < 0))
 summary(notLon$Growth[cU])
 hist(notLon$Growth)
 
-# ar
+# regression model outside london
+notLon <- lam[ lam$Region != "London", ]
+lm1 <- lm(DpCycle ~ Avinc + Lpath + Bcrash + Invst, data=notLon)
+summary(lm1)
+
+lm2 <- lm(Abs.Growth ~ avinc + pathDPP + CDT + perc.car01, data = notLon, na.action="na.omit")
+summary(lm2)
+
+lm2 <- lm(Growth ~ avinc + pathDPP + CDT + perc.car01, data = notLon, na.action="na.omit")
+summary(lm2)
+
+lm2 <- lm(Abs.Growth ~ avinc + pathDPP + CDT + changeYMW, data = notLon, na.action="na.omit")
+summary(lm2)
+
+lm2 <- lm(Growth ~ avinc + pathDPP + CDT + changeYMW, data = notLon, na.action="na.omit")
+summary(lm2)
+
+lm2 <- lm(Abs.Growth ~ avinc + pathDPP + CDT + changeCar, data = notLon, na.action="na.omit")
+summary(lm2)
+
+lm2 <- lm(Growth ~ avinc + pathDPP + CDT + changeCar, data = notLon, na.action="na.omit")
+summary(lm2)
+
+
+

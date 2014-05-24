@@ -451,7 +451,7 @@ ggplot() +
   scale_fill_gradient2(low="red", mid="grey", high="green", name = "Change in\ncycling (%)") +
 #   scale_fill_continuous(limits=c(-40, 0, 120) low="red", high = "green") + 
   geom_path(data = gorf, aes(long, lat, group = group))+
-  coord_map() +
+  coord_fixed() +
   theme_map
 # ggsave("figure/overview-la.png")
 ```

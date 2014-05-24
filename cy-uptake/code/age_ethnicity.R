@@ -32,7 +32,7 @@ head(la01@data)
 names(la01@data)
 # source("code/la01-2-la11.R")
 # head(la11merge)
-la01.epoints <- SpatialPointsDataFrame(coordinates(la01), data=la01@data[4:ncol(la01@data)], match.ID=F)
+la01.epoints <- SpatialPointsDataFrame(coordinates(la01), data=la01@data[3:ncol(la01@data)], match.ID=F)
 head(la01.epoints@data)
 plot(la11)
 points(la01.epoints)
@@ -53,14 +53,16 @@ head(tPop)
 tPop <- cbind(tPop, read.csv("updata/Data_AGE_ETHGRP_SEX_UNIT-simple.csv"))
 tPop <- tPop[ !is.na(tPop$F65600), ]
 head(tPop)
+plot(tPop$F60293, rowSums(tPop[5:10]))
+
 tPop <- data.frame(tPop[c(3)], percYMW11 = rowSums(tPop[5:10]) / tPop$F60293 )
 head(tPop)
-head(merge(lam[1:5], tPop, by="NAME"))
-tPop <- merge(lam[1:5], tPop, by="NAME", all.x=T)
-tPop <- tPop$percYMW11
-class(tPop)
-lam$percYMW11 <- tPop
-plot(lam$percYMW.y, lam$percYMW11)
+head(lam)
+library(plyr)
+lam$percYMW11 <- NULL
+lam <- join(lam, tPop, by="NAME")
+plot(lam$percYMW, lam$percYMW11)
+cor(lam$percYMW, lam$percYMW11, use="complete.obs")
 lam$changeYMW <- lam$percYMW11 - lam$percYMW
 
 save(lam, file = "updata/lam.RData")
