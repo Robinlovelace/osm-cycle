@@ -649,40 +649,37 @@ Table 4: Results from the final model
 
 # Discussion
 
-The analysis presented in this paper sheds some new light onto the spatial
-distribution of change in cycle commuting across England. Furthermore,
-the results provide an empirical basis
-for discussion of how best to make cycling grow in the future.
-The results show that changes in cycle commuting have not happened randomly across
-space over the course of the last 10 years or so: clear patterns can be seen
-from the maps and graphs of cycling change and these have implications for policy
-makers tasked with making cycling soar.
-
-The first point of discussion should be that cycling for personal transport,
-like many other geographic variables related to health and the economy (Dorling, 2011),
+Cycling for personal transport
 has become more unequal over space in the last 10 years:
-most of the growth in cycle commuting has happened in London. Excluding London
+most of the growth in cycle commuting has happened in London and a few
+urban centres outside the capital.
+This coincides with findings of geographical divergence of
+many other geographic variables related to health and the economy (Dorling, 2011).
+Excluding London
 from the analysis, cycle commuting has declined overall from 3.2 to 2.9% of trips.
 Within this aggregate figure, a few areas have seen
 very impressive rates of growth in cycling and a number of these received central
 government funding through the Cyclind Development Towns project. Yet the trend for
 a typical English LA outside London has been decline: the median value of
 pCycle dropped by 0.4% points from 2.9 to 2.5%, a worrying trend about which
-academics and cycle campaigners are either unaware or tend to gloss over.
+many academics and cycle campaigners seem unaware.
 
-That is not to downplay the success stories, but it does raise the question:
+That is not to downplay the success stories, but raises the question:
 why did cycle commuting in some areas grow against a backdrop of decline?
 The paper has been able to provide some answers here: areas with high incomes,
 historically low rates of car use and government support have tended to do well.
-Of course, this does not prove cause and effect: it is plausible to suggest that
+This does not prove cause and effect: it is plausible to suggest that
 areas received cycle funding precisely because they were seen as success stories.
 
-Let us return to the four hypotheses posed in the introduction. We have provided
+Returning to the hypotheses posed in the introduction, we have provided
 statistically significant evidence that the health and other benefits of cycling are
 disproportionately being enjoyed in high income areas, where much of the growth
-has occurred. We have found no significant evidence of safe roads or bicycle path
-provision leading to increased uptake of cycling, although more research is
-needed in both areas and the study has by no means disproved a link. The
+has occurred. No significant evidence about the positive influence of
+safe roads or bicycle path
+provision was found. More research is
+needed in both areas and the study has by no means disproved a link.
+
+The
 findings support previous calls for more rigorous studies exploring the impact
 of different environments and policies on active travel (Fraser and Lock, 2011).
 Specifically, there is a need for a database on public expenditure on cycling and
@@ -800,8 +797,8 @@ survey datasets with information from the Census, for example by comparing
 correlations between Census and individual level variables (Goodman, 2013)
 or more complex techniques such as spatial microsimulation (Lovelace et al.,2014).
 
-It is clear that more research is needed on how best to promote cycling
-in different place. Returning to the global issues raised
+It is clear that more research is needed on how best to promote cycling.
+Returning to the global issues raised
 in the introduction, we have demonstrated that, in addition to improved data
 on the *problems*, there is also mounting
 of evidence about potential *solutions*. Policies to promote
@@ -820,9 +817,9 @@ be pursued with some urgency.
 For cycling investment to be effective, however, policies need
 to be based on evidence: about what works, what does not and where funding
 is likely to have the greatest health and environmental benefits.
-The findings of this paper cannot prescribe policies to encourage
-policies. Interpreted with care and intelligence, such evidence can help
-inform the policy making process.
+The findings of this paper cannot prescribe policies. Interpreted with care
+and intelligence, they can help ensure that specific measures are implemented
+where they are most needed.
 
 # References
 
