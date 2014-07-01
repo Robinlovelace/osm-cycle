@@ -1,10 +1,28 @@
 <!--Investment in cycling infrastructure growth in bicycle commuting: what's the link? -->
 <!--How to increase cycling locally? Exploring the impact of investment, demographics and road safety in England between 2001 and 2011-->
 <!--How to increase cycling locally? Exploring the changing distribution of cycle in England between 2001 and 2011-->
-
-A geographical exploration of the factors associated with changes in bicycle commuting in England between 2001 and 2011
+How to 'make cycling soar': A geographical exploration of the factors associated with changes in bicycle commuting in England between 2001 and 2011
 ========================================================
 
+Bicycle commuting offers a range of health benefits now and in the future.
+In the short term, cycling to work is an important source of exercise for an increasingly
+sedentary population. Longer term health benefits may arise through reduced
+levels of climate change and dependence on fossil fuels. Despite the strength of
+evidence about these benefits, there is still a dearth of geographical
+information about the environmental factors and local policies that are effective.
+This paper processes data from the 2001 and 2011 UK Census to calculate
+the dependent variable:
+*change* in the proportion of commuters cycling to work across England's
+324 Local Authorities. Data on average income, cycle paths, safety and
+central government spending on cycling were used to explain variation in the
+dependent variable. Average income, investment and a low proportion of
+commuters driving to work in 2001 were significant in explaining cycle uptake.
+The findings
+will be of use to policy makers looking for an evidence base on which to
+allocate future cycling investments, including the need to focus more on
+low-income areas.
+
+Keywords: cycling, bicycle commuting, geographic variation.
 
 # Introduction
 During the early years of the 21st century
@@ -113,7 +131,8 @@ the scope of local transport planners to influence. (For example, if topography
 and weather are found to completely explain growth in cycling, there is little
 transport planners can do compared with if provision of cycle paths is found
 to explain much of the change.) Within this question, the following hypotheses were
-generated, based on the literature on the spatial distribution of cycling (see section x).
+generated, based on the literature on the spatial distribution of cycling (see the literature review
+below).
 The expectations were, certeris parabis (all things being equal), that:
 
 - Areas with high incomes would see disproportional increases in cycle commuting.
@@ -256,7 +275,7 @@ Another useful output from this paper was the estimation of a 'saturation point'
 referred to as 'carrying capacity' in population ecology (Lovelace et al., 2011),
 a theoretical upper limit on the proportion of people cycling to work in any particular
 area. This was calculated to be 43% of trips, higher than any wards in the UK, but comparable
-with the proportion cycling to work in some Dutch areas (Parkin et al.,2011)
+with the proportion cycling to work in some Dutch areas (Parkin et al., 2011).
 
 # Data
 
@@ -290,7 +309,7 @@ A data problem that had to be overcome early in the analysis was the conversion
 of 2001 354 Local and Unitary Authorities (combined with the 'merge' function in QGIS)
 into 2011 local authority areas (LAs),
 composed of English Districts, Unitary Authorities and London Boroughs.
-As shown in Fig. x, there are 8 2011 LAs which encapsulate
+As shown in Fig. 1, there are 8 2011 LAs which encapsulate
 many (38) 2001 administrative zones.
 The result of this process of spatial aggregation was all 324
 'lower tier' 2011 LAs, for which the
@@ -309,13 +328,13 @@ because their small size makes it impractical to extract
 geographic information all of them across England. In addition
 small values in OA data are "randomly adjusted "
 in the Census tables for low counts (see, for
-example, http://www.nomisweb.co.uk/livelinks/4652.xls ).
+example, [www.nomisweb.co.uk/livelinks/4652.xls](http://www.nomisweb.co.uk/livelinks/4652.xls)).
 
 The data pre-processing for these areas was simpler as there has been less
 change between 2001 and 2011 for Output Areas than other types of administrative
 geography. Of the 6,781 2001 MSOAs, 98% (6,640) are unchanged in the 2011 dataset. 
 The remaining 141 zones are contiguous with the more numerous (n = 6791) 2011
-zones (fig. 1).
+zones (Fig. 1).
 Because many of 2001 MSOAs were split-up into small 2011 zones, the solution was
 not as simple as allocating the misfits to the nearest 2011 zones. Instead,
 we took advantage of the unchanging geometry of the OA zones and calculated
@@ -347,7 +366,7 @@ from the beginning of 2005 until the end of 2012.
 0 for areas outside the scope of the CDT project and 1 for areas that did receive funding.
 
 The range and distribution of these variables is displayed graphically and numerically
-in fig. 2. This *plot matrix* shows the relationship between each of the input
+in Fig. 2. This *plot matrix* shows the relationship between each of the input
 variables in the model. Of note is the strong positive correlation between $Bcrash$
 and $\Delta pCycle$ (*Q pCycle* is not shown for space reasons, but $Bcrash$ had a
 similarly strong negative correlation with this variable, of 0.31).
@@ -383,7 +402,7 @@ At the national level, this can be represented as
 the population-weighted sum of *pCycle* for all areas:
 
 <!--$$PCycle = \sum_{a=1}^n \frac{Commute_a}{\sum_{a=1}^n Commute_a} \frac{Cycle_a}{Commute_a} $$-->
-$$PCycle = \sum_{a=1}^n \frac{pCycle_a Commute_a}{\sum_{a=1}^n Commute_a} $$
+$$PCycle =  \frac{\sum_{a=1}^n pCycle_a Commute_a}{\sum_{a=1}^n Commute_a} $$
 
 where $PCycle$ is the proportion cycling overall and $pCycle_a$ is the proportion
 cycling in each area.
@@ -427,14 +446,14 @@ The rate of cycling between 2001 and 2011 census was found to have changed
 very little, being 3.1% in both cases. However, there was substantial variation
 between the zones in terms of change in cycling.
 There is a strong positive skew in the distribution the growth rate
-(fig. 3): less than a quarter (74) of LAs saw the modal share of cycling rise, by an average of 30%
+(Fig. 3): less than a quarter (74) of LAs saw the modal share of cycling rise, by an average of 30%
 whereas the majority of LAs (250) saw small declines in the proportion of
 people cycling. 
 
 In terms of absolute growth, the distribution is more
 symmetrical, with the vast majority of zones (264 zones, 81%) seeing less than a 1% change
 either way in absolute proportion of people cycling to work.
-These results are plotted geographically in fig. 4.
+These results are plotted geographically in Fig. 4.
 
 ![Histograms of the distribution in the growth in cycling in absolute (above) and relative (below) terms](figure/unnamed-chunk-6.png) 
 
@@ -464,7 +483,7 @@ The regional distribution of growth in cycling, with its focus on
 London, is also evident from fig 5, which shows the expected
 high correlation between the percent cycling to work in 2001 and 2011
 (r-squared = 0.82).
-The $x = y$ line in fig x represents the 'break even' point
+The $x = y$ line in Fig. 5 represents the 'break even' point
 above which cycling has grown and below which it has dropped. Thus,
 there are 74 points above the line and the rest fall below.
 The further points are located from this break even line the more cycling has
@@ -474,7 +493,7 @@ in cycling are located within the Greater London Authority.
 ![Scatterplot of the proportion of commuters who report using a bicycle as their main means of travel to work in 2001 (x axis) and 2011 (y axis). Colours correspond to English regions.](figure/unnamed-chunk-8.png) 
 
 
-The regional pattern represented by the colours in fig. 5
+The regional pattern represented by the colours in Fig. 5
 is emphasised in Table 1, which shows that
 outside London there were falls in the proportion
 of people cycling to work, with the greatest declines
@@ -528,9 +547,10 @@ already high rate of cycling.
 
 Table 2: Statistics on cycle commuting from the top 5 and bottom 5 local authorities in
 England in terms of the absolute change in the proportion of commuters cycling to work.
-Note
+Note that 'CDT' refers to central government funding through Cycling Demonstration towns
+and the value is the year in which the funding was awarded.
 
-|Local Authority             |  pCycle 2001|  pCycle 2011|  Abs. growth ($\Delta pCycle$)|  Rel. growth ($Q pCycle$)| CDT  |
+|Local Authority             |  pCycle 2001|  pCycle 2011|  $\Delta pCycle$|  $Q pCycle$ | CDT  |
 |:----------------------------|---------:|-------:|-----------:|-------:|:---------|
 |Cambridge                    |      28.3|    31.9|         3.6|    12.7|2009      |
 |Bristol, City of             |       4.9|     8.1|         3.1|    63.7|2009       |
@@ -608,7 +628,7 @@ also had a minimal effect on the model at this stage.
 
 ## Removing London
 
-As can be seen in fig. 5, LAs within London had anomalously high growth
+As can be seen in Fig. 5, LAs within London had anomalously high growth
 rates, some of which can be explained by factors exclusive to the capital
 such as the congestion charge, slow traffic speeds and an influx of young,
 mobile workers. A strong case can thus be made for treating London separately.
@@ -730,15 +750,13 @@ of the potential health benefits.
 
 
 
- 
+ <!--and smaller administrative zones across England-->
 
 # Conclusion
-
 This study provides new evidence about
 the spatial distribution of uptake and declines in
 cycling to work across England. Regression analysis at the level
 of Local Authorities
-<!--and smaller administrative zones across England-->
 was used to test hypotheses about factors expected
 to be associated with growth in cycling. Of these,
 statistically significant results were found for average income and
@@ -829,11 +847,15 @@ Arnott, R., Rave, T., & Schöb, R. (2005). Alleviating urban traffic congestion.
 Beddoe, R., Costanza, R., Farley, J., Garza, E., Kent, J., Kubiszewski, I., … Woodward, J. (2009). Overcoming systemic roadblocks to sustainability: The evolutionary redesign of worldviews, institutions, and technologies. Proceedings of
 the National Academy of Sciences, 106(8), 2483–2489. doi:10.1073/pnas.0812570106
 
-Berners-Lee, M., & Clark, D. (2013). The Burning Question: We can’t burn half the world's oil, coal and gas. So how do we quit? (p. 256). Profile Books. Retrieved from http://www.amazon.co.uk/The-Burning-Question-cant-worlds/dp/1781250456
+Berners-Lee, M., & Clark, D. (2013). The Burning Question: We can’t burn half the world's oil, coal and gas. So how do we quit? (p. 256). Profile Books.
 
 Börjesson, M., & Eliasson, J. (2010). The value of time and external benefits in bicycle cost-benefit analysEs. In Proceedings of the 12th World Conference on Transport Research (WCTR) (pp. 11–15).
 
-Cifuentes, L., Borja-Aburto, V. H., Gouveia, N., Thurston, G., & Davis, D. L. (2001). Hidden Health Benefits of Greenhouse Gas Mitigation. Science, 293(5533), 1257–1259. doi:10.1126/science.1063357
+Cifuentes, L., Borja-Aburto, V. H., Gouveia, N., Thurston, G., & Davis, D. L. (2001). Hidden Health Benefits of Greenhouse Gas Mitigation. Science, 293(5533), 1257–1259. doi:10.1126/science.1063357 
+
+Dorling, D. (2011). Injustice: Why social inequality persists. The Policy Press.
+
+Downs, A. (2011). Still stuck in traffic. Brookings Institute Press. Washington DC.
 
 Ehrlich, P. R., & Ehrlich, A. H. (2013). Can a collapse of global civilization be avoided? Proceedings of the Royal Society B: Biological Sciences, 280(1754).
 

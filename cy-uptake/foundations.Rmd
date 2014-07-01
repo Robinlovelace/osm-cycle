@@ -453,7 +453,7 @@ ggplot() +
   geom_path(data = gorf, aes(long, lat, group = group))+
   coord_fixed() +
   theme_map
-# ggsave("figure/overview-la.png")
+# ggsave("figure/overview-la.pdf")
 ```
 
 
