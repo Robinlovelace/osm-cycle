@@ -5,15 +5,32 @@ library(devtools)
 x <- c("rgdal", "ggplot2", "rgeos", "dplyr")
 lapply(x, require, character.only=T)
 
-msoa <- readOGR("updata/", "msoa-2011") # load spatial data
-msoa.data <- read.csv("updata/all-modes-msoa-2011.csv") # 2011 ttw
+# msoa <- readOGR("updata/", "msoa-2011") # load spatial data
+msoa <- readOGR("/media/SAMSUNG/geodata/UK2011boundaries/england-msoas/", "England_msoa_2011_gen")
+
+msoa.data <- read.csv("updata//all-modes-msoa-2011.csv") # 2011 ttw
 head(msoa.data)
 names(msoa.data)
 names(msoa.data)[3]  <- "CODE"
+names(msoa.data)[2]  <- "NAME"
 names(msoa.data)[5:17] <- c("All", "Mfh", "Tram", "Train", "Bus", "Taxi", "Moto", "Car.d", "Car.p", "Cycle", "Walk", "Other", "Unemp")
+summary(msoa.data)
 head(msoa.data)
 head(msoa@data)
-msoa@data <- left_join(msoa@data, msoa.data, copy=T)
+class(msoa$CODE) 
+msoa$CODE <- as.character(msoa$CODE)
+msoa.data$CODE <- as.character(msoa.data$CODE)
+
+summary(msoa.data$CODE %in% msoa$CODE)
+msoa.data[ !msoa.data$CODE %in% msoa$CODE, ][1:100,]
+missing <- which( !msoa$CODE %in% msoa.data$CODE )
+missing[ grepl("Leeds", missing)]
+
+msoa.data[ grepl("Leeds", msoa.data$NAME), ]
+
+# msoa@data <- join(msoa@data, msoa.data)
+msoa@data <- merge(msoa@data, msoa.data, by = "NAME", all.x=T)
+summary(msoa@data)
 head(msoa@data)
 
 msoa01 <- readOGR("updata/", "msoa-2001")
@@ -133,4 +150,8 @@ length(which(msoa@data$Growth < 0))
 summary(msoa@data$Growth[cU])
 hist(msoa@data$Growth)
 
+msoa.lds <- msoa[ grepl("Leeds|Bradf|Kirk|Wakef|Cald", msoa$Zone.Name), ]
+plot(msoa.lds)
+# writeOGR(msoa.lds, "/media//SAMSUNG/repos/bikeR/geodata/", "msoasBike", "ESRI Shapefile")
+write.csv(msoa.lds@data, "/media//SAMSUNG/repos/bikeR/geodata/msoasBike.csv")
 

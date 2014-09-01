@@ -1,3 +1,9 @@
+*.docx
+*.doc
+*.pdf
+
+*~*
+*bristol*
 *.Rproj.user
 *.Rhistory
 .RData

@@ -1,6 +1,7 @@
 # extract osm points as paths
 load("data//cyclestreetDB2.RData")
 library(sp)
+# write.csv(ps[1:10,], file = "data/original_points.csv") # save sample of input data
 
 ps <- as.list(ps) # make a list to modify contents
 

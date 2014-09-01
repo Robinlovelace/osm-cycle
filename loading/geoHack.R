@@ -4,8 +4,12 @@ la <- readOGR("cy-uptake/updata/")
 la <- readOGR("cy-uptake/updata/", "ua2011")
 ps.leeds <- ps[ la[ la$NAME== "Leeds" ,], ] # didn't work
 
-# loading from .shp file
-ps.leeds <- readOGR("cy-uptake/updata/", "leedsAll")
+# loading the local cyclable paths from .shp file (filtered in qgis)
+# ps.leeds <- readOGR("cy-uptake/updata/", "leedsAll")
+setwd("~/")
+ps.leeds <- readOGR(".", "bristol-cycleways")
+
+
 object.size(ps.leeds) / 1000000
 leedsTags <- mwayTags[ mwayTags$id %in% ps.leeds$id, ]
 head(leedsTags)

@@ -28,7 +28,16 @@ osmosis --read-pbf great-britain-latest-10-03-2014.osm.pbf --tf accept-ways high
 ```
 
 This command took around 5 minutes to run on a 3rd generation Core i5 laptop computer with 12 Mb of RAM.
-The resulting file was 260 Mb in size. It was decided that a further subset would be taken of this file, to facilitate fast preliminary analysis. To start with, we took the bounding box 
+The resulting file was 260 Mb in size.
+
+Another way to perform the same operation is with `osmfilter`:
+
+```{bash}
+osmfilter british-isles-latest.o5m --keep="highway=cycleway" >bcways.osm
+```
+
+
+It was decided that a further subset would be taken of this file, to facilitate fast preliminary analysis. To start with, we took the bounding box 
 encapsulating Leeds and Nottingham, the home locations of the authors and where
 the cycle network is best understood in intuitive terms.
 
