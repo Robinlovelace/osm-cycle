@@ -36,7 +36,7 @@ gLength(os_cypath) / 1000000
 gLength(os_cypath) / (gLength(osd) + gLength(osd1) + gLength(osd2) + gLength(osd3) + gLength(osd4)) 
 os_cypathdf <- SpatialLinesDataFrame(os_cypath, data = data.frame(1:length(os_cypath)))
 
-writeOGR(os_cypathdf, dsn = "/media/SAMSUNG/repos/osm-cycle/data/ordserv/", layer = "os_cypath", driver = "ESRI Shapefile")
+writeOGR(os_cypathdf, dsn = "data/ordserv/", layer = "os_cypath", driver = "ESRI Shapefile")
 
 # old approach
 # os.dbf <- read.dbf("data/ordsurv/allshp/allshp.dbf")
