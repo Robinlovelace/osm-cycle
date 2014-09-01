@@ -15,8 +15,8 @@ less than half of all routes designed to be used by cyclists.
 More common is the `cycleway=track` tag, with over 500,000
 elements belonging to this category.
 
-There are is a bewildering range of additional tags, all of which
-must be taken into account before one can be confident that all cycle
+There are many additional tags which
+must be taken into account to load all cycle
 paths in a given area have been captured. The
 problem becomes more complex when we remember that
 the recommended way of classifying cycle paths is via relations

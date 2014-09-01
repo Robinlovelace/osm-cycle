@@ -335,11 +335,9 @@ from the official data repository [data.gov.uk](http://data.gov.uk/dataset/house
 
 
 - *Lpath*, the of high quality cycle paths within each area. This dataset was provided
-in a series of MySQL databases by CycleStreets.net and processed in R. To ensure high
-quality paths were selected, only those with CycleStreets' 'quietness' and 'speed'
-variables above the median were selected.
+in a series of MySQL databases by CycleStreets.net and processes in R.
 
-- *Bcrash*, a proxy for the safety record in each area. This was defined as a severity-weighted
+- *Bcrash*, a proxy on the safety record on cycling in each area defined as a severity-weighted
 count of the number of cycle-related road traffic incidents reported in the STATS19 database
 from the beginning of 2005 until the end of 2012.
 
@@ -370,8 +368,8 @@ following Parkin et al. (2008) who found this to be an important explanatory var
 # Method
 
 In line with the principle of parsimony,
-the modelling approach was to start simply, by reporting key statistics
-about changes in cycle commuting in England, before progressing to 
+the modelling approach was to start simple by reporting key statistics
+about changes in cycle commuting in England before progressing to 
 a regression model. 
 <!-- before few variables) and move to analyse higher resolution spatial datasets as the analysis progressed.-->
 
@@ -382,11 +380,9 @@ of people commuting by all modes ($Commute$) for each area ($a$).
 At the national level, this can be represented as
 the population-weighted sum of *pCycle* for all areas:
 
-<!--$$PCycle = \sum_{a=1}^n \frac{Commute_a}{\sum_{a=1}^n Commute_a} \frac{Cycle_a}{Commute_a} $$-->
-$$PCycle = \sum_{a=1}^n \frac{pCycle_a Commute_a}{\sum_{a=1}^n Commute_a} $$
+$$PCycle = \sum_{a=1}^n \frac{Commute_a}{\sum_{a=1}^n Commute_a} \frac{Cycle_a}{Commute_a} $$
 
-where $PCycle$ is the proportion cycling overall and $pCycle_a$ is the proportion
-cycling in each area.
+where $PCycle$ is the proportion cycling overall.
 This is expressed more concisely as the total number of cyclists divided by
 the total number of commuters ($PCycle = Cycle / Commute$). However, the above equation
 is useful in demonstrating how a single national value can mask substantial regional
@@ -624,9 +620,9 @@ the other additional variables were statistically insignificant.
 
 ## The final model
 
-The simplest solution that explained a
+Following the principle of parsimony, the simplest solution that explained a
 high proportion of variability in cycling to work was chosen.
-This was found to be the following expression:
+This was found to be the following equation:
 
 $$Q pCycle \sim Avinc + pCar +  CDT $$
 
@@ -649,37 +645,40 @@ Table 4: Results from the final model
 
 # Discussion
 
-Cycling for personal transport
+The analysis presented in this paper sheds some new light onto the spatial
+distribution of change in cycle commuting across England. Furthermore,
+the results provide an empirical basis
+for discussion of how best to make cycling grow in the future.
+The results show that changes in cycle commuting have not happened randomly across
+space over the course of the last 10 years or so: clear patterns can be seen
+from the maps and graphs of cycling change and these have implications for policy
+makers tasked with making cycling soar.
+
+The first point of discussion should be that cycling for personal transport,
+like many other geographic variables related to health and the economy (Dorling, 2011),
 has become more unequal over space in the last 10 years:
-most of the growth in cycle commuting has happened in London and a few
-urban centres outside the capital.
-This coincides with findings of geographical divergence of
-many other geographic variables related to health and the economy (Dorling, 2011).
-Excluding London
+most of the growth in cycle commuting has happened in London. Excluding London
 from the analysis, cycle commuting has declined overall from 3.2 to 2.9% of trips.
 Within this aggregate figure, a few areas have seen
 very impressive rates of growth in cycling and a number of these received central
 government funding through the Cyclind Development Towns project. Yet the trend for
 a typical English LA outside London has been decline: the median value of
 pCycle dropped by 0.4% points from 2.9 to 2.5%, a worrying trend about which
-many academics and cycle campaigners seem unaware.
+academics and cycle campaigners are either unaware or tend to gloss over.
 
-That is not to downplay the success stories, but raises the question:
+That is not to downplay the success stories, but it does raise the question:
 why did cycle commuting in some areas grow against a backdrop of decline?
 The paper has been able to provide some answers here: areas with high incomes,
 historically low rates of car use and government support have tended to do well.
-This does not prove cause and effect: it is plausible to suggest that
+Of course, this does not prove cause and effect: it is plausible to suggest that
 areas received cycle funding precisely because they were seen as success stories.
 
-Returning to the hypotheses posed in the introduction, we have provided
+Let us return to the four hypotheses posed in the introduction. We have provided
 statistically significant evidence that the health and other benefits of cycling are
 disproportionately being enjoyed in high income areas, where much of the growth
-has occurred. No significant evidence about the positive influence of
-safe roads or bicycle path
-provision was found. More research is
-needed in both areas and the study has by no means disproved a link.
-
-The
+has occurred. We have found no significant evidence of safe roads or bicycle path
+provision leading to increased uptake of cycling, although more research is
+needed in both areas and the study has by no means disproved a link. The
 findings support previous calls for more rigorous studies exploring the impact
 of different environments and policies on active travel (Fraser and Lock, 2011).
 Specifically, there is a need for a database on public expenditure on cycling and
@@ -734,32 +733,36 @@ of the potential health benefits.
 
 # Conclusion
 
-This study provides new evidence about
-the spatial distribution of uptake and declines in
+This study provides new evidence about the relationships between
+a range of geographic factors and change in the proportion of people
 cycling to work across England. Regression analysis at the level
 of Local Authorities
 <!--and smaller administrative zones across England-->
-was used to test hypotheses about factors expected
-to be associated with growth in cycling. Of these,
-statistically significant results were found for average income and
-government support for cycling at the level of local authorities. 
-The former supports the wider 'peak car' narrative (Goodwin and Van Dender, 2013).
-Perhaps more relevant for local policy makers is the latter - that cycling grew
-significantly *more* in areas which
-received central government funding through CDTs. This supports additional tranches of
-central government funding for cycling, especially targetting low income areas.
+was used
+to test the hypothesis that wealth, road safety, cycle infrastructure
+and public investment are associated with growth in cycling. Of these
+hypotheses statistically significant results were obtained supporting the
+positive impact of the first two factors. The paper provides
+statistical evidence to support the idea that high income groups are cycling
+more which supports the wider 'peak car' narrative (Goodwin and Van Dender, 2013).
+
+Perhaps more relevant for local policy makers is the finding that cycling grew
+significantly *more* in areas that
+received central government funding in the form of CDT status. Correlation does
+not prove causality, but the results certainly support additional tranches of
+central government funding for cycling.
 
 The study uses *change* in the rate of cycling to work over 10 years as the
-dependent variable.
-This differs from most geographical studies on the subject, which generally
-explain cycling variability at one specific point in time (e.g. Parkin et al., 2008).
-These studies focus attention on
+dependent variable, thereby providing policy relevant insight into the
+factors that may be able to increase the rate of cycling in future years.
+This differs from the majority of geographical studies on the subject, which have sought
+to explain the rate of cycling at one specific point in time (e.g. Parkin et al., 2008).
+These studies have tended to focus on
 variables that are either inherent to the natural environment (e.g. topology, weather)
 or which are not easy to alter through policy interventions (e.g. average distance
-of trips) (Fraser and Lock, 2011).
-
-
-
+of trips) (Fraser and Lock, 2011). This paper, by contrast, deliberately focussed on factors over
+which policy makers have some control or ability to target: bicycle paths, investment in cycling,
+the spatial distribution of average incomes.
 
 Amongst these factors, average income was found to be most strongly associated with
 cycling, providing further evidence that growth in cycling has been driven in recent years
@@ -771,22 +774,22 @@ the control of most policy makers (although they may wish otherwise). Yet the
 finding is important in terms of policy design as it provides additional evidence
 that more needs to be done to promote cycling amongst the most
 disadvantaged in society (Christie, 2011). The
-study supports the conclusion that "care needs to be taken to also develop interventions in
+study provides strong support to a conclusion derived from qualitative analysis that
+"care needs to be taken to also develop interventions in
 lower-income areas" (Aldred and Jungnickel, 2014).
 
-An unexpected finding that merits further analysis was that the most
-powerful predictor of change in cycling was the proportion of people
-driving to work in 2001. 
-We can speculate about why this may be. The result may be linked to confounding factors
-such as average distances between home and work locations, for example.
-In any case strength of the relationship supports the idea that cars and bicycles
+An unexpected finding that merits further analysis was the strong negative relationship
+between people driving to work in 2001 and growth in cycling. 
+We can speculate that the result may be linked to confounding factors
+such as average distances between home and work locations.
+The strength of the correlation provides some evidence that cars and bicycles
 can be seen in ecological terms as 'species' in direct competition (Lovelace et al.,2011).
 The policy implication of this finding is that in some cases the best
 way to promote active travel from a health perspective
 may be to implement policies discouraging car use (Jacobsen et al., 2009).
 
-The limitations of the study relate to its methodology and use
-of administrative zones as the unit of analysis. Focussing on reported cycling
+There are limitations to study inherent to the methodology and use
+of administrative zones as the unit of analysis. The focus on reported cycling
 to work as the dependent variable is problematic because cycling to work is not
 an either/or decision but something that can vary widely, from every day to a
 few times per month (Stinson and Bhat, 2004). Such subtleties are simply
@@ -797,29 +800,20 @@ survey datasets with information from the Census, for example by comparing
 correlations between Census and individual level variables (Goodman, 2013)
 or more complex techniques such as spatial microsimulation (Lovelace et al.,2014).
 
-It is clear that more research is needed on how best to promote cycling.
-Returning to the global issues raised
-in the introduction, we have demonstrated that, in addition to improved data
-on the *problems*, there is also mounting
-of evidence about potential *solutions*. Policies to promote
-cycling represent one option amongst many, but their
-simplicity and low cost make them ideally suited to the current context
-of risk aversion and austerity. Interventions that increase cycling are also
+It is clear that more research is needed in the rapidly evolving global debate
+about how best to promote cycling. Returning to the mounting evidence to society
+mentioned in the introduction, we can also say that we have a mounting body
+of evidence on how best to deal with these threats. Policies to promote
+cycling represent one small option amongst many, but their
+relative simplicity and low cost make them ideally suited to an economic context
+of risk aversion and austerity. Pro bicycle interventions are also
 exceptional in the wide
-range of interrelated problems they tackle. Health and environmental impacts
-can be seen as unintentional 'co-benefit' of improving the performance transport systems.
-
-Investment in cycling is a
-cost effective way to pursue sustainability, with proven health benefits.
-There is a limited time window in which still abundant physical and
-economic resources can be spent on a sustainable future, so measures should
-be pursued with some urgency.
-For cycling investment to be effective, however, policies need
-to be based on evidence: about what works, what does not and where funding
-is likely to have the greatest health and environmental benefits.
-The findings of this paper cannot prescribe policies. Interpreted with care
-and intelligence, they can help ensure that specific measures are implemented
-where they are most needed.
+range of interrelated problems they tackle, often as an
+unintentional 'co-benefit' to an efficient and enjoyable urban transport system.
+There is a limited time horizon in which to invest still abundant physical and
+human energy into a sustainable future, so the pro-cycling policies should continue
+to be pursued with urgency. It is hoped that the evidence provided in this paper
+will help ensure that such policies are implemented with swiftness, but not haste.
 
 # References
 
