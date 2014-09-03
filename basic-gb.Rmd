@@ -33,9 +33,14 @@ The resulting file was 260 Mb in size.
 Another way to perform the same operation is with `osmfilter`:
 
 ```{bash}
-osmfilter british-isles-latest.o5m --keep="highway=cycleway" >bcways.osm
+osmfilter british-isles-latest.osm --keep="highway=cycleway" >bcways.osm
 ```
 
+`osmfilter` can also be used to extract relations:
+
+```{bash}
+osmfilter ~/repos/osm-tutorial/data/map.osm --keep= --keep-relations="route=bicycle" --out-osm >/tmp/cycle-rels.osm
+```
 
 It was decided that a further subset would be taken of this file, to facilitate fast preliminary analysis. To start with, we took the bounding box 
 encapsulating Leeds and Nottingham, the home locations of the authors and where
