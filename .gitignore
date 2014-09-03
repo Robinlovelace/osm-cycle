@@ -7,6 +7,9 @@
 *.Rproj.user
 *.Rhistory
 .RData
+data/ordserv/
+data/osm/
+data/osm-uk/
 lit/
 *html
 bigdata/

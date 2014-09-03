@@ -399,8 +399,12 @@ of people commuting by all modes ($Commute$) for each area ($a$).
 At the national level, this can be represented as
 the population-weighted sum of *pCycle* for all areas:
 
+<<<<<<< HEAD
+$$PCycle = \sum_{a=1}^n \frac{Commute_a}{\sum_{a=1}^n Commute_a} \frac{Cycle_a}{Commute_a} $$
+=======
 <!--$$PCycle = \sum_{a=1}^n \frac{Commute_a}{\sum_{a=1}^n Commute_a} \frac{Cycle_a}{Commute_a} $$-->
 $$PCycle =  \frac{\sum_{a=1}^n pCycle_a Commute_a}{\sum_{a=1}^n Commute_a} $$
+>>>>>>> ae5a2e7d5e7ead99a85dbec6c37ea5763cb17f03
 
 where $PCycle$ is the proportion cycling overall.
 This is expressed more concisely as the total number of cyclists divided by
@@ -753,6 +757,7 @@ of the potential health benefits.
  <!--and smaller administrative zones across England-->
 
 # Conclusion
+<<<<<<< HEAD
 
 This study provides new evidence about the relationships between
 a range of geographic factors and change in the proportion of people
@@ -772,6 +777,21 @@ significantly *more* in areas that
 received central government funding in the form of CDT status. Correlation does
 not prove causality, but the results certainly support additional tranches of
 central government funding for cycling.
+=======
+This study provides new evidence about
+the spatial distribution of uptake and declines in
+cycling to work across England. Regression analysis at the level
+of Local Authorities
+was used to test hypotheses about factors expected
+to be associated with growth in cycling. Of these,
+statistically significant results were found for average income and
+government support for cycling at the level of local authorities. 
+The former supports the wider 'peak car' narrative (Goodwin and Van Dender, 2013).
+Perhaps more relevant for local policy makers is the latter - that cycling grew
+significantly *more* in areas which
+received central government funding through CDTs. This supports additional tranches of
+central government funding for cycling, especially targetting low income areas.
+>>>>>>> ae5a2e7d5e7ead99a85dbec6c37ea5763cb17f03
 
 The study uses *change* in the rate of cycling to work over 10 years as the
 dependent variable, thereby providing policy relevant insight into the
