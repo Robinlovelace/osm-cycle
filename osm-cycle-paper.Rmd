@@ -40,7 +40,7 @@ file (746 Mb),
 downloaded from OSM services provider
 [Geofabrik.de](http://download.geofabrik.de/europe/british-isles.html). This was converted for processing into a raw .osm
 (14.7 Gb) text
-file, a variant of the xml filetype, using the command-line program *osmconvert*,
+file, a variant of the xml filetype, using the command-line program **osmconvert**,
 accessed through the Linux command line.
 
 To take only navigable paths, the first stage was to subset all *ways*.
@@ -94,7 +94,33 @@ but used to identify cycle paths, each with subtly different
 meanings (Table x).
 
 
-
+|Variable  |Tag           |  Number| Percentage|Meaning                                                       |
+|:---------|:-------------|-------:|----------:|:-------------------------------------------------------------|
+|**highway=  **|*             | 3351300|      100.0|                                                              |
+|          |cycleway      |   52672|        1.6|Dedicated bicycle paths                                       |
+|**bicycle=  **|*             |  128493|        3.8|How permitted are bicycles on the path                        |
+|          |yes           |   79586|       61.9|Bicycle can ride here, but it is not necessarily a bike path  |
+|          |no            |   24162|       18.8|Bicycles are not permitted                                    |
+|          |designated    |   16036|       12.5|“Where a way has been specially designated”                   |
+|          |dismount      |    4015|        3.1|You must push your bike by law                                |
+|**cycleway=** |*             |   34085|        1.0|“Cycling infrastructure that is an inherent part of the road” |
+|          |no            |   16472|       48.3|No bicycle path                                               |
+|          |track         |    6926|       20.3|Cycle path separated from the road, e.g. by a curb            |
+|          |lane          |    8831|       25.9|On road/shared use bicycle path                               |
+|          |shared        |    1560|        4.6|“Cyclists share space with other traffic on this highway”     |
+|          |opposite_lane |     806|        2.4|A 'contraflow' cycle lane                                     |
+|          |share_busway  |     502|        1.5|Bicycles share space with buses                               |
+|          |opposite      |     414|        1.2|Bicycles can travel either way                                |
+|**lcn= **     |*             |   15320|        0.5|Local cycle routes                                            |
+|          |yes           |   13193|       86.1|Completed                                                     |
+|          |proposed      |    1536|       10.0|Proposed/under construction                                   |
+|**ncn_ref= ** |*             |   12684|        0.4|Reference of National Cycling Network paths                   |
+|          |1             |    1179|        9.3|NCN route 1                                                   |
+|          |5             |    1003|        7.9|NCN route5                                                    |
+|**ncn=  **    |*             |    3313|        0.1|Is part of the National Cycling Network                       |
+|          |yes           |    2368|       71.5|Completed                                                     |
+|          |proposed      |     888|       26.8|Proposed/under construction                                   |
+|**towpath= ** |*             |    2795|        0.1|The route is along a canal towpath                            |
 
 
 ### Ordnance Survey data
