@@ -1,0 +1,127 @@
+---
+title: 'Crowd sourced vs centralised data for transport planning: a case study of
+  bicycle path data in the UK'
+author: "Robin Lovelace"
+date: "03/09/2014"
+output: html_document
+---
+
+## Abstract
+
+
+
+## Introduction
+
+
+
+The aims of the project are as follows:
+
+1. Describe the cycle path data in Open Street Map and test the hypothesis that it is a good source of data on cycle paths in Great Britain, suitable for academic research.
+2. Compare the OSM cycle path data with a proprietary dataset.
+3. Describe and explain the spatio-temporal distribution of additions to the the cycle path dataset and investigate how this corresponds with investment in cycle schemes overall.
+4. Use the results to discuss the use of crowd-sourced data in mission-critical
+professional planning applications.
+
+
+## Datasets
+
+```{r, echo=FALSE}
+# nrow(cways)
+# nrow(bicycle_most)
+# nrow(ncn)
+```
+
+
+### Open Street Map data
+
+The cycle paths were extracted from the up-to-date and
+compressed 'british-isles' .osm.pbf
+file (746 Mb),
+downloaded from OSM services provider
+[Geofabrik.de](http://download.geofabrik.de/europe/british-isles.html). This was converted for processing into a raw .osm
+(14.7 Gb) text
+file, a variant of the xml filetype, using the command-line program *osmconvert*,
+accessed through the Linux command line.
+
+To take only navigable paths, the first stage was to subset all *ways*.
+This led to a 4.9 Gb file containing 3.35 million features. Of course,
+only a small sample of this large dataset is related to cycling (Fig. x).
+A careful sampling strategy was therefore used to ensure all bicycle paths,
+according to OSM data, were captured and whilst minimising
+data that do not represent bicycle paths. As shown in Fig. x,
+the majority of the route network in OSM is *potentially* cyclable,
+with most residential, service and unclassified highways being suitable
+for bicycles. However, we are not interested in where one *can* cycle
+in this dataset: the focus is on where local authorities and other organisations
+have invested in sustainable transport by constructing bicycle paths.
+The 'cycleway' tag is the 11th most commonly used tag, comprising 1.6%
+of all highway tags in Great Britain. 
+
+```{r, echo=FALSE}
+# summary(hways$highway)
+# top10 <- rev(tail(sort(summary(hways$highway)), 15))
+# labs <- factor(names(top10), levels = rev(names(top10)) )
+# # top10 <- sort(summary(hways$highway), decreasing = T)[1:10]
+# # sort(summary(hways$highway))[ length(top10) - 10: length]
+# ggplot() + geom_bar(aes(x = labs, y = top10 / 1000, fill = labs), stat = "identity") +
+#   coord_flip() +
+#   scale_y_continuous(expand = c(0, 0)) +
+#   scale_fill_manual(values = c(rep("grey", 4), "black", rep("grey", 10)), guide = F) +
+#   xlab("OSM highway type") +
+#   ylab("Number of line features (1000s)") +
+#   theme_classic()   
+# ggsave("figures/osm-highway-types.png", width = 9, height = 5)
+```
+
+![features](figures/osm-highway-types.png)
+
+Tagged cycleways comprise only a small proportion of all cycle paths OSM,
+which are defined using a wide variety of both tags and relations.
+This means that extracting all cycle paths cannot be acheived
+with a simple one-line operation. The following command, using the command-line
+Java program `osmfilter`, for example, will extract only a sample of the
+total length of cycle paths stored in Open Street Map:
+
+```{r, eval=FALSE}
+osmfilter data.osm --keep="highway=cycleway" >bcways.osm
+```
+
+This is because the 'cycleway' attribute
+is only one of the possible *tags* used to represent cycle paths.
+There are many additional tags from a variety of variables that can
+but used to identify cycle paths, each with subtly different
+(and sometimes overlapping)
+meanings (Table x).
+
+
+
+
+
+### Ordnance Survey data
+
+
+
+## Methods and results
+
+
+
+## Discussion
+
+## Conclusion
+
+This is the first study to our knowledge which decisively finds a free and
+crowd-sourced dataset to be more appropriate to a critical application than
+a professionally produced proprietary dataset from a national cartographic
+organisation. In this case, Open Street Map was found to provide more coverage,
+attributes, continuity and recency than the commercial dataset provided by
+the UK's national geospatial data provider Ordnance Survey.
+
+How OSM data is better - para.
+
+To be fair to OSM para... - include areas where OS data excels.
+
+The consequences of this finding...
+
+Prospects for the future.
+
+A research agenda referencing leading papers in the field

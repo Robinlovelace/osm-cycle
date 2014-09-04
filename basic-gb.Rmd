@@ -39,8 +39,13 @@ osmfilter british-isles-latest.osm --keep="highway=cycleway" >bcways.osm
 `osmfilter` can also be used to extract relations:
 
 ```{bash}
-osmfilter ~/repos/osm-tutorial/data/map.osm --keep= --keep-relations="route=bicycle" --out-osm >/tmp/cycle-rels.osm
+osmfilter british-isles-latest.osm --keep= --keep-relations="route=bicycle" --out-osm >cycle-rels.osm
 ```
+
+```{r, echo=FALSE}
+# osmfilter british-isles-latest.osm --keep= --keep-relations="network=ncn" --out-osm >cycle-rels-network=osm.osm
+```
+
 
 It was decided that a further subset would be taken of this file, to facilitate fast preliminary analysis. To start with, we took the bounding box 
 encapsulating Leeds and Nottingham, the home locations of the authors and where

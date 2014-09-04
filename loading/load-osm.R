@@ -1,15 +1,19 @@
 # loading the osm data
 library(rgeos)
+library(rgdal)
 
+hways <- read.csv("/media/SAMSUNG/data/osm/bigshps/allways.csv")
 cways <- readOGR("/media/SAMSUNG/repos/osm-cycle/data/osm/", "cycleways-all")
 summary(cways@data)
 
+bicycle_all <- readOGR("/media/SAMSUNG/repos/osm-cycle/data/osm/", "bicycle-most")
 bicycle_most <- readOGR("/media/SAMSUNG/repos/osm-cycle/data/osm/", "bicycle-designated-shared")
 lcn <- readOGR("/media/SAMSUNG/repos/osm-cycle/data/osm/", "lcn-all")
 ncn <- readOGR("/media/SAMSUNG/repos/osm-cycle/data/osm/", "ncn-all")
 rcn <- readOGR("/media/SAMSUNG/repos/osm-cycle/data/osm/", "rcn-all")
 cway_y <- readOGR("/media/SAMSUNG/repos/osm-cycle/data/osm/", "cycleway=yes-lr")
 tow <- readOGR("/media/SAMSUNG/repos/osm-cycle/data/osm/", "towpath")
+rel_ncn <- readOGR("/media/SAMSUNG/repos/osm-cycle/data/osm/", "rels-network=ncn")
 
 cways <- spTransform(cways, CRS("+init=epsg:27700"))
 bicycle_most <- spTransform(bicycle_most, CRS("+init=epsg:27700"))

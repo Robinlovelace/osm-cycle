@@ -1,14 +1,74 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.2.0-Valmiera">
+<qgis projectname="" version="2.4.0-Chugiak">
     <title></title>
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
+        <customproperties/>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="cycle_rels_polylines20140903125444262" name="cycle-rels_polylines">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="all_tags_merged20140901151000006" name="all-tags-merged">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="b_highways_polylines20140901154046917" name="towpath=">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="b_highways_polylines20140901143838929" name="cycleway=">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="b_highways_polylines20140901110400400" name="b-highways_polylines">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="b_highways_polylines20140901102935139" name="bicycle=all">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="b_highways_polylines20140901102531374" name="ncn=">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="b_highways_polylines20140901102419502" name="rcn">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="b_highways_polylines20140901100427436" name="lcn">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="cycleways20140901100712304" name="cycleway">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Checked" id="os_cypath20140831212643283" name="Ordnance Survey">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20140902061748674" name="Bing Aerial">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20140831210256398" name="OpenCycleMap">
+            <customproperties/>
+        </layer-tree-layer>
+        <layer-tree-group expanded="1" checked="Qt::Unchecked" name="rawos">
+            <customproperties/>
+            <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="nExport_Output20140831191632533" name="nExport_Output">
+                <customproperties/>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="s1Export_Output__2_20140831192634288" name="s1Export_Output (2)">
+                <customproperties/>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="tExport_Output20140831192845565" name="tExport_Output">
+                <customproperties/>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="s3Export_Output20140831184606419" name="s3Export_Output">
+                <customproperties/>
+            </layer-tree-layer>
+            <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="s2Export_Output20140831184155705" name="s2Export_Output">
+                <customproperties/>
+            </layer-tree-layer>
+        </layer-tree-group>
+    </layer-tree-group>
     <relations/>
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>-133686.58087127498583868</xmin>
-            <ymin>6973153.48838397860527039</ymin>
-            <xmax>-130432.5256293811253272</xmax>
-            <ymax>6974992.15277048572897911</ymax>
+            <xmin>-191710.31203698489116505</xmin>
+            <ymin>6931369.68223974574357271</ymin>
+            <xmax>35348.94361085018317681</xmax>
+            <ymax>7049044.20297620166093111</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -25,6 +85,8 @@
         </destinationsrs>
         <layer_coordinate_transform_info>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:27700" srcDatumTransform="-1" destDatumTransform="-1" layerid="s1Export_Output__2_20140831192634288"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20140902061748674"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20140831210256398"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:27700" srcDatumTransform="-1" destDatumTransform="-1" layerid="all_tags_merged20140901151000006"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="b_highways_polylines20140901103446475"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:27700" srcDatumTransform="-1" destDatumTransform="-1" layerid="s3Export_Output20140831184606419"/>
@@ -35,17 +97,45 @@
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="b_highways_polylines20140901100427436"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="b_highways_polylines20140901102935139"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:27700" srcDatumTransform="-1" destDatumTransform="-1" layerid="s2Export_Output20140831184155705"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="b_highways_polylines20140901154046917"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="b_highways_polylines20140901003611903"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="b_highways_polylines20140901102419502"/>
-            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="b_highways_polylines20140901154046917"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="b_highways_polylines20140901110400400"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:27700" srcDatumTransform="-1" destDatumTransform="-1" layerid="os_cypath20140831205939018"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="b_highways_polylines20140901153852486"/>
+            <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="cycle_rels_polylines20140903125444262"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="cycleways20140901100712304"/>
             <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:27700" srcDatumTransform="-1" destDatumTransform="-1" layerid="os_cypath20140831212643283"/>
         </layer_coordinate_transform_info>
     </mapcanvas>
-    <legend updateDrawingOrder="true" activeLayer="OpenLayers_plugin_layer20140902061748674">
+    <layer-tree-canvas>
+        <custom-order enabled="0">
+            <item>all_tags_merged20140901151000006</item>
+            <item>b_highways_polylines20140901154046917</item>
+            <item>b_highways_polylines20140901143838929</item>
+            <item>b_highways_polylines20140901110400400</item>
+            <item>b_highways_polylines20140901102935139</item>
+            <item>b_highways_polylines20140901102531374</item>
+            <item>b_highways_polylines20140901102419502</item>
+            <item>b_highways_polylines20140901100427436</item>
+            <item>cycleways20140901100712304</item>
+            <item>os_cypath20140831212643283</item>
+            <item>OpenLayers_plugin_layer20140902061748674</item>
+            <item>OpenLayers_plugin_layer20140831210256398</item>
+            <item>nExport_Output20140831191632533</item>
+            <item>s1Export_Output__2_20140831192634288</item>
+            <item>tExport_Output20140831192845565</item>
+            <item>s3Export_Output20140831184606419</item>
+            <item>s2Export_Output20140831184155705</item>
+            <item>cycle_rels_polylines20140903125444262</item>
+        </custom-order>
+    </layer-tree-canvas>
+    <legend updateDrawingOrder="true">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="cycle-rels_polylines" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="cycle_rels_polylines20140903125444262" visible="0"/>
+            </filegroup>
+        </legendlayer>
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="all-tags-merged" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="all_tags_merged20140901151000006" visible="0"/>
@@ -96,14 +186,14 @@
                 <legendlayerfile isInOverview="0" layerid="os_cypath20140831212643283" visible="1"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Bing Aerial" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Bing Aerial" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20140902061748674" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20140902061748674" visible="0"/>
             </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="OpenCycleMap" showFeatureCount="0">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="OpenCycleMap" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20140831210256398" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20140831210256398" visible="0"/>
             </filegroup>
         </legendlayer>
         <legendgroup open="true" checked="Qt::Unchecked" name="rawos">
@@ -134,21 +224,24 @@
             </legendlayer>
         </legendgroup>
     </legend>
-    <Composer title="Jubilee" visible="1">
+    <Composer title="Jubilee" visible="0">
         <Composition snapGridTolerance="2" gridVisible="0" printResolution="300" paperWidth="297" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" numPages="1" paperHeight="210" alignmentSnapTolerance="2" smartGuides="1" printAsRaster="0" generateWorldFile="0">
             <symbol alpha="1" type="fill" name="">
                 <layer pass="0" class="SimpleFill" locked="0">
+                    <prop k="border_width_map_unit_scale" v="0,0"/>
                     <prop k="border_width_unit" v="MM"/>
                     <prop k="color" v="255,255,255,255"/>
                     <prop k="color_border" v="0,0,0,255"/>
+                    <prop k="joinstyle" v="bevel"/>
                     <prop k="offset" v="0,0"/>
+                    <prop k="offset_map_unit_scale" v="0,0"/>
                     <prop k="offset_unit" v="MM"/>
                     <prop k="style" v="solid"/>
                     <prop k="style_border" v="no"/>
                     <prop k="width_border" v="0.26"/>
                 </layer>
             </symbol>
-            <ComposerLegend symbolWidth="7" title="Legend" boxSpace="2" splitLayer="0" equalColumnWidth="0" symbolHeight="4" wmsLegendHeight="25" wrapChar="" fontColor="#000000" columnSpace="2" wmsLegendWidth="50" columnCount="1">
+            <ComposerLegend symbolWidth="7" title="Legend" boxSpace="2" splitLayer="0" equalColumnWidth="0" titleAlignment="1" symbolHeight="4" wmsLegendHeight="25" wrapChar="" fontColor="#000000" columnSpace="2" wmsLegendWidth="50" columnCount="1">
                 <styles>
                     <style marginBottom="2" name="title" font="Sans Serif,16,-1,0,50,0,0,0,0,0"/>
                     <style marginTop="2" name="group" font="Sans Serif,14,-1,0,50,0,0,0,0,0"/>
@@ -165,14 +258,17 @@
                                         <prop k="capstyle" v="square"/>
                                         <prop k="color" v="0,0,255,255"/>
                                         <prop k="customdash" v="5;2"/>
+                                        <prop k="customdash_map_unit_scale" v="0,0"/>
                                         <prop k="customdash_unit" v="MM"/>
                                         <prop k="draw_inside_polygon" v="0"/>
                                         <prop k="joinstyle" v="bevel"/>
                                         <prop k="offset" v="0"/>
+                                        <prop k="offset_map_unit_scale" v="0,0"/>
                                         <prop k="offset_unit" v="MM"/>
                                         <prop k="penstyle" v="solid"/>
                                         <prop k="use_custom_dash" v="0"/>
                                         <prop k="width" v="0.46"/>
+                                        <prop k="width_map_unit_scale" v="0,0"/>
                                         <prop k="width_unit" v="MM"/>
                                     </layer>
                                 </symbol>
@@ -187,14 +283,17 @@
                                         <prop k="capstyle" v="round"/>
                                         <prop k="color" v="0,0,0,255"/>
                                         <prop k="customdash" v="5;2"/>
+                                        <prop k="customdash_map_unit_scale" v="0,0"/>
                                         <prop k="customdash_unit" v="MM"/>
                                         <prop k="draw_inside_polygon" v="0"/>
                                         <prop k="joinstyle" v="round"/>
                                         <prop k="offset" v="0"/>
+                                        <prop k="offset_map_unit_scale" v="0,0"/>
                                         <prop k="offset_unit" v="MM"/>
                                         <prop k="penstyle" v="solid"/>
                                         <prop k="use_custom_dash" v="0"/>
                                         <prop k="width" v="0.46"/>
+                                        <prop k="width_map_unit_scale" v="0,0"/>
                                         <prop k="width_unit" v="MM"/>
                                     </layer>
                                 </symbol>
@@ -209,14 +308,42 @@
                                         <prop k="capstyle" v="square"/>
                                         <prop k="color" v="0,0,0,255"/>
                                         <prop k="customdash" v="5;2"/>
+                                        <prop k="customdash_map_unit_scale" v="0,0"/>
                                         <prop k="customdash_unit" v="MM"/>
                                         <prop k="draw_inside_polygon" v="0"/>
                                         <prop k="joinstyle" v="bevel"/>
                                         <prop k="offset" v="0"/>
+                                        <prop k="offset_map_unit_scale" v="0,0"/>
                                         <prop k="offset_unit" v="MM"/>
                                         <prop k="penstyle" v="dot"/>
                                         <prop k="use_custom_dash" v="0"/>
                                         <prop k="width" v="1.06"/>
+                                        <prop k="width_map_unit_scale" v="0,0"/>
+                                        <prop k="width_unit" v="MM"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                    </LayerItem>
+                    <LayerItem layerId="cycle_rels_polylines20140903125444262" userText="" style="hidden" text="cycle-rels_polylines" showFeatureCount="0">
+                        <VectorClassificationItemNg userText="" text="cycle-rels_polylines">
+                            <symbols>
+                                <symbol alpha="1" type="line" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleLine" locked="0">
+                                        <prop k="capstyle" v="square"/>
+                                        <prop k="color" v="143,166,119,255"/>
+                                        <prop k="customdash" v="5;2"/>
+                                        <prop k="customdash_map_unit_scale" v="0,0"/>
+                                        <prop k="customdash_unit" v="MM"/>
+                                        <prop k="draw_inside_polygon" v="0"/>
+                                        <prop k="joinstyle" v="bevel"/>
+                                        <prop k="offset" v="0"/>
+                                        <prop k="offset_map_unit_scale" v="0,0"/>
+                                        <prop k="offset_unit" v="MM"/>
+                                        <prop k="penstyle" v="solid"/>
+                                        <prop k="use_custom_dash" v="0"/>
+                                        <prop k="width" v="0.26"/>
+                                        <prop k="width_map_unit_scale" v="0,0"/>
                                         <prop k="width_unit" v="MM"/>
                                     </layer>
                                 </symbol>
@@ -224,7 +351,7 @@
                         </VectorClassificationItemNg>
                     </LayerItem>
                 </Model>
-                <ComposerItem width="49.4" x="223.205" transparency="0" y="16.3321" height="30" positionMode="0" frame="false" outlineWidth="0.3" zValue="2" itemRotation="0" lastValidViewScaleFactor="3.12269" uuid="{e8bc9b17-1a70-45e2-8e69-d29f95510d61}" id="" background="true" blendMode="0" positionLock="false">
+                <ComposerItem pagey="16.3321" page="1" id="" lastValidViewScaleFactor="3.12269" positionMode="0" positionLock="false" x="223.205" y="16.3321" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="53.6719" outlineWidth="0.3" uuid="{e8bc9b17-1a70-45e2-8e69-d29f95510d61}" height="36" itemRotation="0" frame="false" pagex="223.205">
                     <FrameColor alpha="255" red="0" blue="0" green="0"/>
                     <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
                 </ComposerItem>
@@ -233,10 +360,13 @@
                 <overviewFrame overviewBlendMode="0" overviewFrameMap="-1" overviewCentered="false" overviewInverted="false">
                     <symbol alpha="0.3" type="fill" name="">
                         <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_map_unit_scale" v="0,0"/>
                             <prop k="border_width_unit" v="MM"/>
                             <prop k="color" v="255,0,0,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0,0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="no"/>
@@ -255,14 +385,17 @@
                             <prop k="capstyle" v="flat"/>
                             <prop k="color" v="0,0,0,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.3"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -270,16 +403,16 @@
                         <fontColor alpha="255" red="0" blue="0" green="0"/>
                     </Annotation>
                 </Grid>
-                <AtlasMap fixedScale="0" atlasDriven="0" margin="0.10000000000000001"/>
-                <ComposerItem width="250" x="31" transparency="0" y="14" height="161" positionMode="0" frame="false" outlineWidth="0.3" zValue="1" itemRotation="0" lastValidViewScaleFactor="3.12269" uuid="{0f8a090e-8717-4bf0-8e44-9707a7b11c9e}" id="" background="true" blendMode="0" positionLock="false">
+                <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+                <ComposerItem pagey="14" page="1" id="" lastValidViewScaleFactor="3.12269" positionMode="0" positionLock="false" x="31" y="14" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="250" outlineWidth="0.3" uuid="{0f8a090e-8717-4bf0-8e44-9707a7b11c9e}" height="161" itemRotation="0" frame="false" pagex="31">
                     <FrameColor alpha="255" red="0" blue="0" green="0"/>
                     <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
                 </ComposerItem>
             </ComposerMap>
         </Composition>
     </Composer>
-    <projectlayers layercount="17">
-        <maplayer minimumScale="0" maximumScale="1e+08" ol_layer_type="5" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
+    <projectlayers layercount="18">
+        <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
             <id>OpenLayers_plugin_layer20140831210256398</id>
             <datasource>.</datasource>
             <title></title>
@@ -300,11 +433,13 @@
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
-            <customproperties/>
+            <customproperties>
+                <property key="ol_layer_type" value="OpenCycleMap"/>
+            </customproperties>
         </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" ol_layer_type="12" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
+        <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
             <id>OpenLayers_plugin_layer20140902061748674</id>
-            <datasource></datasource>
+            <datasource>.</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -323,11 +458,13 @@
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
-            <customproperties/>
+            <customproperties>
+                <property key="ol_layer_type" value="Bing Aerial"/>
+            </customproperties>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>all_tags_merged20140901151000006</id>
-            <datasource>/media/SAMSUNG/repos/osm-cycle/data/osm/all-tags-merged.shp</datasource>
+            <datasource>./data/osm/all-tags-merged.shp</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -336,7 +473,7 @@
             <layername>all-tags-merged</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=375,-111,431,0,0,0,0 +units=m +no_defs</proj4>
+                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</proj4>
                     <srsid>2437</srsid>
                     <srid>27700</srid>
                     <authid>EPSG:27700</authid>
@@ -356,28 +493,34 @@
                             <prop k="capstyle" v="round"/>
                             <prop k="color" v="170,110,142,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.66"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                         <layer pass="2" class="SimpleLine" locked="1">
                             <prop k="capstyle" v="round"/>
                             <prop k="color" v="255,255,255,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="dot"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.53"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -529,12 +672,14 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="id"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
-            <editform></editform>
+            <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
-            <annotationform></annotationform>
+            <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
@@ -542,7 +687,7 @@
         </maplayer>
         <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>b_highways_polylines20140901100427436</id>
-            <datasource>dbname='/media/SAMSUNG/data/osm/b-highways.osm.db' table="b-highways_polylines" (geometry) sql="lcn" = 'yes'</datasource>
+            <datasource>dbname='../../data/osm/b-highways.osm.db' table="b-highways_polylines" (geometry) sql="lcn" = 'yes'</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -571,14 +716,17 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="0,0,255,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.46"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -730,47 +878,129 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="access:bicycle"/>
-                <edittype labelontop="0" editable="1" type="0" name="bicycle"/>
-                <edittype labelontop="0" editable="1" type="0" name="bicycle:conditional"/>
-                <edittype labelontop="0" editable="1" type="0" name="bikenorthbirmingham"/>
-                <edittype labelontop="0" editable="1" type="0" name="created_by"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway:est_width"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway:left"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway:left:width"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway:oneside"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway:oneside:width"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway:otherside"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway:otherside:width"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway:right"/>
-                <edittype labelontop="0" editable="1" type="0" name="foot"/>
-                <edittype labelontop="0" editable="1" type="0" name="footway"/>
-                <edittype labelontop="0" editable="1" type="0" name="highway"/>
-                <edittype labelontop="0" editable="1" type="0" name="id"/>
-                <edittype labelontop="0" editable="1" type="0" name="lanes"/>
-                <edittype labelontop="0" editable="1" type="0" name="lcn"/>
-                <edittype labelontop="0" editable="1" type="0" name="lcn_ref"/>
-                <edittype labelontop="0" editable="1" type="0" name="lit"/>
-                <edittype labelontop="0" editable="1" type="0" name="loc_ref"/>
-                <edittype labelontop="0" editable="1" type="0" name="maxspeed"/>
-                <edittype labelontop="0" editable="1" type="0" name="name"/>
-                <edittype labelontop="0" editable="1" type="0" name="ncn"/>
-                <edittype labelontop="0" editable="1" type="0" name="ncn_name"/>
-                <edittype labelontop="0" editable="1" type="0" name="ncn_ref"/>
-                <edittype labelontop="0" editable="1" type="0" name="oneway"/>
-                <edittype labelontop="0" editable="1" type="0" name="oneway:bicycle"/>
-                <edittype labelontop="0" editable="1" type="0" name="path.bicycle"/>
-                <edittype labelontop="0" editable="1" type="0" name="path.segregated"/>
-                <edittype labelontop="0" editable="1" type="0" name="rcn"/>
-                <edittype labelontop="0" editable="1" type="0" name="rcn_ref"/>
-                <edittype labelontop="0" editable="1" type="0" name="service"/>
-                <edittype labelontop="0" editable="1" type="0" name="source"/>
-                <edittype labelontop="0" editable="1" type="0" name="source:name"/>
-                <edittype labelontop="0" editable="1" type="0" name="surface"/>
-                <edittype labelontop="0" editable="1" type="0" name="towpath"/>
-                <edittype labelontop="0" editable="1" type="0" name="width"/>
-                <edittype labelontop="0" editable="1" type="0" name="year_built"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="highway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="source">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="maxspeed">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="foot">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="surface">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="oneway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="source:name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="service">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="created_by">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lanes">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="footway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="ncn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="ncn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="towpath">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="loc_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lcn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="rcn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway:left">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway:right">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway:left:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="ncn_name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway:est_width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="rcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="oneway:bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway:oneside">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway:oneside:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="path.bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="path.segregated">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="access:bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway:otherside:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway:otherside">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="year_built">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="bikenorthbirmingham">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="bicycle:conditional">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
@@ -783,7 +1013,7 @@
         </maplayer>
         <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>b_highways_polylines20140901102419502</id>
-            <datasource>dbname='/media/SAMSUNG/data/osm/b-highways.osm.db' table="b-highways_polylines" (geometry) sql="rcn" is not NULL</datasource>
+            <datasource>dbname='../../data/osm/b-highways.osm.db' table="b-highways_polylines" (geometry) sql="rcn" is not NULL</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -812,14 +1042,17 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="255,255,0,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.46"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -971,47 +1204,129 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="access:bicycle"/>
-                <edittype labelontop="0" editable="1" type="0" name="bicycle"/>
-                <edittype labelontop="0" editable="1" type="0" name="bicycle:conditional"/>
-                <edittype labelontop="0" editable="1" type="0" name="bikenorthbirmingham"/>
-                <edittype labelontop="0" editable="1" type="0" name="created_by"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway:est_width"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway:left"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway:left:width"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway:oneside"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway:oneside:width"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway:otherside"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway:otherside:width"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway:right"/>
-                <edittype labelontop="0" editable="1" type="0" name="foot"/>
-                <edittype labelontop="0" editable="1" type="0" name="footway"/>
-                <edittype labelontop="0" editable="1" type="0" name="highway"/>
-                <edittype labelontop="0" editable="1" type="0" name="id"/>
-                <edittype labelontop="0" editable="1" type="0" name="lanes"/>
-                <edittype labelontop="0" editable="1" type="0" name="lcn"/>
-                <edittype labelontop="0" editable="1" type="0" name="lcn_ref"/>
-                <edittype labelontop="0" editable="1" type="0" name="lit"/>
-                <edittype labelontop="0" editable="1" type="0" name="loc_ref"/>
-                <edittype labelontop="0" editable="1" type="0" name="maxspeed"/>
-                <edittype labelontop="0" editable="1" type="0" name="name"/>
-                <edittype labelontop="0" editable="1" type="0" name="ncn"/>
-                <edittype labelontop="0" editable="1" type="0" name="ncn_name"/>
-                <edittype labelontop="0" editable="1" type="0" name="ncn_ref"/>
-                <edittype labelontop="0" editable="1" type="0" name="oneway"/>
-                <edittype labelontop="0" editable="1" type="0" name="oneway:bicycle"/>
-                <edittype labelontop="0" editable="1" type="0" name="path.bicycle"/>
-                <edittype labelontop="0" editable="1" type="0" name="path.segregated"/>
-                <edittype labelontop="0" editable="1" type="0" name="rcn"/>
-                <edittype labelontop="0" editable="1" type="0" name="rcn_ref"/>
-                <edittype labelontop="0" editable="1" type="0" name="service"/>
-                <edittype labelontop="0" editable="1" type="0" name="source"/>
-                <edittype labelontop="0" editable="1" type="0" name="source:name"/>
-                <edittype labelontop="0" editable="1" type="0" name="surface"/>
-                <edittype labelontop="0" editable="1" type="0" name="towpath"/>
-                <edittype labelontop="0" editable="1" type="0" name="width"/>
-                <edittype labelontop="0" editable="1" type="0" name="year_built"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="highway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="source">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="maxspeed">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="foot">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="surface">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="oneway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="source:name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="service">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="created_by">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lanes">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="footway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="ncn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="ncn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="towpath">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="loc_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lcn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="rcn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway:left">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway:right">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway:left:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="ncn_name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway:est_width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="rcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="oneway:bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway:oneside">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway:oneside:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="path.bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="path.segregated">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="access:bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway:otherside:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway:otherside">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="year_built">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="bikenorthbirmingham">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="bicycle:conditional">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
@@ -1024,7 +1339,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>b_highways_polylines20140901102531374</id>
-            <datasource>dbname='/media/SAMSUNG/data/osm/b-highways.osm.db' table="b-highways_polylines" (geometry) sql="ncn" is not NULL</datasource>
+            <datasource>dbname='../../data/osm/b-highways.osm.db' table="b-highways_polylines" (geometry) sql="ncn" is not NULL</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -1053,14 +1368,17 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="6,41,183,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.26"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -1094,6 +1412,131 @@
                 <multilineenabled fieldname="" on=""/>
                 <selectedonly on=""/>
             </labelattributes>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="highway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="source">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="maxspeed">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="foot">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="surface">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="oneway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="source:name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="service">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="created_by">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lanes">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="footway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="towpath">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="loc_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lcn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="rcn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:left">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:right">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:left:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn_name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:est_width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="rcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="oneway:bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:oneside">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:oneside:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="path.bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="path.segregated">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="access:bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:otherside:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:otherside">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="year_built">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bikenorthbirmingham">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bicycle:conditional">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -1105,7 +1548,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>b_highways_polylines20140901102935139</id>
-            <datasource>dbname='/media/SAMSUNG/data/osm/b-highways.osm.db' table="b-highways_polylines" (geometry) sql="bicycle"  = 'yes'  OR  "bicycle" = 'tolerated' OR "bicycle"  =  'shared' OR "bicycle" = 'permisive' OR "bicycle" =  'designated'</datasource>
+            <datasource>dbname='../../data/osm/b-highways.osm.db' table="b-highways_polylines" (geometry) sql="bicycle"  = 'yes'  OR  "bicycle" = 'tolerated' OR "bicycle"  =  'shared' OR "bicycle" = 'permisive' OR "bicycle" =  'designated'</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -1134,14 +1577,17 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="180,235,246,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.26"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -1175,6 +1621,131 @@
                 <multilineenabled fieldname="" on=""/>
                 <selectedonly on=""/>
             </labelattributes>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="highway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="source">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="maxspeed">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="foot">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="surface">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="oneway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="source:name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="service">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="created_by">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lanes">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="footway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="towpath">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="loc_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lcn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="rcn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:left">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:right">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:left:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn_name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:est_width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="rcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="oneway:bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:oneside">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:oneside:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="path.bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="path.segregated">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="access:bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:otherside:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:otherside">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="year_built">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bikenorthbirmingham">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bicycle:conditional">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -1186,7 +1757,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>b_highways_polylines20140901110400400</id>
-            <datasource>dbname='/media/SAMSUNG/data/osm/b-highways.osm.db' table="b-highways_polylines" (geometry) sql="bicycle" = 'Designated' OR "bicycle" = 'Shared' OR "bicycle" = 'designated' OR "bicycle" = 'designated ' OR "bicycle" = 'path'</datasource>
+            <datasource>dbname='../../data/osm/b-highways.osm.db' table="b-highways_polylines" (geometry) sql="bicycle" = 'Designated' OR "bicycle" = 'Shared' OR "bicycle" = 'designated' OR "bicycle" = 'designated ' OR "bicycle" = 'path'</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -1215,14 +1786,17 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="179,87,64,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.26"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -1256,10 +1830,135 @@
                 <multilineenabled fieldname="" on=""/>
                 <selectedonly on=""/>
             </labelattributes>
-            <editform></editform>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="highway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="source">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="maxspeed">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="foot">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="surface">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="oneway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="source:name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="service">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="created_by">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lanes">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="footway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="towpath">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="loc_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lcn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="rcn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:left">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:right">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:left:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn_name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:est_width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="rcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="oneway:bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:oneside">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:oneside:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="path.bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="path.segregated">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="access:bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:otherside:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:otherside">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="year_built">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bikenorthbirmingham">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bicycle:conditional">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
+            <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
-            <annotationform></annotationform>
+            <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
@@ -1267,7 +1966,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>b_highways_polylines20140901143838929</id>
-            <datasource>dbname='/media/SAMSUNG/data/osm/b-highways.osm.db' table="b-highways_polylines" (geometry) sql="cycleway" = 'Lane' OR "cycleway" = 'yes' OR "cycleway" = 'track' OR "cycleway" = 'shared'  OR "cycleway" = 'left' OR "cycleway" = 'right'</datasource>
+            <datasource>dbname='../../data/osm/b-highways.osm.db' table="b-highways_polylines" (geometry) sql="cycleway" = 'Lane' OR "cycleway" = 'yes' OR "cycleway" = 'track' OR "cycleway" = 'shared'  OR "cycleway" = 'left' OR "cycleway" = 'right'</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -1296,14 +1995,17 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="239,164,196,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.26"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -1337,10 +2039,135 @@
                 <multilineenabled fieldname="" on=""/>
                 <selectedonly on=""/>
             </labelattributes>
-            <editform></editform>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="highway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="source">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="maxspeed">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="foot">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="surface">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="oneway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="source:name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="service">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="created_by">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lanes">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="footway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="towpath">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="loc_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lcn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="rcn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:left">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:right">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:left:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn_name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:est_width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="rcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="oneway:bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:oneside">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:oneside:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="path.bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="path.segregated">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="access:bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:otherside:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:otherside">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="year_built">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bikenorthbirmingham">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bicycle:conditional">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
+            <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
-            <annotationform></annotationform>
+            <annotationform>.</annotationform>
             <editorlayout>generatedlayout</editorlayout>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
@@ -1348,7 +2175,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>b_highways_polylines20140901154046917</id>
-            <datasource>dbname='/media/SAMSUNG/data/osm/b-highways.osm.db' table="b-highways_polylines" (geometry) sql="towpath"  =  'yes'</datasource>
+            <datasource>dbname='../../data/osm/b-highways.osm.db' table="b-highways_polylines" (geometry) sql="towpath"  =  'yes'</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -1377,14 +2204,17 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="64,115,201,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.26"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -1418,6 +2248,394 @@
                 <multilineenabled fieldname="" on=""/>
                 <selectedonly on=""/>
             </labelattributes>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="highway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="source">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="maxspeed">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="foot">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="surface">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="oneway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="source:name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="service">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="created_by">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lanes">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="footway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="towpath">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="loc_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lcn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="rcn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:left">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:right">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:left:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn_name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:est_width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="rcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="oneway:bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:oneside">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:oneside:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="path.bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="path.segregated">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="access:bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:otherside:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:otherside">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="year_built">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bikenorthbirmingham">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bicycle:conditional">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
+            <annotationform>.</annotationform>
+            <editorlayout>generatedlayout</editorlayout>
+            <excludeAttributesWMS/>
+            <excludeAttributesWFS/>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+            <id>cycle_rels_polylines20140903125444262</id>
+            <datasource>dbname='../../data/osm/cycle-rels.osm.db' table="cycle-rels_polylines" (geometry) sql=</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>cycle-rels_polylines</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <provider encoding="UTF-8">spatialite</provider>
+            <previewExpression></previewExpression>
+            <vectorjoins/>
+            <renderer-v2 symbollevels="0" type="singleSymbol">
+                <symbols>
+                    <symbol alpha="1" type="line" name="0">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="143,166,119,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
+                            <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.26"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
+                            <prop k="width_unit" v="MM"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <rotation/>
+                <sizescale scalemethod="area"/>
+            </renderer-v2>
+            <customproperties/>
+            <blendMode>0</blendMode>
+            <featureBlendMode>0</featureBlendMode>
+            <layerTransparency>0</layerTransparency>
+            <displayfield>name</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="Droid Sans"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="highway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="maxspeed">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="source">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="surface">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="foot">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="oneway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lanes">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="bridge">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="layer">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="sidewalk">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="source:name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="segregated">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="maxspeed:type">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="railway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="horse">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="est_width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="note">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="source:ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="created_by">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="source:maxspeed">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="maintenance">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="old_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="rcn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="designation">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="access">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="motor_vehicle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="junction">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="footway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="postal_code">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lcn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="route">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="ncn_name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:left">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="salting:operator">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="traffic_calming">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:right">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:est_width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="rcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="incline">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="history">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:right:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="oneway:bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="smoothness">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="network">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="vehicle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:oneside">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="cycleway:oneside:width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="boundary">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="lcn_name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform></editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -1429,7 +2647,7 @@
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <id>cycleways20140901100712304</id>
-            <datasource>/media/SAMSUNG/repos/osm-cycle/data/osm/cycleways.shp</datasource>
+            <datasource>./data/osm/cycleways.shp</datasource>
             <title></title>
             <abstract></abstract>
             <keywordList>
@@ -1458,14 +2676,17 @@
                             <prop k="capstyle" v="round"/>
                             <prop k="color" v="0,0,0,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="round"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.46"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -1617,30 +2838,78 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="bicycle"/>
-                <edittype labelontop="0" editable="1" type="0" name="bridge"/>
-                <edittype labelontop="0" editable="1" type="0" name="created_by"/>
-                <edittype labelontop="0" editable="1" type="0" name="cycleway"/>
-                <edittype labelontop="0" editable="1" type="0" name="est_width"/>
-                <edittype labelontop="0" editable="1" type="0" name="foot"/>
-                <edittype labelontop="0" editable="1" type="0" name="footway"/>
-                <edittype labelontop="0" editable="1" type="0" name="highway"/>
-                <edittype labelontop="0" editable="1" type="0" name="horse"/>
-                <edittype labelontop="0" editable="1" type="0" name="id"/>
-                <edittype labelontop="0" editable="1" type="0" name="layer"/>
-                <edittype labelontop="0" editable="1" type="0" name="lcn"/>
-                <edittype labelontop="0" editable="1" type="0" name="lit"/>
-                <edittype labelontop="0" editable="1" type="0" name="name"/>
-                <edittype labelontop="0" editable="1" type="0" name="ncn"/>
-                <edittype labelontop="0" editable="1" type="0" name="ncn_ref"/>
-                <edittype labelontop="0" editable="1" type="0" name="note"/>
-                <edittype labelontop="0" editable="1" type="0" name="oneway"/>
-                <edittype labelontop="0" editable="1" type="0" name="railway"/>
-                <edittype labelontop="0" editable="1" type="0" name="segregated"/>
-                <edittype labelontop="0" editable="1" type="0" name="source"/>
-                <edittype labelontop="0" editable="1" type="0" name="surface"/>
-                <edittype labelontop="0" editable="1" type="0" name="tunnel"/>
-                <edittype labelontop="0" editable="1" type="0" name="width"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="id">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="highway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="foot">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="surface">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="bicycle">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="segregated">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lit">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="source">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="name">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="est_width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="cycleway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="layer">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="ncn_ref">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="bridge">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="lcn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="railway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="created_by">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="oneway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="tunnel">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="footway">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="horse">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="note">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="width">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="ncn">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
@@ -1662,7 +2931,7 @@
             <layername>nExport_Output</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=375,-111,431,0,0,0,0 +units=m +no_defs</proj4>
+                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</proj4>
                     <srsid>2437</srsid>
                     <srid>27700</srid>
                     <authid>EPSG:27700</authid>
@@ -1682,14 +2951,17 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="242,157,53,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.26"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -1723,6 +2995,65 @@
                 <multilineenabled fieldname="" on=""/>
                 <selectedonly on=""/>
             </labelattributes>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Toid">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Version">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="VerDate">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Theme">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="DescGroup">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="DescTerm">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Change">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Make">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="LnkLength">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="TopoArea">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node1Grade">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node1Gra_1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node2">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node2Grade">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node2Gra_1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="LoadDate">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="OBJECTID">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="SHAPE_Leng">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -1743,7 +3074,7 @@
             <layername>Ordnance Survey</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=375,-111,431,0,0,0,0 +units=m +no_defs</proj4>
+                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</proj4>
                     <srsid>2437</srsid>
                     <srid>27700</srid>
                     <authid>EPSG:27700</authid>
@@ -1763,14 +3094,17 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="0,0,0,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="dot"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="1.06"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -1922,7 +3256,9 @@
                 <selectedonly on=""/>
             </labelattributes>
             <edittypes>
-                <edittype labelontop="0" editable="1" type="0" name="X1_l___"/>
+                <edittype labelontop="0" editable="1" widgetv2type="TextEdit" name="X1_l___">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
@@ -1944,7 +3280,7 @@
             <layername>s1Export_Output (2)</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=375,-111,431,0,0,0,0 +units=m +no_defs</proj4>
+                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</proj4>
                     <srsid>2437</srsid>
                     <srid>27700</srid>
                     <authid>EPSG:27700</authid>
@@ -1964,14 +3300,17 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="214,63,83,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.26"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -2005,6 +3344,65 @@
                 <multilineenabled fieldname="" on=""/>
                 <selectedonly on=""/>
             </labelattributes>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Toid">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Version">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="VerDate">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Theme">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="DescGroup">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="DescTerm">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Change">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Make">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="LnkLength">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="TopoArea">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node1Grade">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node1Gra_1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node2">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node2Grade">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node2Gra_1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="LoadDate">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="OBJECTID">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="SHAPE_Leng">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -2025,7 +3423,7 @@
             <layername>s2Export_Output</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=375,-111,431,0,0,0,0 +units=m +no_defs</proj4>
+                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</proj4>
                     <srsid>2437</srsid>
                     <srid>27700</srid>
                     <authid>EPSG:27700</authid>
@@ -2045,14 +3443,17 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="49,159,88,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.26"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -2086,6 +3487,65 @@
                 <multilineenabled fieldname="" on=""/>
                 <selectedonly on=""/>
             </labelattributes>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Toid">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Version">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="VerDate">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Theme">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="DescGroup">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="DescTerm">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Change">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Make">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="LnkLength">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="TopoArea">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node1Grade">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node1Gra_1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node2">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node2Grade">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node2Gra_1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="LoadDate">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="OBJECTID">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="SHAPE_Leng">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -2106,7 +3566,7 @@
             <layername>s3Export_Output</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=375,-111,431,0,0,0,0 +units=m +no_defs</proj4>
+                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</proj4>
                     <srsid>2437</srsid>
                     <srid>27700</srid>
                     <authid>EPSG:27700</authid>
@@ -2126,14 +3586,17 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="128,88,25,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.26"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -2167,6 +3630,65 @@
                 <multilineenabled fieldname="" on=""/>
                 <selectedonly on=""/>
             </labelattributes>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Toid">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Version">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="VerDate">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Theme">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="DescGroup">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="DescTerm">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Change">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Make">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="LnkLength">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="TopoArea">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node1Grade">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node1Gra_1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node2">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node2Grade">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node2Gra_1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="LoadDate">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="OBJECTID">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="SHAPE_Leng">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
@@ -2187,7 +3709,7 @@
             <layername>tExport_Output</layername>
             <srs>
                 <spatialrefsys>
-                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=375,-111,431,0,0,0,0 +units=m +no_defs</proj4>
+                    <proj4>+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +towgs84=446.448,-125.157,542.06,0.15,0.247,0.842,-20.489 +units=m +no_defs</proj4>
                     <srsid>2437</srsid>
                     <srid>27700</srid>
                     <authid>EPSG:27700</authid>
@@ -2207,14 +3729,17 @@
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="254,130,127,255"/>
                             <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_map_unit_scale" v="0,0"/>
                             <prop k="customdash_unit" v="MM"/>
                             <prop k="draw_inside_polygon" v="0"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
+                            <prop k="offset_map_unit_scale" v="0,0"/>
                             <prop k="offset_unit" v="MM"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
                             <prop k="width" v="0.26"/>
+                            <prop k="width_map_unit_scale" v="0,0"/>
                             <prop k="width_unit" v="MM"/>
                         </layer>
                     </symbol>
@@ -2248,6 +3773,65 @@
                 <multilineenabled fieldname="" on=""/>
                 <selectedonly on=""/>
             </labelattributes>
+            <edittypes>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Toid">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Version">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="VerDate">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Theme">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="DescGroup">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="DescTerm">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Change">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Make">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="LnkLength">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="TopoArea">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node1Grade">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node1Gra_1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node2">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node2Grade">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="Node2Gra_1">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="LoadDate">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="OBJECTID">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+                <edittype labelontop="0" editable="0" widgetv2type="TextEdit" name="SHAPE_Leng">
+                    <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
+                </edittype>
+            </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
             <featformsuppress>0</featformsuppress>
