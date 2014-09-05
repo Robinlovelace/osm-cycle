@@ -13,6 +13,7 @@ ncn <- readOGR("/media/SAMSUNG/repos/osm-cycle/data/osm/", "ncn-all")
 rcn <- readOGR("/media/SAMSUNG/repos/osm-cycle/data/osm/", "rcn-all")
 cway_y <- readOGR("/media/SAMSUNG/repos/osm-cycle/data/osm/", "cycleway=yes-lr")
 tow <- readOGR("/media/SAMSUNG/repos/osm-cycle/data/osm/", "towpath")
+rel_bicycle <- readOGR("/media/SAMSUNG/repos/osm-cycle/data/osm/", "rels-route=bicycle")
 rel_ncn <- readOGR("/media/SAMSUNG/repos/osm-cycle/data/osm/", "rels-network=ncn")
 
 cways <- spTransform(cways, CRS("+init=epsg:27700"))
@@ -22,6 +23,7 @@ ncn <- spTransform(ncn, CRS("+init=epsg:27700"))
 rcn <- spTransform(rcn, CRS("+init=epsg:27700"))
 cway_y <- spTransform(cway_y, CRS("+init=epsg:27700"))
 tow <- spTransform(tow, CRS("+init=epsg:27700"))
+rel_bicycle <- spTransform(rel_bicycle, CRS("+init=epsg:27700"))
 
 obp <- gUnion(cways, bicycle_most)
 obp <- gUnion(obp, lcn)
@@ -29,6 +31,7 @@ obp <- gUnion(obp, ncn)
 obp <- gUnion(obp, rcn)
 obp <- gUnion(obp, cway_y)
 obp <- gUnion(obp, tow)
+obp <- gUnion(obp, rel_bicycle)
 
 obp <- spTransform(obp, CRS("+init=epsg:27700"))
 obpdf <- SpatialLinesDataFrame(obp, data = data.frame(id = 1), match.ID = F)
@@ -65,3 +68,10 @@ plot(ncn, col = "green", add = T)
 plot(rcn, col = "yellow", add = T)
 
 dev.off()
+
+# load new cycle path selection from qgis and osm-attribute-table.R
+cspecific <- readOGR("data/osm/", "all-tags-merged-final")
+summary(cspecific) # this in itself is a goldmine of ininfo
+cspecific <- spTransform(cspecific, CRS("+init=epsg:27700"))
+gLength(cspecific)
+plot(cspecific[1:1000,])
